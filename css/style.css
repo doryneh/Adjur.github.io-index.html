@@ -1,0 +1,584 @@
+@font-face {
+    font-family: Cairo;
+    src: url(../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: Cairo !important;
+
+}
+
+.purpleTop {
+    background-color: #7453C6;
+}
+
+.purpleTop p.TopText ,footer.footer .TopText{
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.purpleTop p.TopText button {
+    color: #7453C6;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-shadow: none;
+    border: 2px solid white;
+    transition: 0.5s ease all;
+}
+
+.purpleTop p.TopText button:hover {
+    background-color: #7453C6;
+    color: white;
+}
+
+.purpleTop .BigBox {
+    background-color: #F6F2FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 37px;
+    color: #242424;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    line-height: 75px;
+    color: #242424;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.card {
+    border: none;
+}
+
+/***********
+***********
+Navbar
+************
+*************/
+nav.navbar ul.navbar-nav li.nav-item {
+    margin-right: 20px;
+}
+
+nav.navbar ul.navbar-nav li.nav-item:first-of-type {
+    margin-right: 0;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 18px;
+    color: #242424;
+    line-height: 34px;
+    transition: 0.2s ease all;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link.active {
+    color: #7453C6;
+    border-bottom: 1px solid #7453C6;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: #7453C6;
+}
+
+nav.navbar .NavButtons a.purpleBtn ,section.LevelOfEducation .card .purpleBtn,section.LevelOfEducation .card .AddedToCart{
+    width: 50px ;
+    height: 50px ;
+    background-color: #7453C6;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    box-shadow: none ;
+
+}
+
+nav.navbar .NavButtons a.purpleBtn:hover {
+    background-color: #50398a;
+}
+
+nav.navbar .NavButtons a button {
+    height: 50px;
+    border-radius: 16px;
+    background-color: #3FDBB1;
+    transition: 0.2s ease all;
+    border: none;
+}
+
+nav.navbar .NavButtons a button:hover {
+    background-color: #2ea183;
+}
+
+/***********
+***********
+End Navbar
+************
+*************/
+
+
+
+/***********
+***********
+Banner
+************
+*************/
+section.Banner .BannerText h5, section.CarouselPart .CarouselText h5 {
+    font-size: 28px;
+    line-height: 52px;
+    color: #242424;
+}
+
+section.Banner .BannerText h5 span {
+    color: #7453C6;
+}
+
+section.Banner .BannerText h1 {
+    color: #242424;
+    font-size: 38px;
+    line-height: 71px;
+}
+
+section.Banner .BannerText h6 {
+    font-size: 25px;
+    line-height: 47px;
+    color: #7453C6;
+}
+
+/***********
+***********
+End Banner
+************
+*************/
+
+
+/***********
+***********
+Search Section
+************
+*************/
+.SearchLine {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.055));
+    transition: 0.5s ease all;
+}
+
+.SearchLine:hover {
+    filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.3));
+
+}
+
+.SearchLine .SelectPart {
+    border: none;
+    border-left-width: 1px;
+    border-left-style: solid;
+
+    border-image:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            #685555,
+            rgba(0, 0, 0, 0)) 1 100%;
+
+}
+
+.SearchLine .SelectPart.noBorder {
+    border-left: none;
+}
+
+.SearchLine select {
+    color: #939393;
+    background-color: hsla(257, 50%, 55%, 0.09);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 34px;
+    box-shadow: none;
+    width: 90%;
+}
+
+.SearchLine .ButtonPurp button {
+    background-color: #7453C6;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-radius: none;
+    filter: drop-shadow(13px 0px 41px hsla(257, 50%, 55%, 0.21));
+}
+
+.SearchLine .ButtonPurp button:hover {
+    background-color: #50398a;
+}
+
+/***********
+***********
+End Search Section
+************
+*************/
+
+
+/***********
+***********
+Why Us
+************
+*************/
+section.WhyUs .card {
+    border-radius: 30px;
+}
+
+
+section.WhyUs .card.purple {
+
+    background-image: linear-gradient(to top left, #997FDA, #7453C6);
+    filter: drop-shadow(0px 42px 93px hsla(257, 50%, 56%, 0.35));
+}
+
+section.WhyUs .card.Green {
+    background-image: linear-gradient(to top left, #A5E7D5, #3FDBB1);
+    filter: drop-shadow(0px 42px 93px #3FDBB159);
+
+}
+
+section.WhyUs .card .card-title, section.WhyUs .card .card-text {
+    font-size: 20px;
+    line-height: 186%;
+    color: white;
+}
+
+section.WhyUs .card .card-text {
+    font-size: 15px !important;
+}
+
+section.WhyUs .card .card-title {
+    font-weight: bolder;
+}
+section.WhyUs .card img{
+    width: 35%;
+    margin: 15px 0px;
+}
+/***********
+***********
+End Why Us
+************
+*************/
+
+
+/***********
+***********
+Bundels
+************
+*************/
+section.Bundels .card ,section.LevelOfEducation .card{
+    border-radius: 20px;
+    filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.05));
+    transition: 0.3s ease all;
+
+}
+
+section.LevelOfEducation .card:hover{
+    filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
+    transform: scale(1.05);
+}
+
+section.Bundels .card .card-title,section.LevelOfEducation .card .card-title {
+    font-size: 18px;
+    color: #242424;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+section.Bundels .card .card-text {
+    font-size: 18px;
+    color: #707070;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+section.Bundels .card .PriceAndRating ,section.LevelOfEducation .card .PriceAndRating {
+    font-size: 18px;
+    color: #5032AD;
+    line-height: 34px;
+}
+
+section.Bundels .card .PriceAndRating span.OldPrice {
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+    margin-right: 15px;
+    text-decoration: line-through;
+}
+
+section.Bundels .card .PriceAndRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.Bundels .card .card-text  {
+    font-size: 11px ;
+    line-height: 30px;
+    color: #242424;
+    font-weight: 500;
+}
+section.Bundels .card .card-text img.ClassNumb{
+    width: 10px ;
+}
+section.Bundels .card .card-text img{
+    width: 17px ;
+}
+section.Bundels .card .card-text span{
+    border-left: 1px solid hsla(257, 50%, 55%, 0.7);
+    padding-left: 10px;
+}
+section.Bundels .card  .Rating,section.LevelOfEducation .card  .Rating {
+    color: #FCCC21;
+    font-weight: 500;
+    border-left: none !important;
+}
+
+section.Bundels .card button.btn-primary.addToCart,section.LevelOfEducation .card button.btn-primary.addToCart  {
+    background-color: #7453C6;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    line-height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    box-shadow: none;
+}
+
+section.Bundels .card button.btn-primary.addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover  {
+    background-color: #50398a;
+}
+section.Bundels .carousel{
+    max-width: 100% !important;
+}
+section.Bundels .carousel-inner{
+    padding: 0 15px 0 5px;
+    overflow-y: hidden;
+}
+section.Bundels .carousel , section.Bundels .carousel-inner ,section.Bundels .carousel-item {
+    background-color: transparent !important;
+}
+
+/***********
+***********
+End Bundels
+************
+*************/
+
+
+/***********
+***********
+Carousel Part
+************
+*************/
+section.CarouselPart {
+    background-image: linear-gradient(to top, #997FDA, #7453C6);
+    filter: drop-shadow(0px 42px 93px hsla(257, 50%, 55%, 0.35));
+    border-radius: 30px;
+}
+
+section.CarouselPart .CarouselText h5 {
+    color: white !important;
+}
+
+section.CarouselPart .text {
+    color: white;
+}
+section.CarouselPart .carousel img {
+    width: 50% !important;
+    margin: 0 auto;
+}
+section.CarouselPart .carousel button{
+    opacity: 1 !important;
+    
+}
+section.CarouselPart .carousel svg{
+    font-size: 25px;
+    
+}
+section.CarouselPart .carousel .carousel-indicators button{
+    height: 7px;
+    width: 67px;
+    border-radius: 10px !important;
+    opacity: 33% !important;
+}
+section.CarouselPart .carousel .carousel-indicators button.active{
+    opacity: 1 !important;
+}
+section.CarouselPart .carousel .carousel-control-next{
+    left: 10%;
+}
+section.CarouselPart .carousel  .carousel-control-prev{
+    right: 10%;
+}
+/***********
+***********
+End Carousel
+************
+*************/
+
+
+
+/***********
+***********
+Level Of Education
+************
+*************/
+section.LevelOfEducation .nav-pills {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.055));
+
+}
+section.LevelOfEducation .nav-pills li button{
+    color: #242424;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5;
+    line-height: 37px;
+}
+section.LevelOfEducation .nav-pills .nav-link.active,section.LevelOfEducation .nav-pills .show > .nav-link{
+    opacity: 1 !important;
+    background-color: #7453C6;
+    border-radius: 15px;
+    filter: drop-shadow(-5px 1px 21px hsla(257, 50%, 55%, 0.19));
+
+}
+section.LevelOfEducation .card{
+    position: relative;
+}
+section.LevelOfEducation .card .PriceAndRating {
+    font-size: 28px;
+}
+section.LevelOfEducation .card  .Rating{
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    background-color: #FCF0CE;
+    border-radius: 8px ;
+    padding: 7px 10px;
+    font-size: 16px;
+}
+section.LevelOfEducation .card  .Rating img{
+    width: 20px;
+}
+section.LevelOfEducation .card .purpleBtn{
+    border-radius: 8px !important;
+    background-color: #40DCB2;
+    border: none;
+}
+section.LevelOfEducation .card .purpleBtn:hover{
+    background-color: #2ea183;
+}
+section.LevelOfEducation .card .AddedToCart{
+    background-color: hsla(164, 69%, 56%, 0.39) !important;
+    border-radius: 8px !important;
+    border: none;
+}
+section.LevelOfEducation .card .AddedToCart img {
+    width: 100%;
+}
+section.LevelOfEducation .card .AddedToCart:hover{
+    background-color: hsla(164, 54%, 27%, 0.39) !important;
+}
+
+/***********
+***********
+End Level Of Education
+************
+*************/
+
+
+/***********
+***********
+Green Section
+************
+*************/
+section.GreenSection{
+    background-image: linear-gradient(to bottom, #A5E7D5, #3FDBB1);
+    border-radius: 30px;
+    filter: drop-shadow(0px 44px 93px hsla(164, 68%, 55%, 0.38));
+}
+section.GreenSection h1,section.GreenSection .text ,section.GreenSection h3{
+    color: #242424;
+
+}
+section.GreenSection h1{
+    font-size: 40px;
+    line-height:75px ;
+}
+section.GreenSection h3{
+    font-size: 30px;
+    line-height:56px ;
+}
+
+
+/***********
+***********
+End Green Section
+************
+*************/
+
+
+/***********
+***********
+Footer
+************
+*************/
+footer.footer {
+    background-color: #7453C6;
+}
+footer.footer p.TextSemiBold{
+    font-weight: 400;
+}
+footer.footer .firstFooterPart img.whatsapp{
+    width: 30px;
+}
+footer.footer a{
+    text-decoration: none;
+}
+footer.footer a:hover{
+    color: rgb(231, 231, 231);
+}
+footer.footer .footerTitle{
+    font-size: 24px;
+    line-height: 136.7%;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid #40DCB2;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+footer.footer  .DownloadApp .footerTitle{
+    border-bottom: none;
+    font-weight: 500;
+}
+footer.footer   .SocialIcons img{
+    width: 30px;
+}
+footer.footer   .SocialIcons img.whatsapp{
+    width: 25px;
+}
+
+/***********
+***********
+End Footer
+************
+*************/
