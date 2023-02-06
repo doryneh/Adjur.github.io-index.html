@@ -6,14 +6,14 @@
 body {
     direction: rtl;
     font-family: Cairo !important;
-
+    background-color: #F6F2FF;
 }
 
 .purpleTop {
     background-color: #7453C6;
 }
 
-.purpleTop p.TopText ,footer.footer .TopText{
+.purpleTop p.TopText, footer.footer .TopText {
     color: white;
     font-size: 16px;
     line-height: 30px;
@@ -66,7 +66,9 @@ Navbar
 nav.navbar ul.navbar-nav li.nav-item {
     margin-right: 20px;
 }
-
+nav.navbar .navbar-brand{
+    width: fit-content;
+}
 nav.navbar ul.navbar-nav li.nav-item:first-of-type {
     margin-right: 0;
 }
@@ -87,9 +89,9 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #7453C6;
 }
 
-nav.navbar .NavButtons a.purpleBtn ,section.LevelOfEducation .card .purpleBtn,section.LevelOfEducation .card .AddedToCart{
-    width: 50px ;
-    height: 50px ;
+nav.navbar .NavButtons a.purpleBtn, section.LevelOfEducation .card .purpleBtn, section.LevelOfEducation .card .AddedToCart {
+    width: 50px;
+    height: 50px;
     background-color: #7453C6;
     border: none;
     border-radius: 16px;
@@ -97,7 +99,7 @@ nav.navbar .NavButtons a.purpleBtn ,section.LevelOfEducation .card .purpleBtn,se
     justify-content: center;
     align-items: center;
     transition: 0.2s ease all;
-    box-shadow: none ;
+    box-shadow: none;
 
 }
 
@@ -130,17 +132,17 @@ End Navbar
 Banner
 ************
 *************/
-section.Banner .BannerText h5, section.CarouselPart .CarouselText h5 {
+section.Banner .BannerText h1, section.CarouselPart .CarouselText h1 {
     font-size: 28px;
     line-height: 52px;
     color: #242424;
 }
 
-section.Banner .BannerText h5 span {
+section.Banner .BannerText h1 span {
     color: #7453C6;
 }
 
-section.Banner .BannerText h1 {
+section.Banner .BannerText h5 {
     color: #242424;
     font-size: 38px;
     line-height: 71px;
@@ -257,16 +259,18 @@ section.WhyUs .card .card-title, section.WhyUs .card .card-text {
 }
 
 section.WhyUs .card .card-text {
-    font-size: 15px !important;
+    font-size: 13px !important;
 }
 
 section.WhyUs .card .card-title {
     font-weight: bolder;
 }
-section.WhyUs .card img{
-    width: 35%;
+
+section.WhyUs .card img {
+    width: 40%;
     margin: 15px 0px;
 }
+
 /***********
 ***********
 End Why Us
@@ -279,19 +283,19 @@ End Why Us
 Bundels
 ************
 *************/
-section.Bundels .card ,section.LevelOfEducation .card{
+section.Bundels .card, section.LevelOfEducation .card {
     border-radius: 20px;
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.05));
     transition: 0.3s ease all;
 
 }
 
-section.LevelOfEducation .card:hover{
+section.LevelOfEducation .card:hover {
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
 
-section.Bundels .card .card-title,section.LevelOfEducation .card .card-title {
+section.Bundels .card .card-title, section.LevelOfEducation .card .card-title {
     font-size: 18px;
     color: #242424;
     font-weight: 600;
@@ -305,13 +309,14 @@ section.Bundels .card .card-text {
     line-height: 30px;
 }
 
-section.Bundels .card .PriceAndRating ,section.LevelOfEducation .card .PriceAndRating {
+section.Bundels .card .PriceAndRating, section.LevelOfEducation .card .PriceAndRating {
     font-size: 18px;
     color: #5032AD;
     line-height: 34px;
 }
 
-section.Bundels .card .PriceAndRating span.OldPrice {
+section.Bundels .card .PriceAndRating span.OldPrice, section.LevelOfEducation .card .PriceAndRating span.OldPrice {
+
     font-size: 14px;
     color: #242424;
     font-weight: 400;
@@ -324,29 +329,34 @@ section.Bundels .card .PriceAndRating {
     justify-content: space-between;
     align-items: center;
 }
-section.Bundels .card .card-text  {
-    font-size: 11px ;
+
+section.Bundels .card .card-text {
+    font-size: 11px;
     line-height: 30px;
     color: #242424;
     font-weight: 500;
 }
-section.Bundels .card .card-text img.ClassNumb{
-    width: 10px ;
+
+section.Bundels .card .card-text img.ClassNumb {
+    width: 10px;
 }
-section.Bundels .card .card-text img{
-    width: 17px ;
+
+section.Bundels .card .card-text img {
+    width: 17px;
 }
-section.Bundels .card .card-text span{
+
+section.Bundels .card .card-text span {
     border-left: 1px solid hsla(257, 50%, 55%, 0.7);
     padding-left: 10px;
 }
-section.Bundels .card  .Rating,section.LevelOfEducation .card  .Rating {
+
+section.Bundels .card .Rating, section.LevelOfEducation .card .Rating {
     color: #FCCC21;
     font-weight: 500;
     border-left: none !important;
 }
 
-section.Bundels .card button.btn-primary.addToCart,section.LevelOfEducation .card button.btn-primary.addToCart  {
+section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -359,19 +369,23 @@ section.Bundels .card button.btn-primary.addToCart,section.LevelOfEducation .car
     align-items: center;
     transition: 0.2s ease all;
     box-shadow: none;
+    width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover  {
+section.Bundels .card button.btn-primary.addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover {
     background-color: #50398a;
 }
-section.Bundels .carousel{
+
+section.Bundels .carousel {
     max-width: 100% !important;
 }
-section.Bundels .carousel-inner{
+
+section.Bundels .carousel-inner {
     padding: 0 15px 0 5px;
     overflow-y: hidden;
 }
-section.Bundels .carousel , section.Bundels .carousel-inner ,section.Bundels .carousel-item {
+
+section.Bundels .carousel, section.Bundels .carousel-inner, section.Bundels .carousel-item {
     background-color: transparent !important;
 }
 
@@ -395,38 +409,179 @@ section.CarouselPart {
 
 section.CarouselPart .CarouselText h5 {
     color: white !important;
+    font-size: 28px;
 }
 
 section.CarouselPart .text {
     color: white;
+    font-weight: 300;
 }
-section.CarouselPart .carousel img {
-    width: 50% !important;
-    margin: 0 auto;
-}
-section.CarouselPart .carousel button{
+
+section.CarouselPart .carousel button {
     opacity: 1 !important;
-    
+
 }
-section.CarouselPart .carousel svg{
+
+#NextBtn svg, #PrevBtn svg{
     font-size: 25px;
-    
+
 }
-section.CarouselPart .carousel .carousel-indicators button{
-    height: 7px;
-    width: 67px;
+
+
+
+/*Teachers carousel*/
+#Teachercarousel {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 75%;
+    height: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: flat;
+    perspective: 400px;
+    pointer-events: none;
+    overflow: visible;
+}
+
+div.item {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-200px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    border-radius: 20px !important;
+    filter: drop-shadow(0px 1px 10px hsla(0, 0%, 0%, 0.49));
+
+}
+
+section.CarouselPart .Overlay {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    text-align: center !important;
+}
+
+section.CarouselPart .Overlay img.TeacherProfile {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    z-index: 400;
+
+}
+
+section.CarouselPart .Overlay .Rating {
+    color: #D9B019;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: hsla(47, 79%, 48%, 0.19);
+    border-radius: 10px;
+    width: 90px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+section.CarouselPart .Overlay .Rating img {
+    margin-right: 5px;
+}
+
+section.CarouselPart .Overlay .CardText, section.CarouselPart .Overlay .CardTextSmall {
+    font-size: 16px;
+    line-height: 30px;
+    color: #242424;
+}
+
+section.CarouselPart .Overlay .CardTextSmall {
+    font-size: 14px;
+}
+
+section.CarouselPart .Overlay a.purpleBtn {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #7453C6;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*Indicators*/
+section.CarouselPart .carousel-indicator {
+    height: 7px !important;
+    width: 67px !important;
     border-radius: 10px !important;
-    opacity: 33% !important;
+    opacity: 33%;
+    background-color: white !important;
+    color: white;
+    z-index: 100;
+    border: none;
+    margin: 5px;
+    position: relative;
 }
-section.CarouselPart .carousel .carousel-indicators button.active{
-    opacity: 1 !important;
+
+section.CarouselPart .carousel-indicator input {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -moz-opacity: 0;
+    opacity: 0;
+    width: 100%;
+    height: 200%;
 }
-section.CarouselPart .carousel .carousel-control-next{
+
+section.CarouselPart .carousel-indicator input:checked {
+    color: white;
+}
+
+#PrevBtn, #NextBtn {
+    z-index: 100;
+    color: white;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+
+}
+
+#NextBtn {
     left: 10%;
+    transform: translate(-50%, -50%);
+
 }
-section.CarouselPart .carousel  .carousel-control-prev{
+
+#PrevBtn {
     right: 10%;
+    transform: translate(0, -50%);
+
 }
+
 /***********
 ***********
 End Carousel
@@ -447,58 +602,77 @@ section.LevelOfEducation .nav-pills {
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.055));
 
 }
-section.LevelOfEducation .nav-pills li button{
+
+section.LevelOfEducation .nav-pills li button {
     color: #242424;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     opacity: 0.5;
     line-height: 37px;
 }
-section.LevelOfEducation .nav-pills .nav-link.active,section.LevelOfEducation .nav-pills .show > .nav-link{
+
+section.LevelOfEducation .nav-pills .nav-link.active, section.LevelOfEducation .nav-pills .show>.nav-link {
     opacity: 1 !important;
     background-color: #7453C6;
     border-radius: 15px;
     filter: drop-shadow(-5px 1px 21px hsla(257, 50%, 55%, 0.19));
 
 }
-section.LevelOfEducation .card{
+
+section.LevelOfEducation .card {
     position: relative;
 }
+
 section.LevelOfEducation .card .PriceAndRating {
     font-size: 28px;
 }
-section.LevelOfEducation .card  .Rating{
+
+section.LevelOfEducation .card .Rating {
     position: absolute;
     top: 8%;
     left: 7%;
     background-color: #FCF0CE;
-    border-radius: 8px ;
+    border-radius: 8px;
     padding: 7px 10px;
     font-size: 16px;
 }
-section.LevelOfEducation .card  .Rating img{
+
+section.LevelOfEducation .card .Rating img {
     width: 20px;
 }
-section.LevelOfEducation .card .purpleBtn{
+
+section.LevelOfEducation .card .purpleBtn {
     border-radius: 8px !important;
     background-color: #40DCB2;
     border: none;
 }
-section.LevelOfEducation .card .purpleBtn:hover{
+
+section.LevelOfEducation .card .purpleBtn:hover {
     background-color: #2ea183;
 }
-section.LevelOfEducation .card .AddedToCart{
+
+section.LevelOfEducation .card .AddedToCart {
     background-color: hsla(164, 69%, 56%, 0.39) !important;
     border-radius: 8px !important;
     border: none;
 }
+
 section.LevelOfEducation .card .AddedToCart img {
     width: 100%;
 }
-section.LevelOfEducation .card .AddedToCart:hover{
+
+section.LevelOfEducation .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
 
+section.LevelOfEducation .dropdownBtn{
+    background-color:transparent;
+    border: 2px solid #242424;
+    color: #242424;
+    font-size:20px;
+    font-weight:500;
+    border-radius:15px;
+}
 /***********
 ***********
 End Level Of Education
@@ -511,22 +685,25 @@ End Level Of Education
 Green Section
 ************
 *************/
-section.GreenSection{
-    background-image: linear-gradient(to bottom, #A5E7D5, #3FDBB1);
+section.GreenSection {
+    background-image: linear-gradient(to top left, #3FDBB1, #A5E7D5);
     border-radius: 30px;
     filter: drop-shadow(0px 44px 93px hsla(164, 68%, 55%, 0.38));
 }
-section.GreenSection h1,section.GreenSection .text ,section.GreenSection h3{
+
+section.GreenSection h1, section.GreenSection .text, section.GreenSection h3 {
     color: #242424;
 
 }
-section.GreenSection h1{
+
+section.GreenSection h1 {
     font-size: 40px;
-    line-height:75px ;
+    line-height: 75px;
 }
-section.GreenSection h3{
+
+section.GreenSection h3 {
     font-size: 30px;
-    line-height:56px ;
+    line-height: 56px;
 }
 
 
@@ -545,19 +722,24 @@ Footer
 footer.footer {
     background-color: #7453C6;
 }
-footer.footer p.TextSemiBold{
+
+footer.footer p.TextSemiBold {
     font-weight: 400;
 }
-footer.footer .firstFooterPart img.whatsapp{
+
+footer.footer .firstFooterPart img.whatsapp {
     width: 30px;
 }
-footer.footer a{
-    text-decoration: none;
+
+a {
+    text-decoration: none !important;
 }
-footer.footer a:hover{
+
+footer.footer a:hover {
     color: rgb(231, 231, 231);
 }
-footer.footer .footerTitle{
+
+footer.footer .footerTitle {
     font-size: 24px;
     line-height: 136.7%;
     font-weight: bold;
@@ -566,14 +748,17 @@ footer.footer .footerTitle{
     width: fit-content;
     padding-bottom: 10px;
 }
-footer.footer  .DownloadApp .footerTitle{
+
+footer.footer .DownloadApp .footerTitle {
     border-bottom: none;
     font-weight: 500;
 }
-footer.footer   .SocialIcons img{
+
+footer.footer .SocialIcons img {
     width: 30px;
 }
-footer.footer   .SocialIcons img.whatsapp{
+
+footer.footer .SocialIcons img.whatsapp {
     width: 25px;
 }
 
