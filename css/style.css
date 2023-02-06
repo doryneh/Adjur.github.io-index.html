@@ -122,7 +122,11 @@ nav.navbar .NavButtons a button {
     transition: 0.2s ease all;
     border: none;
 }
-
+nav.navbar .NavButtons a.btn-primary{
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+}
 nav.navbar .NavButtons a button:hover {
     background-color: #2ea183;
 }
@@ -132,6 +136,128 @@ nav.navbar .NavButtons a button:hover {
 End Navbar
 ************
 *************/
+
+/***********
+***********
+Modal
+************
+*************/
+.modal {
+    background-color: rgba(255, 255, 255, 0.1);
+  filter: blur(50%);
+}
+.modal-dialog{
+    max-width: 770px;
+}
+.modal .modal-content{
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 51px hsla(0, 0%, 0%, 0.21));
+}
+.modal .modal-header{
+    display: inline-block;
+    border: none;
+}
+.modal .modal-title{
+    font-size: 24px;
+    color: #7453C6;
+    font-weight: bold;
+    line-height: 45px;    
+}
+.modal .btn-close {
+    width: fit-content;
+    float: left;
+    background-color: hsla(257, 48%, 52%, 0.315);
+    color: #6B4BBF;
+    box-shadow: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.modal .text{
+    font-size: 16px;
+    
+}
+
+.modal .SignUpUsingGoogle {
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: white;
+
+}
+.modal .SignUpUsingGoogle:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.modal .SignUpUsingGoogle img ,.modal .SignUpUsingTwiter img{
+    width: 35px;
+    margin-left: 10px;
+}
+.modal .SignUpUsingTwiter{
+    background-color: #0A93E2;
+    border-radius: 10px;
+
+}
+.modal .SignUpUsingTwiter:hover{
+    background-color: #0877b8;
+}
+.modal .SignUpUsingTwiter a span{
+    color: white;
+
+}
+.modal .SignUpText .col-4{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .borderRow{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #A09EA5;
+}
+.modal .DownloadAppRow a{
+    width: fit-content;
+}
+.modal .DownloadAppRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.modal input,.modal select{
+    direction: rtl;
+    border: 1px solid #A09EA5;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: white;
+    box-shadow: none;
+}
+.modal .textPurp{
+    color: #7A5CC8;
+} 
+.modal .SubmitBtn {
+    background-color: #7A5CC8;
+    border-radius: 8px;
+    border: none;
+
+}
+.modal .SubmitBtn:hover {
+    background-color: #6B4BBF;
+}
+.modal .textSmall{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.modal .textSmall a{
+    color: #7A5CC8;
+}
+/***********
+***********
+End Modal
+************
+*************/
+
 
 
 
@@ -953,3 +1079,12 @@ End Footer
     }
  
 }
+
+@media (max-width: 565px){
+    .modal .DownloadAppRow a{
+        margin-top: 5px;
+        padding: 5px;
+        }
+
+}
+

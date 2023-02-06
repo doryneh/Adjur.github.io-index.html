@@ -61,7 +61,7 @@
                 <a href="" class="purpleBtn ms-3">
                   <img loading="lazy" src="images/bag-2.svg" alt="bag Icon">
                 </a>
-                <a href="" class="ms-3">
+                <a class="btn btn-primary ms-3" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                   <button type="button" class="btn btn-success px-4 py-2"> تسجيل <img loading="lazy"
                       src="images/import.svg" alt="">
                   </button>
@@ -71,6 +71,176 @@
           </div>
         </nav>
         <!--End Navbar-->
+
+        <!--SignIn And SignUp Modals-->
+        <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header p-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+              </div>
+              <div class="modal-body  border-0 p-5">
+              <div class="row m-0">
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingGoogle  py-3 pe-1">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Google logo.png" alt="GOogle Logo">
+                    <span class="text">تسجيل الدخول بحساب جوجل</span>
+                  </a>
+                </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Twitter.png" alt="Twiter Logo">
+                    <span class="text">تسجيل الدخول بحساب تويتر</span>
+                  </a>
+                </div>
+                </div>
+              </div>  
+              <div class="row mt-5 SignUpText">
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+                <div class="col-md-4 col-8 p-0">
+                  <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                </div>
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text"> <b> البريد الإلكتروني </b></label>
+                    <input type="email" class="form-control py-2" id="exampleInputEmail1" placeholder="عنوان البريد الإلكتروني" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور </b></label>
+                    <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="كلمة المرور" required>
+                  </div>
+                  <div class="mb-3 form-check ps-0">
+                    <a href="" class="ps-0 textPurp text">هل نسيت كلمة المرور؟</a>
+                    <div class="float-end d-flex justify-content-center align-items-center">
+                    <input type="checkbox" class="form-check-input me-3" id="exampleCheck1">
+                    <label class="form-check-label textPurp text" for="exampleCheck1">تذكرني</label>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">تسجيل الدخول</button>
+                </form>
+              </div>
+              <div class="row mt-3">
+                <div class="textSmall text-center">
+                  ليس لديك حساب؟  <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"> حساب جديد</a>
+                </div>
+              </div>
+              <div class="row DownloadAppRow">
+                <a href=""><img src="images/GooglePlay White.png" alt="GooglePlay White" class="me-2 me-sm-3"></a>
+               <a href=""> <img src="images/AppStore white.png" alt="AppStore white"></a>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal fade " id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header p-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+              </div>
+              <div class="modal-body  border-0 p-5">
+              <div class="row m-0">
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingGoogle  py-3 pe-1">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Google logo.png" alt="GOogle Logo">
+                    <span class="text">تسجيل الدخول بحساب جوجل</span>
+                  </a>
+                </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Twitter.png" alt="Twiter Logo">
+                    <span class="text">تسجيل الدخول بحساب تويتر</span>
+                  </a>
+                </div>
+                </div>
+              </div>  
+              <div class="row mt-5 SignUpText">
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+                <div class="col-md-4 col-8 p-0">
+                  <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                </div>
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputName" class="form-label text"> <b> الأسم كاملاّ</b></label>
+                    <input type="text" class="form-control py-2" id="exampleInputName" placeholder="الأسم كاملاّ " aria-describedby="UserName" required>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="Select1" class="form-label text"> <b>  المرحلة</b></label>
+
+                      <select class="form-select form-select-sm" id="Select1" aria-label=".form-select-sm example">
+                        <option selected>اختر من هنا</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Select2" class="form-label text"> <b> الصف </b></label>
+
+                      <select class="form-select form-select-sm" id="Select2" aria-label=".form-select-sm example">
+                        <option selected>اختر من هنا</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label text"> <b> البريد الإلكتروني </b></label>
+                    <input type="email" class="form-control py-2" id="exampleInputEmail2" placeholder="عنوان البريد الإلكتروني" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور </b></label>
+                    <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="كلمة المرور" required>
+                  </div>
+                 
+                  <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">إشتراك </button>
+                  <div class="mb-3 form-check ps-0 d-flex justify-content-start align-items-center mt-2">
+                    <input type="checkbox" class="form-check-input me-3 ms-3" id="exampleCheck2" required>
+                    <label class="form-check-label textPurp text" for="exampleCheck2">موافق على الشروط والأحكام</label>
+                  </div>
+                </form>
+              </div>
+              <div class="row mt-2">
+                <div class="textSmall text-center">
+                  ليس لديك حساب؟  <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">  تسجيل الدخول</a>
+                </div>
+              </div>
+
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!--End SignIn And SignUp Modals-->
 
 
         <!--Banner-->
