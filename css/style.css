@@ -47,7 +47,7 @@ body {
 }
 
 .sectionTitle {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 75px;
     color: #242424;
     font-weight: 600;
@@ -66,8 +66,16 @@ Navbar
 nav.navbar ul.navbar-nav li.nav-item {
     margin-right: 20px;
 }
-nav.navbar .navbar-brand{
+
+nav.navbar .navbar-brand {
     width: fit-content;
+}
+nav.navbar .navbar-toggler {
+    box-shadow: none;
+    color: #7453C6;
+    font-size: 25px;
+    border: 1px solid #7453C6;
+    padding: 10px;
 }
 nav.navbar ul.navbar-nav li.nav-item:first-of-type {
     margin-right: 0;
@@ -206,6 +214,10 @@ Search Section
     width: 90%;
 }
 
+.SearchLine a.ButtonPurp{
+    width: 100% ;
+    height: 100%;
+}
 .SearchLine .ButtonPurp button {
     background-color: #7453C6;
     width: 100%;
@@ -221,6 +233,10 @@ Search Section
 
 .SearchLine .ButtonPurp button:hover {
     background-color: #50398a;
+}
+
+.SearchLine .text {
+    line-height: unset;
 }
 
 /***********
@@ -295,8 +311,14 @@ section.LevelOfEducation .card:hover {
     transform: scale(1.05);
 }
 
+section.Bundels .card .ImgPart {
+    background-color: #FFDDF3;
+    display: flex;
+    border-radius: 20px;
+}
+
 section.Bundels .card .card-title, section.LevelOfEducation .card .card-title {
-    font-size: 18px;
+    font-size: 16px;
     color: #242424;
     font-weight: 600;
     line-height: 34px;
@@ -422,7 +444,7 @@ section.CarouselPart .carousel button {
 
 }
 
-#NextBtn svg, #PrevBtn svg{
+#NextBtn svg, #PrevBtn svg {
     font-size: 25px;
 
 }
@@ -464,7 +486,15 @@ div.item {
     filter: drop-shadow(0px 1px 10px hsla(0, 0%, 0%, 0.49));
 
 }
-
+section.CarouselPart .carousel-inner,section.CarouselPart .carousel,section.CarouselPart .carousel-item,section.CarouselPart .carousel .row ,section.CarouselPart .carousel .col-sm-6 {
+    overflow-y: visible !important;
+}
+section.CarouselPart .card {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px !important;
+    border: none;
+}
 section.CarouselPart .Overlay {
     position: relative;
     display: block;
@@ -578,7 +608,7 @@ section.CarouselPart .carousel-indicator input:checked {
 
 #PrevBtn {
     right: 10%;
-    transform: translate(0, -50%);
+    transform: translate(50%, -50%);
 
 }
 
@@ -624,7 +654,7 @@ section.LevelOfEducation .card {
 }
 
 section.LevelOfEducation .card .PriceAndRating {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 section.LevelOfEducation .card .Rating {
@@ -645,10 +675,16 @@ section.LevelOfEducation .card .purpleBtn {
     border-radius: 8px !important;
     background-color: #40DCB2;
     border: none;
+    width: 100%;
+    height: unset;
 }
 
 section.LevelOfEducation .card .purpleBtn:hover {
     background-color: #2ea183;
+}
+
+section.LevelOfEducation .card button.btn-primary.addToCart {
+    width: 95%;
 }
 
 section.LevelOfEducation .card .AddedToCart {
@@ -665,14 +701,19 @@ section.LevelOfEducation .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
 
-section.LevelOfEducation .dropdownBtn{
-    background-color:transparent;
-    border: 2px solid #242424;
+section.LevelOfEducation .dropdownBtn {
+    background-color: transparent;
+    border: 1px solid #242424;
     color: #242424;
-    font-size:20px;
-    font-weight:500;
-    border-radius:15px;
+    font-size: 18px;
+    font-weight: 200;
+    border-radius: 15px;
 }
+
+section.LevelOfEducation .dropdown-toggle::after {
+    display: none;
+}
+
 /***********
 ***********
 End Level Of Education
@@ -767,3 +808,148 @@ footer.footer .SocialIcons img.whatsapp {
 End Footer
 ************
 *************/
+
+
+
+
+/***************************
+************Media *********
+****************************/
+
+@media (max-width: 1200px) {
+    section.Banner .BannerText h5 {
+        font-size: 30px;
+        line-height: 55px;
+    }
+
+    section.Banner .BannerText h6 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    section.Banner .BannerText h1, section.CarouselPart .CarouselText h1 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    section.Bundels .card .ImgPart {
+        justify-content: center;
+    }
+
+    section.Bundels .card .ImgPart img {
+        width: 50%;
+
+    }
+
+    section.LevelOfEducation .nav-pills li button {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    section.GreenSection h3 {
+        font-size: 25px;
+
+    }
+
+    section.GreenSection .text {
+        font-size: 15px;
+    }
+
+    nav.navbar .navbar-brand {
+        width: 150px;
+    }
+
+    nav.navbar .navbar-brand img {
+        width: 70px !important;
+    }
+    footer.footer p.TextSemiBold{
+        text-align: start !important;
+    }
+    footer.footer .footerTitle{
+        width: unset;
+    }
+    footer.footer .FooterLink {
+        text-align: center !important;
+    }
+
+    
+}
+@media (max-width: 991px){
+    section.Banner .col-lg-5{
+        display: flex;
+    }
+    section.Banner .col-lg-5 img {
+        width: 75% !important;
+        margin: 0 auto ;
+    }
+    .SearchLine .ButtonPurp button{
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+    }
+    section.WhyUs .card.purple {
+    z-index: 100;
+    }
+    .text {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    section.CarouselPart .CarouselText h5{
+        font-size: 25px;
+    }
+    footer.footer{
+        text-align: center;
+    }
+    footer.footer .firstFooterPart{
+        text-align: center ;
+    }
+    footer.footer p.TextSemiBold{
+        text-align: center !important;
+    }
+    section.LevelOfEducation .nav-pills li button {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    section.LevelOfEducation .card .PriceAndRating{
+        font-size: 20px;
+
+    }
+    section.Bundels .card .card-title, section.LevelOfEducation .card .card-title{
+        font-size: 14px;
+    }
+    .GreenSection .firstSection{
+        text-align: center;
+        padding: 20px 0 !important;
+    }
+    section.Banner .BannerText{
+        text-align: center;
+    }
+    .sectionTitle {
+        font-size: 30px;
+    }
+    nav.navbar ul.navbar-nav li.nav-item{
+        margin-right: 0;
+    }
+    nav.navbar .NavButtons{
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    nav.navbar ul.navbar-nav li.nav-item a.nav-link{
+        text-align: center;
+    }
+    section.CarouselPart .carousel-control-prev, section.CarouselPart .carousel-control-next{
+        display: inline-block;
+        position: unset ;
+        margin:30px 20px 0;
+    }
+}
+
+@media (max-width: 756px){
+    section.CarouselPart .text {
+        width: 100% !important;
+        font-size: 13px;
+    }
+    section.CarouselPart .CarouselText h5{
+        font-size: 20px;
+    }
+ 
+}

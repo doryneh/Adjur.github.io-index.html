@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $('section.Bundels .Next').click(function () {
-    $('#carousel').carousel('next');
+    $('#carouselExample').carousel('next');
   });
   $('section.Bundels .Prev').click(function () {
-    $('#carousel').carousel('prev');
+    $('#carouselExample').carousel('prev');
   });
 
 
