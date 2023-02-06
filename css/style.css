@@ -827,19 +827,45 @@ section.LevelOfEducation .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
 
-section.LevelOfEducation .dropdownBtn {
+section.LevelOfEducation .dropdownBtn button{
     background-color: transparent;
     border: 1px solid #242424;
     color: #242424;
     font-size: 18px;
     font-weight: 200;
     border-radius: 15px;
+    line-height: 25px;
+    padding: 7px 10px;
 }
 
 section.LevelOfEducation .dropdown-toggle::after {
     display: none;
 }
-
+section.LevelOfEducation  .dropdown {
+    position: relative;
+  }
+  
+  section.LevelOfEducation  .dropdown-toggle {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  section.LevelOfEducation  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    min-width: 100px;
+    line-height: 25px;
+  }
+  
+  section.LevelOfEducation  .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #242424;
+  }
 /***********
 ***********
 End Level Of Education

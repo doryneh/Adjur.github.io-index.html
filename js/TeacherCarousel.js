@@ -12,19 +12,26 @@ function applyOffsets(items) {
         $(this).css({ '--offset': (index + 1) });
     });
 }
+
 $(document).ready(function () {
-    var inputs = $('input');
-
-    inputs.each(function (index) {
-        $(this).css({
-            'grid-column': (index + 2) + ' / ' + (index + 3),
-            'grid-row': '2 / 3'
+    var inputs = $('section.CarouselPart .carousel-indicator input');
+    var itemElements = $('div.item');
+    
+    inputs.each(function(index) {
+      $(this).css({
+        'grid-column': (index + 2) + ' / ' + (index + 3),
+        'grid-row': '2 / 3'
+      });
+    
+      $(this).click(function() {
+        var position = index + 1;
+        $('main#carousel').css({'--position': position});
+        itemElements.each(function(itemIndex) {
+          if (itemIndex == index) {
+            $(this).css({'--offset': position});
+          }
         });
-
-        $(this).click(function () {
-            var position = index + 1;
-            $('main#carousel').css({ '--position': position });
-        });
+      });
     });
 
 
@@ -33,6 +40,7 @@ $(document).ready(function () {
 
     setCarouselProperties(3);
 
+    
     $('section.CarouselPart .carousel-indicator input:checked').parent('section.CarouselPart .carousel-indicator').css('opacity', '100%');
 
     $('  section.CarouselPart .carousel-indicator input').on('change', function () {
@@ -44,26 +52,34 @@ $(document).ready(function () {
 
 
     /*Prev and next Buttons */
+    var $carousel = $('main#carousel');
+    var items = parseInt($carousel.css('--items'));
+    var middle = parseInt($carousel.css('--middle'));
+    var position = parseInt($carousel.css('--position'));
+    
     $('#NextBtn').click(function() {
-        $('section.CarouselPart .carousel-indicator :radio[name="position"]').each(function(index) {
-            if ($(this).is(':checked')) {
-            $(this).removeAttr('checked');
-            $(':radio[name="position"]').eq(index + 1).attr('checked', 'checked');
-            return false;
-          }
-        });
+        position = (position + 1) % items;
+        if (position < 0) {
+          position += items;
+        }
+        $carousel.css('--position', position + 1);
+    
+        var currentPosition = parseInt($carousel.css('--position'));
+        var totalItems = parseInt($carousel.css('--items'));
+        if (currentPosition > totalItems) {
+          $carousel.css({'--position': totalItems });
+        }
       });
-
+    
       $('#PrevBtn').click(function() {
-        $('section.CarouselPart .carousel-indicator :radio[name="position"]').each(function(index) {
-            if ($(this).is(':checked')) {
-            $(this).removeAttr('checked');
-            $(':radio[name="position"]').eq(index - 1).attr('checked', 'checked');
-            return false;
-          }
-        });
+        position = (position - 1 + items) % items;
+        $carousel.css('--position', position + 1);
+        var currentPosition = parseInt($carousel.css('--position'));
+    
+        if (currentPosition < 1) {
+          $carousel.css({'--position': 1});
+        }
       });
-
 
 });
 
