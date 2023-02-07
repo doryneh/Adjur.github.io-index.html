@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>Courses Page</title>
+</head>
+
+<body>
+   
+
+    <!--Big Box-->
+
+    <div class=" pb-5">
+      <div class="BigBox CoursesPage">
+      <div class="container">
+        <!--Navbar-->
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="index.html">
+              <img loading="lazy" src="images/Logo.png" alt="Logo" class="w-25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link"  href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Courses.html">المواد</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">محاضرات مباشرة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">الاساتذة</a>
+                </li>
+
+              </ul>
+              <div class="NavButtons d-flex align-items-center">
+                <a href="" class="purpleBtn">
+                  <img loading="lazy" src="images/Search.svg" alt="Search Icon">
+                </a>
+                <a href="" class="purpleBtn ms-3">
+                  <img loading="lazy" src="images/bag-2.svg" alt="bag Icon">
+                </a>
+                <a class="btn btn-primary ms-3" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                  <button type="button" class="btn btn-success px-4 py-2"> تسجيل <img loading="lazy"
+                      src="images/import.svg" alt="">
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--SignIn And SignUp Modals-->
+        <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header p-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+              </div>
+              <div class="modal-body  border-0 p-5">
+              <div class="row m-0">
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingGoogle  py-3 pe-1">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Google logo.png" alt="GOogle Logo">
+                    <span class="text">تسجيل الدخول بحساب جوجل</span>
+                  </a>
+                </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Twitter.png" alt="Twiter Logo">
+                    <span class="text">تسجيل الدخول بحساب تويتر</span>
+                  </a>
+                </div>
+                </div>
+              </div>  
+              <div class="row mt-5 SignUpText">
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+                <div class="col-md-4 col-8 p-0">
+                  <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                </div>
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text"> <b> البريد الإلكتروني </b></label>
+                    <input type="email" class="form-control py-2" id="exampleInputEmail1" placeholder="عنوان البريد الإلكتروني" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور </b></label>
+                    <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="كلمة المرور" required>
+                  </div>
+                  <div class="mb-3 form-check ps-0">
+                    <a href="" class="ps-0 textPurp text">هل نسيت كلمة المرور؟</a>
+                    <div class="float-end d-flex justify-content-center align-items-center">
+                    <input type="checkbox" class="form-check-input me-3" id="exampleCheck1">
+                    <label class="form-check-label textPurp text" for="exampleCheck1">تذكرني</label>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">تسجيل الدخول</button>
+                </form>
+              </div>
+              <div class="row mt-3">
+                <div class="textSmall text-center">
+                  ليس لديك حساب؟  <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"> حساب جديد</a>
+                </div>
+              </div>
+              <div class="row DownloadAppRow">
+                <a href=""><img src="images/GooglePlay White.png" alt="GooglePlay White" class="me-2 me-sm-3"></a>
+               <a href=""> <img src="images/AppStore white.png" alt="AppStore white"></a>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="modal fade " id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header p-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+              </div>
+              <div class="modal-body  border-0 p-5">
+              <div class="row m-0">
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingGoogle  py-3 pe-1">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Google logo.png" alt="GOogle Logo">
+                    <span class="text">تسجيل الدخول بحساب جوجل</span>
+                  </a>
+                </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                  <a href="" class=" d-flex justify-content-center align-items-center">
+                    <img src="images/Twitter.png" alt="Twiter Logo">
+                    <span class="text">تسجيل الدخول بحساب تويتر</span>
+                  </a>
+                </div>
+                </div>
+              </div>  
+              <div class="row mt-5 SignUpText">
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+                <div class="col-md-4 col-8 p-0">
+                  <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                </div>
+                <div class="col-md-4 col-2">
+                  <div class="borderRow"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputName" class="form-label text"> <b> الأسم كاملاّ</b></label>
+                    <input type="text" class="form-control py-2" id="exampleInputName" placeholder="الأسم كاملاّ " aria-describedby="UserName" required>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="Select1" class="form-label text"> <b>  المرحلة</b></label>
+
+                      <select class="form-select form-select-sm" id="Select1" aria-label=".form-select-sm example">
+                        <option selected>اختر من هنا</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Select2" class="form-label text"> <b> الصف </b></label>
+
+                      <select class="form-select form-select-sm" id="Select2" aria-label=".form-select-sm example">
+                        <option selected>اختر من هنا</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label text"> <b> البريد الإلكتروني </b></label>
+                    <input type="email" class="form-control py-2" id="exampleInputEmail2" placeholder="عنوان البريد الإلكتروني" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور </b></label>
+                    <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="كلمة المرور" required>
+                  </div>
+                 
+                  <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">إشتراك </button>
+                  <div class="mb-3 form-check ps-0 d-flex justify-content-start align-items-center mt-2">
+                    <input type="checkbox" class="form-check-input me-3 ms-3" id="exampleCheck2" required>
+                    <label class="form-check-label textPurp text" for="exampleCheck2">موافق على الشروط والأحكام</label>
+                  </div>
+                </form>
+              </div>
+              <div class="row mt-2">
+                <div class="textSmall text-center">
+                  ليس لديك حساب؟  <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">  تسجيل الدخول</a>
+                </div>
+              </div>
+
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!--End SignIn And SignUp Modals-->
+
+
+      
+
+
+
+        <!--CarouselPart-->
+        <section class="CarouselPart mt-md-5 mt-4 p-5 pb-4" id="CarouselPart">
+          <div class="container">
+            <div class="row text-center">
+              <div class="CarouselText ">
+                <h5><b> <img src="images/courses Baner.png" alt="courses Baner"> موادك جميعها في مكان واحد، <br>
+
+                    إختر مادتك وابدأ الآن </b></h5>
+              </div>
+
+
+                <!--SearchPart-->
+        <section class="SearchSection mb-5" id="SearchSection">
+          <div class="SearchLine ">
+            <form action="" class="row ">
+              <div class="col-lg-11 ">
+                <div class="row">
+                  <div class="col-4 SelectPart ps-5 py-3 ">
+                    <label class="text " for="Country">الدولة</label>
+                    <select class="form-select py-0 " aria-label="Default select example" id="Country">
+                      <option selected>حدد خيار</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-4 SelectPart ps-5 py-3">
+                    <label class="text " for="Country">الدولة</label>
+                    <select class="form-select py-0 " aria-label="Default select example" id="Country">
+                      <option selected>حدد خيار</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-4 SelectPart ps-5 noBorder py-3 ">
+                    <label class="text " for="Country">الدولة</label>
+                    <select class="form-select py-0 " aria-label="Default select example" id="Country">
+                      <option selected>حدد خيار</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 ButtonPurp p-lg-0">
+                <a href="" class=""> <button type="button" class="btn btn-danger py-2 py-xl-0"> إبحث </button></a>
+
+              </div>
+            </form>
+          </div>
+        </section>
+        <!--End SearchPart-->
+            </div>
+          </div>
+        </section>
+        <!--End CarouselPart-->
+
+
+        <!--Level Of Education-->
+        <section class="LevelOfEducation mt-md-5 mt-4 pt-md-4 pb-md-5" id="LevelOfEducation">
+          <ul class="nav nav-pills mb-4 p-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-ClassOneMiddle-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-ClassOneMiddle" type="button" role="tab" aria-controls="pills-ClassOneMiddle"
+                aria-selected="true">الابتدائي </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-ClassTwoMiddle-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-ClassTwoMiddle" type="button" role="tab" aria-controls="pills-ClassTwoMiddle"
+                aria-selected="false">المتوسط </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-ClassThreeMiddle-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-ClassThreeMiddle" type="button" role="tab"
+                aria-controls="pills-ClassThreeMiddle" aria-selected="false">الثانوي </button>
+            </li>
+
+          </ul>
+          <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-9">
+              <div class="mb-5 WhiteBG">
+               
+                <div class="tab-content" id="pills-tabContent">
+    
+                  <!--CLass One-->
+                  <div class="tab-pane fade show active" id="pills-ClassOneMiddle" role="tabpanel"
+                    aria-labelledby="pills-ClassOneMiddle-tab" tabindex="0">
+                    <div class="row p-4">
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle2.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle3.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle4.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle2.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle3.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle4.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                  <!--CLass Two-->
+                  <!--CLass Two-->
+    
+                  <div class="tab-pane fade" id="pills-ClassTwoMiddle" role="tabpanel"
+                    aria-labelledby="pills-ClassTwoMiddle-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle2.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle3.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle4.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!--CLass THree-->
+                  <!--CLass THree-->
+    
+                  <div class="tab-pane fade" id="pills-ClassThreeMiddle" role="tabpanel"
+                    aria-labelledby="pills-ClassThreeMiddle-tab" tabindex="0">
+                    <div class="row">
+                 
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle3.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                          <img loading="lazy" src="images/Bundle4.png" class="card-img-top" alt="Bundle1">
+                          <div class="card-body pb-0 px-2">
+                            <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                            <p class="PriceAndRating"><b>س.ر 460</b>
+                            </p>
+                            <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                            <div class="row  w-100 gx-0">
+                              <div class="col-9 ">
+                                <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0" type="link"
+                                    alt="redirect"> تجربة
+                                    مجانية</button></a>
+                              </div>
+                              <div class="col-3">
+                                <button class="btn btn-primary purpleBtn "><img loading="lazy" src="images/bag-2.svg"
+                                    alt=""> </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+                </div>
+              </div>
+    
+            </div>
+          </div>
+
+          
+       
+        </section>
+        <!--End Level Of Education-->
+
+      
+
+      </div>
+    </div>
+    </div>
+
+
+    <!--End Big Box-->
+
+  <!--Footer-->
+  <footer class="footer pt-5 pb-3" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 d-flex flex-column justify-content-between firstFooterPart">
+          <div>
+            <img loading="lazy" src="images/ajdur-white.png" alt="ajdur-white">
+            <br>
+            <p class="TopText mt-3 TextSemiBold ">
+              منصة تعليمية إلكترونية تهتم بتقديم وتوفير <br> مواد دراسية أكاديمية ومحاضرات
+            </p>
+          </div>
+          <!--Contact Us-->
+          <div>
+            <p class="TopText mt-3">
+              تواصل معنا </p>
+
+            <img loading="lazy" src="images/Message.png" alt="Message" class="me-2"> <span
+              class="TopText">support@ajdur.com</span>
+            <img loading="lazy" src="images/whatsapp.svg" alt="whatsapp" class="ms-4 me-2 whatsapp"> <span
+              class="TopText">+966
+              559322764</span>
+          </div>
+
+        </div>
+        <div class="col-xl-3 col-lg-6 d-flex flex-column justify-content-between h-100 FooterLink mt-5 mt-lg-0">
+          <div class="row">
+            <div class="col-lg-5 col-6">
+              <div class="footerTitle">
+                أجدر
+              </div>
+              <br>
+              <a href="">
+                <p class="TopText">عن أجدر</p>
+              </a>
+              <a href="">
+                <p class="TopText"> المقررات</p>
+              </a>
+              <a href="">
+                <p class="TopText">الجامعات </p>
+              </a>
+              <a href="">
+                <p class="TopText">الأساتذة </p>
+              </a>
+
+
+            </div>
+            <div class="col-lg-7 col-6 ">
+              <div class="footerTitle">
+                أخرى
+              </div>
+              <br>
+              <a href="">
+                <p class="TopText">طرق السداد </p>
+              </a>
+              <a href="">
+                <p class="TopText"> الأسئلة الشائعة</p>
+              </a>
+              <a href="">
+                <p class="TopText">شروط الإستخدام </p>
+              </a>
+              <a href="">
+                <p class="TopText">كن محاضراً </p>
+              </a>
+              <a href="">
+                <p class="TopText"> تواصل معنا</p>
+              </a>
+            </div>
+          </div>
+          <p class="TopText  mb-0 mt-5">سياسة الخصوصية | الشروط والأحكام</p>
+        </div>
+        <div    class="col-xl-4 col-lg-6 DownloadApp d-flex flex-column justify-content-between mt-5 mt-xl-0 offset-lg-3 offset-0 offset-xl-0">
+          <div>
+            <div class="footerTitle mb-5">
+              حمل التطبيق
+            </div>
+            <div class="row w-100">
+              <div class="col-5">
+                <img loading="lazy" src="images/QRCode.png" alt="QRCode">
+              </div>
+              <div class="col-2 footerTitle d-flex align-items-center justify-content-center">
+                OR
+              </div>
+              <div class="col-5">
+                <a href=""><img loading="lazy" src="images/GooglePlay.png" alt="" class="mb-3"></a>
+                <br>
+                <a href=""><img loading="lazy" src="images/AppStore.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="SocialIcons">
+            <p class="TopText mt-3">
+              تابعنا</p>
+
+            <a href=""><img loading="lazy" src="images/whatsapp.svg" alt="whatsapp" class="whatsapp"></a>
+            <a href=""><img loading="lazy" src="images/instagram.svg" alt="instagram" class="ms-3"></a>
+            <a href=""><img loading="lazy" src="images/twitter.svg" alt="twitter" class="ms-3"></a>
+            <a href=""><img loading="lazy" src="images/youtube.svg" alt="youtube" class="ms-3"></a>
+            <a href=""><img loading="lazy" src="images/telegram.svg" alt="telegram" class="ms-3"></a>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-5 text-center">
+        <div class="TopText">
+          جميع الحقوق محفوظة لمنصة أجدر التعليمية 2022
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+</body>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="js/js.js"></script>
+<script src="js/TeacherCarousel.js"></script>
+
+
+</html>
