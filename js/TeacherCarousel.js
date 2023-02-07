@@ -33,24 +33,24 @@ $(document).ready(function () {
         });
       });
     });
-
-
+    
+    itemElements.click(function() {
+      var position = $(this).index() + 1;
+      $('main#carousel').css({'--position': position});
+    });
+    
     var items = $('div.item');
     applyOffsets(items);
-
+    
     setCarouselProperties(3);
-
     
     $('section.CarouselPart .carousel-indicator input:checked').parent('section.CarouselPart .carousel-indicator').css('opacity', '100%');
-
+    
     $('  section.CarouselPart .carousel-indicator input').on('change', function () {
-        $(' section.CarouselPart .carousel-indicator').css('opacity', '50%');
-
+        $('section.CarouselPart .carousel-indicator').css('opacity', '50%');
         $('section.CarouselPart .carousel-indicator input:checked').parent('section.CarouselPart .carousel-indicator').css('opacity', '100%');
     });
-
-
-
+    
     /*Prev and next Buttons */
     var $carousel = $('main#carousel');
     var items = parseInt($carousel.css('--items'));
@@ -80,6 +80,22 @@ $(document).ready(function () {
           $carousel.css({'--position': 1});
         }
       });
+
+      // setInterval function to increase position every 7 seconds
+       setInterval(function() {
+        position = (position + 1) % items;
+        if (position < 0) {
+          position += items;
+        }
+        $carousel.css('--position', position + 1);
+    
+        var currentPosition = parseInt($carousel.css('--position'));
+        var totalItems = parseInt($carousel.css('--items'));
+        if (currentPosition > totalItems) {
+          $carousel.css({'--position': totalItems });
+        }
+      }, 7000);
+
 
 });
 
