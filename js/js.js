@@ -1,3 +1,7 @@
+
+/******
+ Bundels Carousel buttons (HomePage)
+ *****/
 $(document).ready(function () {
   $('section.Bundels .Next').click(function () {
     $('#carouselExample').carousel('next');
@@ -8,9 +12,13 @@ $(document).ready(function () {
   $(".dropdown-toggle").click(function () {
     $(".dropdown-menu").toggle();
   });
-});
 
-$(document).ready(function () {
+
+/**** 
+Changing the add to cart button on click (HomePage)
+******/
+
+
   $('.BundelCard .purpleBtn').click(function () {
     var button = $(this);
     if (button.hasClass('AddedToCart')) {
@@ -21,5 +29,8 @@ $(document).ready(function () {
       button.html('<img loading="lazy" src="images/AddedToCart.png" alt="">');
     }
   });
+
+
+
 });
 
