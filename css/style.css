@@ -58,6 +58,9 @@ body {
 .card {
     border: none;
 }
+.card img, .Overlay img{
+    border-radius: 15px;
+}
 
 /***********
 ***********
@@ -136,9 +139,16 @@ nav.navbar .NavButtons a button:hover {
     background-color: #2ea183;
 }
 
-nav.navbar .dropdownBtn button {
+nav.navbar .dropdownBtn select,section.LevelOfEducation .dropdownBtn select {
     border: 1px solid #7A5CC8;
     color: #7A5CC8;
+    background-image: url(../images/Vector.png);
+    direction: ltr;
+    background-position: 90% center;
+    background-size: 10%;
+    font-weight: 500;
+    padding-right: 30px;
+    box-shadow: none;
 }
 
 /***********
@@ -317,12 +327,12 @@ section.Banner .BannerText h1 span {
 
 section.Banner .BannerText h5 {
     color: #242424;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 71px;
 }
 
 section.Banner .BannerText h6 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 47px;
     color: #7453C6;
 }
@@ -344,6 +354,7 @@ Search Section
     border-radius: 20px;
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.055));
     transition: 0.5s ease all;
+    z-index: 1000;
 }
 
 .SearchLine:hover {
@@ -418,8 +429,10 @@ End Search Section
 Why Us
 ************
 *************/
+
 section.WhyUs .card {
     border-radius: 30px;
+
 }
 
 
@@ -491,7 +504,7 @@ section.Bundels .card .card-title, section.LevelOfEducation .card .card-title {
     line-height: 34px;
 }
 
-section.Bundels .card .card-text {
+section.Bundels .card .card-text, .PackagesCourse .BundelCard .card .card-text {
     font-size: 18px;
     color: #707070;
     font-weight: 500;
@@ -502,6 +515,7 @@ section.Bundels .card .PriceAndRating, section.LevelOfEducation .card .PriceAndR
     font-size: 18px;
     color: #5032AD;
     line-height: 34px;
+    display: flex;
 }
 
 section.Bundels .card .PriceAndRating span.OldPrice, section.LevelOfEducation .card .PriceAndRating span.OldPrice {
@@ -672,7 +686,10 @@ section.CarouselPart .card {
 
 section.CarouselPart .Overlay, .CoursesPage .LevelOfEducation .Overlay {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     z-index: 200;
@@ -815,7 +832,7 @@ section.LevelOfEducation .nav-pills {
 
 section.LevelOfEducation .nav-pills li button {
     color: #242424;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: bold;
     opacity: 0.5;
     line-height: 37px;
@@ -880,8 +897,17 @@ section.LevelOfEducation .card .AddedToCart img {
 section.LevelOfEducation .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
+section.LevelOfEducation .dropdownBtn select{
+    direction: rtl;
+    background-image: url(../images/arrow-down.svg);
+    background-position: 5%;
+    background-size: 20px;
+    padding-left: 40px !important;
+    width: fit-content ;
 
-section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
+}
+
+section.LevelOfEducation .dropdownBtn select, .navbar .dropdownBtn select {
     background-color: transparent;
     border: 1px solid #242424;
     color: #242424;
@@ -892,23 +918,22 @@ section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
     padding: 7px 10px;
 }
 
-section.LevelOfEducation .dropdown-toggle::after,
-.navbar .dropdown-toggle::after {
+section.LevelOfEducation .dropdown-toggle::after {
     display: none;
 }
 
-section.LevelOfEducation .dropdown, .navbar .dropdown {
+section.LevelOfEducation .dropdown {
     position: relative;
 }
 
-section.LevelOfEducation .dropdown-toggle, .navbar .dropdown-toggle {
+section.LevelOfEducation .dropdown-toggle {
     background-color: white;
     border: 1px solid gray;
     padding: 10px 20px;
     cursor: pointer;
 }
 
-section.LevelOfEducation .dropdown-menu, .navbar .dropdown-menu {
+section.LevelOfEducation .dropdown-menu {
     display: none;
     position: absolute;
     background-color: white;
@@ -917,8 +942,7 @@ section.LevelOfEducation .dropdown-menu, .navbar .dropdown-menu {
     line-height: 25px;
 }
 
-section.LevelOfEducation .dropdown-menu li a,
-.navbar .dropdown-menu li a {
+section.LevelOfEducation .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
     color: #242424;
@@ -996,6 +1020,10 @@ footer.footer p.TextSemiBold {
     font-weight: 400;
 }
 
+footer.footer .TopText {
+    font-size: 14px;
+}
+
 footer.footer .firstFooterPart img.whatsapp {
     width: 30px;
 }
@@ -1009,7 +1037,7 @@ footer.footer a:hover {
 }
 
 footer.footer .footerTitle {
-    font-size: 24px;
+    font-size: 21px;
     line-height: 136.7%;
     font-weight: bold;
     color: white;
@@ -1056,6 +1084,11 @@ End Footer
     position: absolute;
     right: -20%;
     top: -25%;
+}
+
+.CoursesPage section.CarouselPart .CarouselText img.PAckageImg {
+    right: -45%;
+    top: -50%;
 }
 
 .CoursesPage section.CarouselPart .SearchLine .ButtonPurp button {
@@ -1131,12 +1164,49 @@ End Footer
     font-weight: 400;
 }
 
+/***************************
+************Packages and offers Page *********
+****************************/
+.PackagesCourse .BundelCard .card .card-text {
+    font-size: 12px;
+}
 
+.PackagesCourse .BundelCard .card .card-text span {
+    border-left: 1px solid hsla(257, 50%, 55%, 0.705);
+    padding-left: 15px;
+}
 
+.PackagesCourse .BundelCard .card .card-text .Rating {
+    position: unset !important;
+    background-color: transparent;
+    font-size: 12px !important;
+}
 
+.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
+    font-size: 14px;
+}
 
+.PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
+    font-size: 18px;
+    color: #7A5CC8;
+    line-height: 37px;
+}
 
-
+.PackagesCourse  .pagination .page-item a.page-link {
+    background-color: transparent !important;
+    border: none !important;
+    color: #242424;
+    font-weight: bold;
+    box-shadow: none;
+}
+.PackagesCourse  .pagination .page-item:first-child .page-link{
+    font-weight: 300 !important;
+}
+.PackagesCourse  .pagination .page-item.active .page-link{
+    background-color: #7453C6 !important;
+    color: white;
+    border-radius: 5px;
+}
 
 
 
@@ -1160,7 +1230,9 @@ End Footer
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 14px;
     }
-
+    .PackagesCourse .BundelCard .card .card-text{
+        font-size: 8px;
+    }
     section.Banner .BannerText h5 {
         font-size: 30px;
         line-height: 55px;
@@ -1186,7 +1258,7 @@ End Footer
     }
 
     section.LevelOfEducation .nav-pills li button {
-        font-size: 15px;
+        font-size: 14px;
         padding: 5px 10px;
     }
 
@@ -1280,7 +1352,7 @@ End Footer
     }
 
     section.LevelOfEducation .nav-pills li button {
-        font-size: 13px;
+        font-size: 12px;
         padding: 4px 8px;
     }
 
@@ -1332,12 +1404,14 @@ End Footer
 
 }
 
-@media (max-width: 756px) {
+@media (max-width: 767px) {
     section.CarouselPart .text {
         width: 100% !important;
         font-size: 13px;
     }
-
+    .CoursesPage section.LevelOfEducation .FilterPart .form-check label{
+        font-size: 15px;
+    }
     section.CarouselPart .CarouselText h5 {
         font-size: 20px;
     }
@@ -1347,10 +1421,16 @@ End Footer
         width: 50px;
 
     }
+    .CoursesPage section.CarouselPart .CarouselText{
+        margin-bottom: 0px;
+    }
+    .CoursesPage section.CarouselPart .CarouselText img.PAckageImg{
+        position: unset;
+    }
 
 }
 
-@media (max-width: 565px) {
+@media (max-width: 575px) {
     .modal .DownloadAppRow a {
         margin-top: 5px;
         padding: 5px;
