@@ -19,7 +19,7 @@ Changing the add to cart button on click (HomePage)
 ******/
 
 
-  $('.BundelCard .purpleBtn').click(function () {
+  $('.BundelCard .card .purpleBtn').click(function () {
     var button = $(this);
     if (button.hasClass('AddedToCart')) {
       button.removeClass('AddedToCart');
