@@ -61,7 +61,11 @@ body {
 .card img, .Overlay img{
     border-radius: 15px;
 }
-
+img[data-src] {
+    width: 100%;
+   
+    background-color: #eee;
+  }
 /***********
 ***********
 Navbar
