@@ -58,14 +58,17 @@ body {
 .card {
     border: none;
 }
-.card img, .Overlay img{
+
+.card img, .Overlay img {
     border-radius: 15px;
 }
+
 img[data-src] {
     width: 100%;
-   
+
     background-color: #eee;
-  }
+}
+
 /***********
 ***********
 Navbar
@@ -143,7 +146,7 @@ nav.navbar .NavButtons a button:hover {
     background-color: #2ea183;
 }
 
-nav.navbar .dropdownBtn select,section.LevelOfEducation .dropdownBtn select {
+nav.navbar .dropdownBtn select, section.LevelOfEducation .dropdownBtn select {
     border: 1px solid #7A5CC8;
     color: #7A5CC8;
     background-image: url(../images/Vector.png);
@@ -365,11 +368,13 @@ Search Section
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.3));
 
 }
-.SearchLine form{
+
+.SearchLine form {
     width: 100% !important;
     margin: 0;
     padding: 0px !important;
 }
+
 .SearchLine .SelectPart {
     border: none;
     border-left-width: 1px;
@@ -402,10 +407,12 @@ Search Section
     width: 100%;
     height: 100%;
 }
-.SearchLine .ButtonPurp{
+
+.SearchLine .ButtonPurp {
     padding: 0px !important;
 
 }
+
 .SearchLine .ButtonPurp button {
     background-color: #7453C6;
     width: 100%;
@@ -908,13 +915,14 @@ section.LevelOfEducation .card .AddedToCart img {
 section.LevelOfEducation .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
-section.LevelOfEducation .dropdownBtn select{
+
+section.LevelOfEducation .dropdownBtn select {
     direction: rtl;
     background-image: url(../images/arrow-down.svg);
     background-position: 5%;
     background-size: 20px;
     padding-left: 40px !important;
-    width: fit-content ;
+    width: fit-content;
 
 }
 
@@ -1203,33 +1211,94 @@ End Footer
     line-height: 37px;
 }
 
-.PackagesCourse  .pagination .page-item a.page-link {
+.PackagesCourse .pagination .page-item a.page-link {
     background-color: transparent !important;
     border: none !important;
     color: #242424;
     font-weight: bold;
     box-shadow: none;
 }
-.PackagesCourse  .pagination .page-item:first-child .page-link{
+
+.PackagesCourse .pagination .page-item:first-child .page-link {
     font-weight: 300 !important;
 }
-.PackagesCourse  .pagination .page-item.active .page-link{
+
+.PackagesCourse .pagination .page-item.active .page-link {
     background-color: #7453C6 !important;
     color: white;
     border-radius: 5px;
 }
 
+.PackagesCourse .OfferCard .OfferCardImg {
+    width: 157px;
+    height: 157px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #3FDBB1, #A5E7D5);
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    line-height: 64px
+}
 
+.PackagesCourse .OfferCard .OfferCardImg span {
+    font-size: 20px;
+    line-height: 37px
+}
 
+.PackagesCourse .OfferCard .card .title {
+    font-size: 16px;
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+
+.PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText {
+    font-size: 11px;
+    line-height: 30px;
+    color: #7453C6;
+    border-radius: 8px;
+    background-color: #7453c61f;
+    padding: 3px 10px;
+}
+.PackagesCourse .OfferCard .card .tags img{
+    border-radius: 0px;
+    max-width: 20px;
+    margin-left: 5px;
+}
+.PackagesCourse .OfferCard .card .tags a {
+    width: fit-content;
+    margin-left: 10px;
+    line-height: 50px;
+    display: inline-block;
+}
+.PackagesCourse .OfferCard .card .card-body{
+    min-height: 100%;
+    height: fit-content;
+}
+.PackagesCourse .OfferCard .card .PriceAndRating {
+    font-size: 16px;
+    color: #919191;
+}
+
+.PackagesCourse .OfferCard .card .PriceAndRating img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.PackagesCourse .OfferCard .card .smallText {
+    background-color: transparent;
+    font-size: 14px;
+}
 
 /***************************
 ************Media *********
 ****************************/
 @media (min-width: 1400px) {
-    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile{
-        top:-15%;
+    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
+        top: -15%;
     }
 }
+
 @media (max-width: 1400px) {
     nav.navbar .navbar-brand {
         width: 150px;
@@ -1246,9 +1315,11 @@ End Footer
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 14px;
     }
-    .PackagesCourse .BundelCard .card .card-text{
+
+    .PackagesCourse .BundelCard .card .card-text {
         font-size: 8px;
     }
+
     section.Banner .BannerText h5 {
         font-size: 30px;
         line-height: 55px;
@@ -1417,7 +1488,7 @@ End Footer
         text-align: center !important;
     }
 
-    
+
 }
 
 @media (max-width: 767px) {
@@ -1425,9 +1496,11 @@ End Footer
         width: 100% !important;
         font-size: 13px;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart .form-check label{
+
+    .CoursesPage section.LevelOfEducation .FilterPart .form-check label {
         font-size: 15px;
     }
+
     section.CarouselPart .CarouselText h5 {
         font-size: 20px;
     }
@@ -1437,13 +1510,16 @@ End Footer
         width: 50px;
 
     }
-    .CoursesPage section.CarouselPart .CarouselText{
+
+    .CoursesPage section.CarouselPart .CarouselText {
         margin-bottom: 0px;
     }
-    .CoursesPage section.CarouselPart .CarouselText img.PAckageImg{
+
+    .CoursesPage section.CarouselPart .CarouselText img.PAckageImg {
         position: unset;
     }
-    .PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart{
+
+    .PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
         font-size: 13px;
     }
 }
@@ -1490,30 +1566,37 @@ End Footer
     .CoursesPage section.LevelOfEducation .FilterPart .FilterRow .form-check {
         justify-content: center;
     }
-    .CoursesPage section.LevelOfEducation .card, .CoursesPage .LevelOfEducation .Overlay{
+
+    .CoursesPage section.LevelOfEducation .card, .CoursesPage .LevelOfEducation .Overlay, section.LevelOfEducation .card {
         padding: 15px 30px !important;
     }
-    
-    .PackagesCourse  .BundelCard .card .card-text span{
+
+    .PackagesCourse .BundelCard .card .card-text span {
         border-left: none;
         display: block;
     }
-    .PackagesCourse .BundelCard .card .card-text{
+
+    .PackagesCourse .BundelCard .card .card-text {
         font-size: 10px;
     }
+
     .PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
-    font-size: 15px;
+        font-size: 15px;
     }
-    section.LevelOfEducation .card .PriceAndRating{
-        font-size:16px;
+
+    section.LevelOfEducation .card .PriceAndRating {
+        font-size: 16px;
     }
+
     section.LevelOfEducation .card .Rating {
         left: 15%;
     }
-    .purpleTop p.TopText, footer.footer .TopText{
+
+    .purpleTop p.TopText, footer.footer .TopText {
         font-size: 12px;
     }
-    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile{
+
+    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
         position: unset;
         transform: unset;
     }
