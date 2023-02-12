@@ -110,13 +110,14 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #7453C6;
 }
 
-nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link{
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link {
     background-color: #7554C6;
     border-radius: 20px;
     color: white;
     line-height: 20px;
 }
-nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link img{
+
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link img {
     width: 25px;
 }
 
@@ -890,18 +891,22 @@ section.LevelOfEducation .card .Rating {
     padding: 7px 10px;
     font-size: 16px;
 }
+
 section.LevelOfEducation .card .Favorite {
     position: absolute;
     top: 8%;
     right: 7%;
 }
-section.LevelOfEducation .card .Favorite button{
-    background-color:transparent;
+
+section.LevelOfEducation .card .Favorite button {
+    background-color: transparent;
     border: none;
 }
-section.LevelOfEducation .card .Favorite button img{
+
+section.LevelOfEducation .card .Favorite button img {
     width: 35px;
 }
+
 section.LevelOfEducation .card .Rating img {
     width: 20px;
 }
@@ -986,9 +991,11 @@ section.LevelOfEducation .dropdown-menu li a {
     padding: 10px 20px;
     color: #242424;
 }
+
 .SpinnerPart {
     display: none !important;
 }
+
 /***********
 ***********
 End Level Of Education
@@ -1251,15 +1258,19 @@ End Footer
     border-radius: 5px;
 }
 
-.PackagesCourse .OfferCard .OfferCardImg {
+.PackagesCourse .OfferCard .OfferCardImg, .PackagesCourse .BundelCard .col-md-3 img {
     width: 157px;
-    height: 157px;
-    border-radius: 20px;
+    height: 157px !important;
+    border-radius: 20px !important;
     background-image: linear-gradient(to top, #3FDBB1, #A5E7D5);
     font-size: 30px;
     color: white;
     font-weight: bolder;
     line-height: 64px
+}
+
+.PackagesCourse section.LevelOfEducation .card .card-title {
+    font-size: 16px;
 }
 
 .PackagesCourse .OfferCard .OfferCardImg span {
@@ -1281,21 +1292,25 @@ End Footer
     background-color: #7453c61f;
     padding: 3px 10px;
 }
-.PackagesCourse .OfferCard .card .tags img{
+
+.PackagesCourse .OfferCard .card .tags img {
     border-radius: 0px;
     max-width: 20px;
     margin-left: 5px;
 }
+
 .PackagesCourse .OfferCard .card .tags a {
     width: fit-content;
     margin-left: 10px;
     line-height: 50px;
     display: inline-block;
 }
-.PackagesCourse .OfferCard .card .card-body{
+
+.PackagesCourse .OfferCard .card .card-body {
     min-height: 100%;
     height: fit-content;
 }
+
 .PackagesCourse .OfferCard .card .PriceAndRating {
     font-size: 16px;
     color: #919191;
@@ -1409,6 +1424,13 @@ End Footer
         width: 30%;
     }
 
+    .PackagesCourse .OfferCard .card .title, .PackagesCourse section.LevelOfEducation .card .card-title {
+        font-size: 12px;
+    }
+
+    .PackagesCourse .BundelCard .card .card-text .Rating {
+        padding: 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1544,14 +1566,35 @@ End Footer
     .PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
         font-size: 13px;
     }
+
+    .PackagesCourse .OfferCard .OfferCardImg, .PackagesCourse .BundelCard .col-md-3 img {
+        margin: auto;
+    }
+    .PackagesCourse .OfferCard .card .PriceAndRating {
+    font-size: 14px;
+    }
 }
 
 @media (max-width: 575px) {
+    .PackagesCourse .OfferCard .card .card-body{
+        padding: 0 !important;
+    }
     .modal .DownloadAppRow a {
         margin-top: 5px;
         padding: 5px;
     }
-
+    .PackagesCourse .OfferCard .card .tags {
+    flex-direction: column;
+    }
+    .PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText{
+        float: right;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+       width: fit-content;
+    }
+    .CoursesPage.PackagesCourse section.LevelOfEducation .card {
+    padding: 5px !important;
+    }
     .CoursesPage section.CarouselPart .CarouselText h5 {
         font-size: 17px;
     }
@@ -1603,13 +1646,19 @@ End Footer
     }
 
     .PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
-        font-size: 15px;
+        font-size: 13px;
     }
-
+    .PackagesCourse .OfferCard .card .PriceAndRating {
+        flex-direction: column !important;
+        padding: 0 !important;
+        font-size: 13px;
+    }
     section.LevelOfEducation .card .PriceAndRating {
         font-size: 16px;
     }
-
+    section.LevelOfEducation .card:hover  {
+    transform: none;
+}
     section.LevelOfEducation .card .Rating {
         left: 15%;
     }
