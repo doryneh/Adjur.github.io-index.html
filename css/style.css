@@ -110,6 +110,16 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #7453C6;
 }
 
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link{
+    background-color: #7554C6;
+    border-radius: 20px;
+    color: white;
+    line-height: 20px;
+}
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link img{
+    width: 25px;
+}
+
 nav.navbar .NavButtons a.purpleBtn, section.LevelOfEducation .card .purpleBtn, section.LevelOfEducation .card .AddedToCart {
     width: 50px;
     height: 50px;
@@ -809,7 +819,6 @@ section.CarouselPart .carousel-indicator input:checked {
     border: none;
     background-color: transparent;
     width: fit-content;
-    height: 300%;
     position: absolute;
     top: 60%;
 
@@ -881,7 +890,18 @@ section.LevelOfEducation .card .Rating {
     padding: 7px 10px;
     font-size: 16px;
 }
-
+section.LevelOfEducation .card .Favorite {
+    position: absolute;
+    top: 8%;
+    right: 7%;
+}
+section.LevelOfEducation .card .Favorite button{
+    background-color:transparent;
+    border: none;
+}
+section.LevelOfEducation .card .Favorite button img{
+    width: 35px;
+}
 section.LevelOfEducation .card .Rating img {
     width: 20px;
 }
@@ -966,7 +986,9 @@ section.LevelOfEducation .dropdown-menu li a {
     padding: 10px 20px;
     color: #242424;
 }
-
+.SpinnerPart {
+    display: none !important;
+}
 /***********
 ***********
 End Level Of Education
