@@ -31,6 +31,24 @@ Changing the add to cart button on click (HomePage)
   });
 
 
+/***************
+ Changing the favorite icon color 
+ ***********/
+ $("section.LevelOfEducation .card .Favorite button img").click(function() {
+  $(this).toggleClass("grayscale");
+});
+
+/********
+ COpy Btn 
+ ******/
+ $("#copy-button").click(function() {
+  var text = $("#text-to-copy").text();
+  var textarea = $("<textarea>");
+  textarea.val(text).appendTo("body").select();
+  document.execCommand("copy");
+  textarea.remove();
+  alert("Copied the text: " + text);
+});
 
 });
 

@@ -63,7 +63,7 @@ body {
     border-radius: 15px;
 }
 
-img[data-src] {
+img[imgsrc] {
     width: 100%;
 
     background-color: #eee;
@@ -157,16 +157,52 @@ nav.navbar .NavButtons a button:hover {
     background-color: #2ea183;
 }
 
-nav.navbar .dropdownBtn select, section.LevelOfEducation .dropdownBtn select {
+section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
+    background-color: transparent;
+    border: 1px solid #242424;
+    color: #242424;
+    font-size: 18px;
+    font-weight: 200;
+    border-radius: 15px;
+    line-height: 25px;
+    padding: 7px 10px;
+}
+
+nav.navbar .dropdownBtn button {
     border: 1px solid #7A5CC8;
     color: #7A5CC8;
-    background-image: url(../images/Vector.png);
-    direction: ltr;
-    background-position: 90% center;
-    background-size: 10%;
-    font-weight: 500;
-    padding-right: 30px;
-    box-shadow: none;
+
+}
+
+.dropdownBtn .dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: right;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdownBtn .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
 }
 
 /***********
@@ -319,6 +355,43 @@ Modal
     color: #7A5CC8;
 }
 
+
+/*Coupon modal */
+ #OfferModalLabel img{
+    width: 15%;
+}
+#text-to-copy{
+    color: #8A4CE9;
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: bold;
+ 
+}
+#copy-button {
+    background-color: #8A4CE9;
+    border-radius: 8px;
+    height: 100%;
+    color: white;
+    border: none;
+    border: 3px solid #8A4CE9;
+}
+#OfferModal  .CopyPart{
+    border: 1px solid #8A4CE9;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+}#OfferModal .tags a{
+    width: 100%;
+    margin-left: 0 !important;
+}
+#OfferModal .tags a span {
+font-size: 18px;
+width: 100%;
+display: inline-block;
+}
+#OfferModal .tags a img {
+    width: 35px;
+}
 /***********
 ***********
 End Modal
@@ -907,6 +980,10 @@ section.LevelOfEducation .card .Favorite button img {
     width: 35px;
 }
 
+.grayscale {
+    filter: grayscale(100%);
+}
+
 section.LevelOfEducation .card .Rating img {
     width: 20px;
 }
@@ -934,7 +1011,7 @@ section.LevelOfEducation .card .AddedToCart {
 }
 
 section.LevelOfEducation .card .AddedToCart img {
-    width: 100%;
+    width: 52%;
 }
 
 section.LevelOfEducation .card .AddedToCart:hover {
@@ -1232,6 +1309,7 @@ End Footer
 
 .PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
     font-size: 14px;
+    height: fit-content !important;
 }
 
 .PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
@@ -1284,7 +1362,7 @@ End Footer
     margin-bottom: 10px;
 }
 
-.PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText {
+.PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText,#OfferModal .tags  span {
     font-size: 11px;
     line-height: 30px;
     color: #7453C6;
@@ -1293,13 +1371,13 @@ End Footer
     padding: 3px 10px;
 }
 
-.PackagesCourse .OfferCard .card .tags img {
+.PackagesCourse .OfferCard .card .tags img ,#OfferModal .tags  img{
     border-radius: 0px;
     max-width: 20px;
     margin-left: 5px;
 }
 
-.PackagesCourse .OfferCard .card .tags a {
+.PackagesCourse .OfferCard .card .tags a ,#OfferModal .tags a{
     width: fit-content;
     margin-left: 10px;
     line-height: 50px;
@@ -1570,31 +1648,37 @@ End Footer
     .PackagesCourse .OfferCard .OfferCardImg, .PackagesCourse .BundelCard .col-md-3 img {
         margin: auto;
     }
+
     .PackagesCourse .OfferCard .card .PriceAndRating {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 575px) {
-    .PackagesCourse .OfferCard .card .card-body{
+    .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
+
     .modal .DownloadAppRow a {
         margin-top: 5px;
         padding: 5px;
     }
-    .PackagesCourse .OfferCard .card .tags {
-    flex-direction: column;
+
+    .PackagesCourse .OfferCard .card .tags,#OfferModal .tags   {
+        flex-direction: column;
     }
-    .PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText{
+
+    .PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText {
         float: right;
         margin: 0 !important;
         margin-bottom: 10px !important;
-       width: fit-content;
+        width: fit-content;
     }
+
     .CoursesPage.PackagesCourse section.LevelOfEducation .card {
-    padding: 5px !important;
+        padding: 5px !important;
     }
+
     .CoursesPage section.CarouselPart .CarouselText h5 {
         font-size: 17px;
     }
@@ -1648,17 +1732,21 @@ End Footer
     .PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
         font-size: 13px;
     }
+
     .PackagesCourse .OfferCard .card .PriceAndRating {
         flex-direction: column !important;
         padding: 0 !important;
         font-size: 13px;
     }
+
     section.LevelOfEducation .card .PriceAndRating {
         font-size: 16px;
     }
-    section.LevelOfEducation .card:hover  {
-    transform: none;
-}
+
+    section.LevelOfEducation .card:hover {
+        transform: none;
+    }
+
     section.LevelOfEducation .card .Rating {
         left: 15%;
     }
