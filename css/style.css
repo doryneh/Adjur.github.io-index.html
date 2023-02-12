@@ -383,6 +383,7 @@ Modal
 }#OfferModal .tags a{
     width: 100%;
     margin-left: 0 !important;
+    min-width: 200px;
 }
 #OfferModal .tags a span {
 font-size: 18px;
