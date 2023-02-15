@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="images/FavIcon.png">
+    <meta name="description"
+        content="منصة أجدر التعليمية منصة إلكترونية تهتم بشرح المنهاج الدراسي من المرحلة الابتدائية وحتى الثانوية العامة">
+
+
+    <title> منصة أجدر التعليمية- شرح المنهاج الدراسي لجميع المراحل</title>
+</head>
+
+<body>
+    <!--Big Box-->
+
+    <div class="pb-5">
+        <div class="BigBox VideoPage ">
+            <div class="container ">
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid justify-content-between">
+                        <a class="navbar-brand" href="index.html">
+                            <img loading="lazy" src="images/Logo.png" alt="Logo" class="w-25">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarScroll">
+                            <ul
+                                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-between align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Courses.html">المواد</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">محاضرات مباشرة</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Teachers.html">الاساتذة</a>
+                                </li>
+                                <li class="nav-item Offers ms-2 ">
+                                    <a class="nav-link px-2" href="Packages.Html"><img src="images/PercentIcon.png"
+                                            alt="PercentIcon">
+                                        العروض </a>
+                                </li>
+                            </ul>
+                            <div class="NavButtons d-flex align-items-center">
+                                <a href="" class="purpleBtn">
+                                    <img loading="lazy" src="images/Search.svg" alt="Search Icon">
+                                </a>
+                                <a href="" class="purpleBtn ms-2">
+                                    <img loading="lazy" src="images/bag-2.svg" alt="bag Icon">
+                                </a>
+                                <div class="dropdownBtn ms-2 ProfileDropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="images/Profile.png" alt="Profile" />
+                                        <span class="UserName"> سهاد وصفي دادر </span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_kuwait.svg'" alt="" />
+                                            <span>الكويت</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_oman.svg" alt="" />
+                                            <span>عمان</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_bahrain.svg" width="24" height="16"
+                                                alt="" />
+                                            <span>البحرين</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdownBtn ms-2">
+                                    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="/school_assets/imgs/f_saudi.svg" alt="" />
+                                        <span> السعودية </span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_kuwait.svg'" alt="" />
+                                            <span>الكويت</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_oman.svg" alt="" />
+                                            <span>عمان</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="/school_assets/imgs/f_bahrain.svg" width="24" height="16"
+                                                alt="" />
+                                            <span>البحرين</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!--End Navbar-->
+
+                <!--SignIn And SignUp Modals-->
+                <div class="modal fade " id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header p-5">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+
+                                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+                            </div>
+                            <div class="modal-body  border-0 p-5 pt-0">
+                                <div class="row m-0">
+                                    <div class="col-md-6 ">
+                                        <div class="SignUpUsingGoogle  py-3 pe-1">
+                                            <a href="" class=" d-flex justify-content-center align-items-center">
+                                                <img src="images/Google logo.png" alt="GOogle Logo">
+                                                <span class="text">تسجيل الدخول بحساب جوجل</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                                            <a href="" class=" d-flex justify-content-center align-items-center">
+                                                <img src="images/Twitter.png" alt="Twiter Logo">
+                                                <span class="text">تسجيل الدخول بحساب تويتر</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 SignUpText">
+                                    <div class="col-md-4 col-2">
+                                        <div class="borderRow"></div>
+                                    </div>
+                                    <div class="col-md-4 col-8 p-0">
+                                        <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                                    </div>
+                                    <div class="col-md-4 col-2">
+                                        <div class="borderRow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <form class="needs-validation">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label text"> <b> البريد
+                                                    الإلكتروني </b></label>
+                                            <input type="email" class="form-control py-2" id="exampleInputEmail1"
+                                                value="" placeholder="عنوان البريد الإلكتروني"
+                                                aria-describedby="emailHelp" required>
+                                            <div class="feedback">
+                                                رجاءّ املأ الحقل السابق
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور
+                                                </b></label>
+                                            <input type="password" class="form-control py-2" id="exampleInputPassword1"
+                                                placeholder="كلمة المرور" required>
+                                            <div class="feedback">
+                                                رجاءّ املأ الحقل السابق
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 form-check ps-0">
+                                            <a href="" class="ps-0 textPurp text">هل نسيت كلمة المرور؟</a>
+                                            <div class="float-end d-flex justify-content-center align-items-center">
+                                                <input type="checkbox" class="form-check-input me-3" id="exampleCheck1">
+                                                <label class="form-check-label textPurp text"
+                                                    for="exampleCheck1">تذكرني</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">تسجيل
+                                            الدخول</button>
+                                    </form>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="textSmall text-center">
+                                        ليس لديك حساب؟ <a href="" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal"> حساب جديد</a>
+                                    </div>
+                                </div>
+                                <div class="row DownloadAppRow">
+                                    <a href=""><img src="images/GooglePlay White.png" alt="GooglePlay White"
+                                            class="me-2 me-sm-3"></a>
+                                    <a href=""> <img src="images/AppStore white.png" alt="AppStore white"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header p-5">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+
+                                <h5 class="modal-title text-center" id="exampleModalToggleLabel">تسجيل الدخول</h5>
+                            </div>
+                            <div class="modal-body  border-0 p-5 pt-0">
+                                <div class="row m-0">
+                                    <div class="col-md-6 ">
+                                        <div class="SignUpUsingGoogle  py-3 pe-1">
+                                            <a href="" class=" d-flex justify-content-center align-items-center">
+                                                <img src="images/Google logo.png" alt="GOogle Logo">
+                                                <span class="text">تسجيل الدخول بحساب جوجل</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="SignUpUsingTwiter py-3 ps-1 mt-4 mt-md-0">
+                                            <a href="" class=" d-flex justify-content-center align-items-center">
+                                                <img src="images/Twitter.png" alt="Twiter Logo">
+                                                <span class="text">تسجيل الدخول بحساب تويتر</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 SignUpText">
+                                    <div class="col-md-4 col-2">
+                                        <div class="borderRow"></div>
+                                    </div>
+                                    <div class="col-md-4 col-8 p-0">
+                                        <p class="text mb-0 text-center">يمكنك التسجيل بالبريد الإلكتروني</p>
+                                    </div>
+                                    <div class="col-md-4 col-2">
+                                        <div class="borderRow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputName" class="form-label text"> <b> الأسم
+                                                    كاملاّ</b></label>
+                                            <input type="text" class="form-control py-2" id="exampleInputName"
+                                                placeholder="الأسم كاملاّ " aria-describedby="UserName" required>
+                                            <div class="feedback">
+                                                رجاءّ املأ الحقل السابق
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <label for="Select1" class="form-label text"> <b> المرحلة</b></label>
+
+                                                <select class="form-select form-select-sm" id="Select1"
+                                                    aria-label=".form-select-sm example">
+                                                    <option selected>اختر من هنا</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <div class="feedback">
+                                                    رجاءّ املأ الحقل السابق
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Select2" class="form-label text"> <b> الصف </b></label>
+
+                                                <select class="form-select form-select-sm" id="Select2"
+                                                    aria-label=".form-select-sm example">
+                                                    <option selected>اختر من هنا</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <div class="feedback">
+                                                    رجاءّ املأ الحقل السابق
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail2" class="form-label text"> <b> البريد
+                                                    الإلكتروني </b></label>
+                                            <input type="email" class="form-control py-2" id="exampleInputEmail2"
+                                                placeholder="عنوان البريد الإلكتروني" aria-describedby="emailHelp"
+                                                required>
+                                            <div class="feedback">
+                                                رجاءّ املأ الحقل السابق
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label text"> <b> كلمة المرور
+                                                </b></label>
+                                            <input type="password" class="form-control py-2" id="exampleInputPassword1"
+                                                placeholder="كلمة المرور" required>
+                                            <div class="feedback">
+                                                رجاءّ املأ الحقل السابق
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary w-100 SubmitBtn py-3">إشتراك
+                                        </button>
+                                        <div
+                                            class="mb-3 form-check ps-0 d-flex justify-content-start align-items-center mt-2">
+                                            <input type="checkbox" class="form-check-input me-3 ms-3" id="exampleCheck2"
+                                                required>
+                                            <label class="form-check-label textPurp text" for="exampleCheck2">موافق على
+                                                الشروط
+                                                والأحكام</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="textSmall text-center">
+                                        ليس لديك حساب؟ <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> تسجيل الدخول</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End SignIn And SignUp Modals-->
+
+                <section class="WatchVideo mt-4" id="WatchVideo">
+                    <h2 class="sectionTitle mb-0">الفيزياء 1 </h2>
+                    <h3 class="sectionSubTitle mb-2">المحاضرة الاولى : مسائل تدريبية صفحة 11</h3>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="WhiteBG VideoPart p-4 h-100 d-flex justify-content-center align-items-center">
+                                <video controls class="w-100" src="images/Video" poster="images/videoPoster.png">
+                                    <source src="video/hsoub.mp4" type="video/webm">
+                                    <source src="video/hsoub.webm" type="video/mp4">
+                                    <track kind="captions" srclang="ar" label="عربي" default>
+                                    لا يدعم متصفحك هذا الفيديو
+                                    <code>video</code>
+                                </video>
+                                <img src="images/PlayIcon.png" alt="PlayIcon" class="PlayIcon">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="WhiteBG px-3 py-2 SmallWhiteBg">
+                                <div class="text purple mb-3"> <b> الفيزياء - أول ثانوي </b></div>
+                                <a href="">
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                                <img src="images/TeacherPhoto.png" class="img-fluid rounded-start"
+                                                    alt="TeacherPhoto">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="card-body p-0 ps-2">
+                                                    <p class="text mb-0"> <b> م. سالي محمود عبدالله </b></p>
+                                                    <p class="card-text"><small class="text-muted text">ماجستير في
+                                                            هندسة
+                                                            الحاسوب - الاردن</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="WhiteBG  py-3 mt-2  SmallWhiteBg">
+                                <div class="WhiteBgRows px-3 pb-2">
+                                    <img src="images/VideoIcon.svg" alt="VideoIcon">
+                                    <span class="text-muted text ms-2 Details">عدد المحاضرات: </span>
+                                    <span class="text ms-3"><b>12</b></span>
+                                    <span class="text-muted text ms-2 Details2">محاضرة </span>
+                                </div>
+                                <div class="WhiteBgRows px-3 pb-2 pt-2">
+                                    <img src="images/Clock.png" alt="Clock">
+                                    <span class="text-muted text ms-2 Details">المدة: </span>
+                                    <span class="text ms-3"><b>16</b></span>
+                                    <span class="text-muted text ms-2 Details2">ساعة </span>
+                                </div>
+                                <div class="WhiteBgRows px-3 pb-2 pt-2">
+                                    <img src="images/FileIcon.svg" alt="FileIcon">
+                                    <span class="text-muted text ms-2 Details">عدد المرفقات: </span>
+                                    <span class="text ms-3"><b>21</b></span>
+                                    <span class="text-muted text ms-2 Details2">مرفق </span>
+                                </div>
+                                <div class="WhiteBgRows px-3 pb-2 pt-2">
+                                    <img src="images/ChatIcon.svg" alt="ChatIcon">
+                                    <span class="text-muted text ms-2 Details">عدد المرفقات: </span>
+                                    <span class="text ms-3"><b>21</b></span>
+                                    <span class="text-muted text ms-2 Details2">مرفق </span>
+                                </div>
+
+                                <p class="PriceAndRating mx-0 my-1  text-center justify-content-center"><b>س.ر 460
+                                    </b><span class="OldPrice">س.ر 500</span> </p>
+                                <div class="px-3">
+                                    <a href=""><button class="btn btn-primary addToCart py-0" type="link" alt="redirect"
+                                            type="link" alt="redirect"> استكشف المواد</button></a>
+                                </div>
+                            </div>
+                            <div class="WhiteBG mt-2  p-2 SmallWhiteBg">
+                                <div class=" tags d-flex justify-content-between align-items-center">
+                                    <div class="row w-100">
+                                        <div class="col-lg-6 pe-lg-0">
+                                            <a href=""> <span class="p-2"> <img src="images/shareIcon.svg"
+                                                        alt="shareIcon"> مشاركة الكورس
+                                                    تويتر</span></a>
+                                        </div>
+                                        <div class="col-lg-6 pe-lg-0">
+                                            <a href=""><span class="p-2"> <img src="images/telegramSmall.png"
+                                                        alt="telegramSmall"> مجموعة التلجرام
+                                                </span></a>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+
+
+
+
+                <!--Level Of Education-->
+                <section class="LevelOfEducation mt-md-5 mt-4  pb-md-5" id="LevelOfEducation">
+                    <!--HighSchool Level-->
+                    <div class="mb-5 mt-md-4">
+                        <div class="d-flex  align-items-center mb-4">
+                            <h2 class="sectionTitle mb-0">محتويات المادة
+
+
+                            </h2>
+
+                        </div>
+                        <ul class="nav nav-pills mb-5 p-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-ClassOneHigh-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-ClassOneHigh" type="button" role="tab"
+                                    aria-controls="pills-ClassOneHigh" aria-selected="true">الدروس</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-ClassTwoHigh-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-ClassTwoHigh" type="button" role="tab"
+                                    aria-controls="pills-ClassTwoHigh" aria-selected="false">مكتبة المقررات</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-ClassThreeHigh-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-ClassThreeHigh" type="button" role="tab"
+                                    aria-controls="pills-ClassThreeHigh" aria-selected="false">الاختبارات </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-ClassFourHigh-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-ClassFourHigh" type="button" role="tab"
+                                    aria-controls="pills-ClassFourHigh" aria-selected="false">المناقشات</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="d-flex justify-content-center SpinnerPart">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+
+
+                            <!--CLass One-->
+                            <div class="tab-pane fade show active WhiteBG p-3" id="pills-ClassOneHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassOneHigh-tab" tabindex="0">
+
+                                <!--Accordion-->
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="row w-100">
+                                                    <div class="col-lg-7 col-sm-5 text">
+                                                        <b> تعريف بالأستاذ والمادة</b>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-sm-0 text disabled">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-2  col-sm-3 col-6 mt-2  mt-sm-0 text disabled">
+                                                        <img src="images/VideoIcon.svg" alt="VideoIcon" class="me-md-2">
+                                                        1 محاضرة
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 ">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                1
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                2
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                3
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <img src="images/lockIcon.svg" alt="lockIcon" class="m-auto">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="row w-100">
+                                                    <div class="col-lg-7 col-sm-5 text">
+                                                        <b> تعريف بالأستاذ والمادة</b>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-sm-0 text disabled">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-2  col-sm-3 col-6 mt-2  mt-sm-0 text disabled">
+                                                        <img src="images/VideoIcon.svg" alt="VideoIcon" class="me-md-2">
+                                                        1 محاضرة
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 ">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                1
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                2
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                3
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <img src="images/lockIcon.svg" alt="lockIcon" class="m-auto">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="row w-100">
+                                                    <div class="col-lg-7 col-sm-5 text">
+                                                        <b> تعريف بالأستاذ والمادة</b>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-sm-0 text disabled">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-2  col-sm-3 col-6 mt-2  mt-sm-0 text disabled">
+                                                        <img src="images/VideoIcon.svg" alt="VideoIcon" class="me-md-2">
+                                                        1 محاضرة
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 ">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                1
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                2
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <a href="" class="first"><button
+                                                                class="btn btn-primary addToCart py-1 " type="button"
+                                                                alt="button">
+                                                                مشاهدة
+                                                            </button></a>
+                                                        <a href="" class="second"><button
+                                                                class="btn btn-secondary addToCart py-1  " type="button"
+                                                                alt="button">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                            </button></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mt-3">
+                                                    <div class="col-lg-5">
+                                                        <div class="row">
+                                                            <div class="col-1 Number p-0">
+                                                                3
+                                                            </div>
+                                                            <div class="col-11 ContenTitlte text">
+                                                                <div class="row">
+                                                                    <div class="col-10">
+                                                                        المحاضرة الاولى : مسائل تدريبية صفحة 11
+
+                                                                    </div>
+                                                                    <div class="col-2 Forfree">
+                                                                        <span class=" ">مجاناً</span>
+                                                                    </div>
+                                                                </div>
+                                                         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
+                                                        2022-08-27
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                        <img src="images/Clock.png" alt="Clock" class="me-md-2">
+                                                        01:00:14
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6  p-0 Buttons mt-2 mt-lg-0">
+                                                        <img src="images/lockIcon.svg" alt="lockIcon" class="m-auto">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Accordion-->
+
+                            </div>
+
+                            <!--CLass Two-->
+                            <!--CLass Two-->
+
+                            <div class="tab-pane fade" id="pills-ClassTwoHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassTwoHigh-tab" tabindex="0">
+                                <div class="row">
+
+                                </div>
+                            </div>
+
+                            <!--CLass THree-->
+                            <!--CLass THree-->
+
+                            <div class="tab-pane fade" id="pills-ClassThreeHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassThreeHigh-tab" tabindex="0">
+                                <div class="row">
+
+                                </div>
+                            </div>
+
+                            <!--CLass Four-->
+                            <!--CLass Four-->
+                            <div class="tab-pane fade WhiteBG " id="pills-ClassFourHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassFourHigh-tab" tabindex="0">
+                                <div class="p-3">
+
+                                    <button class="btn btn-primary addToCart py-0 float-end w-25 d" type="button"
+                                        alt="button"> أضف
+                                        سؤالاً
+                                    </button>
+                                    <div class="QNA mt-5">
+                                        <div class="row  mx-0 w-100 Question">
+                                            <div
+                                                class="col-sm-1 px-0 text d-flex justify-content-center align-items-center QuestionTab">
+                                                <b>سؤال</b>
+                                            </div>
+                                            <div class="col-sm-11 px-0 QuestionContent">
+                                                <div
+                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-1">
+                                                            <img src="images/TeacherPhoto.png"
+                                                                class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-md-11 ">
+                                                            <div
+                                                                class="card-body h-100 py-0 d-flex flex-column justify-content-center">
+                                                                <div class="smallText mb-2"><b>حسن صالح</b> <span
+                                                                        class="smallText mb-0 disabled float-end">منذ
+                                                                        يومين</span>
+                                                                </div>
+                                                                <p class="smallText mb-0 ">نص توضيحي نص توضيحي نص توضيحي
+                                                                    نص
+                                                                    توضيحي <span class="float-end"><button><img
+                                                                                src="images/EditBtn.svg"
+                                                                                alt="EditBtn"></button> <button><img
+                                                                                src="images/DeleteBTN.svg"
+                                                                                alt="DeleteBTN"></button> </span></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 Answer m-0">
+                                            <div
+                                                class="col-sm-1 px-0 text d-flex justify-content-center align-items-center AnswerTab">
+                                                <b>جواب</b>
+                                            </div>
+                                            <div class="col-sm-11 px-0 AnswerContent">
+                                                <div
+                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-1">
+                                                            <img src="images/TeacherPhoto.png"
+                                                                class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-md-11 ">
+                                                            <div
+                                                                class="card-body h-100 py-0 d-flex flex-column justify-content-center">
+                                                                <div class="smallText mb-2"><b>حسن صالح</b> <span
+                                                                        class="smallText mb-0 disabled float-end">منذ
+                                                                        يومين</span>
+                                                                </div>
+                                                                <p class="smallText mb-0 ">نص توضيحي نص توضيحي نص توضيحي
+                                                                    نص
+                                                                    توضيحي <span class="float-end"><button><img
+                                                                                src="images/EditBtn.svg"
+                                                                                alt="EditBtn"></button> <button><img
+                                                                                src="images/DeleteBTN.svg"
+                                                                                alt="DeleteBTN"></button> </span></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mt-3 Answer">
+                                            <form action="" class="w-100 d-flex">
+                                                <div class="col-sm-11">
+                                                    <input type="text" placeholder="أضف ردًا"
+                                                        class="w-100 py-3 px-4 text">
+                                                </div>
+                                                <div
+                                                    class="col-sm-1 px-0 text d-flex justify-content-center align-items-center AnswerTab">
+                                                    <b>نشر</b>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="QNA mt-4">
+                                        <div class="row  mx-0 w-100 Question">
+                                            <div
+                                                class="col-sm-1 px-0 text d-flex justify-content-center align-items-center QuestionTab">
+                                                <b>سؤال</b>
+                                            </div>
+                                            <div class="col-sm-11 px-0 QuestionContent">
+                                                <div
+                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-1">
+                                                            <img src="images/TeacherPhoto.png"
+                                                                class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-md-11 ">
+                                                            <div
+                                                                class="card-body h-100 py-0 d-flex flex-column justify-content-center">
+                                                                <div class="smallText mb-2"><b>حسن صالح</b> <span
+                                                                        class="smallText mb-0 disabled float-end">منذ
+                                                                        يومين</span>
+                                                                </div>
+                                                                <p class="smallText mb-0 ">نص توضيحي نص توضيحي نص توضيحي
+                                                                    نص
+                                                                    توضيحي <span class="float-end"><button><img
+                                                                                src="images/EditBtn.svg"
+                                                                                alt="EditBtn"></button> <button><img
+                                                                                src="images/DeleteBTN.svg"
+                                                                                alt="DeleteBTN"></button> </span></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 Answer m-0">
+                                            <div
+                                                class="col-sm-1 px-0 text d-flex justify-content-center align-items-center AnswerTab">
+                                                <b>جواب</b>
+                                            </div>
+                                            <div class="col-sm-11 px-0 AnswerContent">
+                                                <div
+                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-1">
+                                                            <img src="images/TeacherPhoto.png"
+                                                                class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-md-11 ">
+                                                            <div
+                                                                class="card-body h-100 py-0 d-flex flex-column justify-content-center">
+                                                                <div class="smallText mb-2"><b>حسن صالح</b> <span
+                                                                        class="smallText mb-0 disabled float-end">منذ
+                                                                        يومين</span>
+                                                                </div>
+                                                                <p class="smallText mb-0 ">نص توضيحي نص توضيحي نص توضيحي
+                                                                    نص
+                                                                    توضيحي <span class="float-end"><button><img
+                                                                                src="images/EditBtn.svg"
+                                                                                alt="EditBtn"></button> <button><img
+                                                                                src="images/DeleteBTN.svg"
+                                                                                alt="DeleteBTN"></button> </span></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mt-3 Answer">
+                                            <form action="" class="w-100 d-flex">
+                                                <div class="col-sm-11">
+                                                    <input type="text" placeholder="أضف ردًا"
+                                                        class="w-100 py-3 px-4 text">
+                                                </div>
+                                                <div
+                                                    class="col-sm-1 px-0 text d-flex justify-content-center align-items-center AnswerTab">
+                                                    <b>نشر</b>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--CLass five-->
+                            <!--CLass five-->
+                            <div class="tab-pane fade" id="pills-ClassFiveHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassFiveHigh-tab" tabindex="0">
+                                <div class="row">
+
+                                </div>
+                            </div>
+
+                            <!--CLass Six-->
+                            <!--CLass Six-->
+                            <div class="tab-pane fade" id="pills-ClassSixHigh" role="tabpanel"
+                                aria-labelledby="pills-ClassSixHigh-tab" tabindex="0">
+                                <div class="row">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </section>
+                <!--End Level Of Education-->
+
+                <div class="row Suggestions gx-3">
+                    <h2 class="sectionTitle mb-0">مواد قد تهمك !</h2>
+                    <h3 class="sectionSubTitle mb-2">الطلاب الذين اشتركوا في هذا المقرر قاموا أيضا بالاشتراك بهذه
+                        المقررات</h3>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                            <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle2.png" alt="" />
+                            <div class="card-body pb-0 px-2">
+                                <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                                <p class="PriceAndRating"><b>س.ر 460</b> <span class="OldPrice">س.ر 500</span> </p>
+                                <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                                <div class="Favorite"><button class=""><img src="images/HeartShape.svg"
+                                            alt="FavIcon"></button>
+                                </div>
+                                <div class="row  w-100 gx-0">
+                                    <div class="col-9 ">
+                                        <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0"
+                                                type="link" alt="redirect"> تجربة
+                                                مجانية</button></a>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-primary purpleBtn ">
+                                            <img loading="lazy" src="images/bag-2.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                            <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle3.png" alt="" />
+
+                            <div class="card-body pb-0 px-2">
+                                <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                                <p class="PriceAndRating"><b>س.ر 460</b> <span class="OldPrice">س.ر 500</span> </p>
+                                <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                                <div class="Favorite"><button class=""><img src="images/HeartShape.svg"
+                                            alt="FavIcon"></button>
+                                </div>
+
+                                <div class="row  w-100 gx-0">
+                                    <div class="col-9 ">
+                                        <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0"
+                                                type="link" alt="redirect"> تجربة
+                                                مجانية</button></a>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-primary purpleBtn">
+                                            <img loading="lazy" src="images/bag-2.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                            <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle4.png" alt="" />
+
+                            <div class="card-body pb-0 px-2">
+                                <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                                <p class="PriceAndRating"><b>س.ر 460</b> <span class="OldPrice">س.ر 500</span> </p>
+                                <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                                <div class="Favorite"><button class=""><img src="images/HeartShape.svg"
+                                            alt="FavIcon"></button>
+                                </div>
+
+                                <div class="row  w-100 gx-0">
+                                    <div class="col-9 ">
+                                        <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0"
+                                                type="link" alt="redirect"> تجربة
+                                                مجانية</button></a>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-primary purpleBtn ">
+                                            <img loading="lazy" src="images/bag-2.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
+                        <div class="card py-3 px-2">
+                            <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle5.png" alt="" />
+
+                            <div class="card-body pb-0 px-2">
+                                <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
+                                <p class="PriceAndRating"><b>س.ر 460</b>
+                                </p>
+                                <div class="Rating "><img loading="lazy" src="images/star.png" alt="star"> 4.5</div>
+                                <div class="Favorite"><button class=""><img src="images/HeartShape.svg"
+                                            alt="FavIcon"></button>
+                                </div>
+
+                                <div class="row  w-100 gx-0">
+                                    <div class="col-9 ">
+                                        <a href="" class="h-100"><button class="btn btn-primary h-100 addToCart py-0"
+                                                type="link" alt="redirect"> تجربة
+                                                مجانية</button></a>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-primary purpleBtn ">
+                                            <img loading="lazy" src="images/bag-2.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--End Big Box-->
+
+
+    <!--Footer-->
+    <footer class="footer pt-5 pb-3" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-6 d-flex flex-column justify-content-between firstFooterPart">
+                    <div>
+                        <img loading="lazy" src="images/ajdur-white.png" alt="ajdur-white">
+                        <br>
+                        <p class="TopText mt-3 TextSemiBold ">
+                            منصة تعليمية إلكترونية تهتم بتقديم وتوفير <br> مواد دراسية أكاديمية ومحاضرات
+                        </p>
+                    </div>
+                    <!--Contact Us-->
+                    <div>
+                        <p class="TopText mt-3">
+                            تواصل معنا </p>
+
+                        <img loading="lazy" src="images/Message.png" alt="Message" class="me-2"> <span
+                            class="TopText">support@ajdur.com</span>
+                        <img loading="lazy" src="images/whatsapp.svg" alt="whatsapp" class="ms-4 me-2 whatsapp"> <span
+                            class="TopText">+966
+                            559322764</span>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex flex-column justify-content-between h-100 FooterLink mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-lg-5 col-6">
+                            <div class="footerTitle">
+                                أجدر
+                            </div>
+                            <br>
+                            <a href="">
+                                <p class="TopText">عن أجدر</p>
+                            </a>
+                            <a href="">
+                                <p class="TopText"> المقررات</p>
+                            </a>
+                            <a href="">
+                                <p class="TopText">الجامعات </p>
+                            </a>
+                            <a href="">
+                                <p class="TopText">الأساتذة </p>
+                            </a>
+
+
+                        </div>
+                        <div class="col-lg-7 col-6 ">
+                            <div class="footerTitle">
+                                أخرى
+                            </div>
+                            <br>
+                            <a href="">
+                                <p class="TopText">طرق السداد </p>
+                            </a>
+                            <a href="">
+                                <p class="TopText"> الأسئلة الشائعة</p>
+                            </a>
+                            <a href="">
+                                <p class="TopText">شروط الإستخدام </p>
+                            </a>
+                            <a href="">
+                                <p class="TopText">كن محاضراً </p>
+                            </a>
+                            <a href="">
+                                <p class="TopText"> تواصل معنا</p>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="TopText  mb-0 mt-5">سياسة الخصوصية | الشروط والأحكام</p>
+                </div>
+                <div
+                    class="col-xl-4 col-md-6 DownloadApp d-flex flex-column justify-content-between mt-5 mt-xl-0 offset-lg-3 offset-0  offset-xl-0">
+                    <div>
+                        <div class="footerTitle mb-5">
+                            حمل التطبيق
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-5">
+                                <img loading="lazy" src="images/QRCode.png" alt="QRCode">
+                            </div>
+                            <div class="col-2 footerTitle d-flex align-items-center justify-content-center">
+                                OR
+                            </div>
+                            <div class="col-5">
+                                <a href=""><img loading="lazy" src="images/GooglePlay.png" alt="" class="mb-3"></a>
+                                <br>
+                                <a href=""><img loading="lazy" src="images/AppStore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SocialIcons">
+                        <p class="TopText mt-3">
+                            تابعنا</p>
+
+                        <a href=""><img loading="lazy" src="images/whatsapp.svg" alt="whatsapp" class="whatsapp"></a>
+                        <a href=""><img loading="lazy" src="images/instagram.svg" alt="instagram" class="ms-3"></a>
+                        <a href=""><img loading="lazy" src="images/twitter.svg" alt="twitter" class="ms-3"></a>
+                        <a href=""><img loading="lazy" src="images/youtube.svg" alt="youtube" class="ms-3"></a>
+                        <a href=""><img loading="lazy" src="images/telegram.svg" alt="telegram" class="ms-3"></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="TopText">
+                    جميع الحقوق محفوظة لمنصة أجدر التعليمية 2022
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/TeacherCarousel.js"></script>
+<script src="js/lazyload.js"></script>
+
+</html>
