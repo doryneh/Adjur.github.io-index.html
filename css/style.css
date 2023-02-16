@@ -932,7 +932,12 @@ section.CarouselPart .Overlay, .CoursesPage .LevelOfEducation .Overlay {
     z-index: 200;
     text-align: center !important;
 }
-
+section.CarouselPart .Overlay .purpleBtn{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 !important;
+}
 section.CarouselPart .Overlay img.TeacherProfile, .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
     position: absolute;
     left: 50%;
@@ -966,8 +971,15 @@ section.CarouselPart .Overlay .CardText, section.CarouselPart .Overlay .CardText
     font-size: 14px;
     line-height: 25px;
     color: #242424;
+    width: 100%;
 }
-
+section.CarouselPart .Overlay .CardText{
+    max-height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
 section.CarouselPart .Overlay .CardTextSmall, .CoursesPage .LevelOfEducation .Overlay .CardTextSmall {
     font-size: 12px;
 }
