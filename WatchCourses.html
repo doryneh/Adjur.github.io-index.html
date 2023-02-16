@@ -21,7 +21,7 @@
 <body>
     <!--Big Box-->
 
-    <div class="pb-5">
+    <div class="pb-5 ">
         <div class="BigBox VideoPage ">
             <div class="container ">
                 <!--Navbar-->
@@ -37,16 +37,14 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarScroll">
                             <ul
-                                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-between align-items-center">
+                                class="navbar-nav me-auto flex-row my-2 my-lg-0 navbar-nav-scroll justify-content-between align-items-center">
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="Courses.html">المواد</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">محاضرات مباشرة</a>
-                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="Teachers.html">الاساتذة</a>
                                 </li>
@@ -57,32 +55,88 @@
                                 </li>
                             </ul>
                             <div class="NavButtons d-flex align-items-center">
+                                <div class="d-flex">
                                 <a href="" class="purpleBtn">
                                     <img loading="lazy" src="images/Search.svg" alt="Search Icon">
                                 </a>
                                 <a href="" class="purpleBtn ms-2">
                                     <img loading="lazy" src="images/bag-2.svg" alt="bag Icon">
                                 </a>
+                                <div class="dropdownBtn ms-2 NotificationDropdown dropstart">
+                                    <button class="btn btn-light dropdown-toggle position-relative purpleBtn" type="button" data-toggle="dropdown"
+                                    aria-expanded="false" id="NotificationBTN">
+                                    <img loading="lazy" src="images/notificationIcon.svg" alt="notification Icon">
+                                    <span class="position-absolute top-0 start-5 translate-middle badge rounded-pill bg-danger">
+                                        1
+                                      </span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-start"  aria-labelledby="dropdownMenu1">
+
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="images/notificationIconNavbarIcon.svg" width="20" alt="notification  Navbar Icon" class="me-2" />
+                                            <span>تم رفع واجب الوحدة الاولى </span>
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2 mt-sm-0">
                                 <div class="dropdownBtn ms-2 ProfileDropdown">
                                     <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"
                                         aria-expanded="false">
                                         <img src="images/Profile.png" alt="Profile" />
                                         <span class="UserName"> سهاد وصفي دادر </span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-menu dropdown-menu-left">
 
                                         <a class="dropdown-item" href="#">
-                                            <img src="/school_assets/imgs/f_kuwait.svg'" alt="" />
-                                            <span>الكويت</span>
+                                            <img src="images/Profile_Icon.svg" width="15" alt="Profile_Icon" class="me-2" />
+                                            <span>لوحة التحكم</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <img src="/school_assets/imgs/f_oman.svg" alt="" />
-                                            <span>عمان</span>
+                                            <img src="images/Dashboard_Icon.svg" width="15" alt="Dashboard_Icon" class="me-2" />
+                                            <span>الملف الشخصي</span>
                                         </a>
-                                        <a class="dropdown-item" href="#">
-                                            <img src="/school_assets/imgs/f_bahrain.svg" width="24" height="16"
-                                                alt="" />
-                                            <span>البحرين</span>
+                                        <a class="dropdown-item logoutBtn" href="#">
+                                            <button class="btn d-flex justify-content-center align-items-center" type="button">
+                                            <img src="images/logout.png" alt="logout icon" width="15"  />
+                                            <span> تسجيل الخروج </span>
+                                        </button>
                                         </a>
                                     </div>
                                 </div>
@@ -95,21 +149,22 @@
                                     <div class="dropdown-menu dropdown-menu-right">
 
                                         <a class="dropdown-item" href="#">
-                                            <img src="/school_assets/imgs/f_kuwait.svg'" alt="" />
-                                            <span>الكويت</span>
+                                            <img src="images/Profile_Icon.svg" width="15" alt="Profile_Icon" />
+                                            <span>الملف الشخصي</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
                                             <img src="/school_assets/imgs/f_oman.svg" alt="" />
                                             <span>عمان</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <img src="/school_assets/imgs/f_bahrain.svg" width="24" height="16"
+                                            <img src="/school_assets/imgs/f_bahrain.svg" 
                                                 alt="" />
                                             <span>البحرين</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </nav>
@@ -336,10 +391,23 @@
 
                 <section class="WatchVideo mt-4" id="WatchVideo">
                     <h2 class="sectionTitle mb-0">الفيزياء 1 </h2>
-                    <h3 class="sectionSubTitle mb-2">المحاضرة الاولى : مسائل تدريبية صفحة 11</h3>
+                    <div class="sectionSubTitle mb-2 d-flex justify-content-between align-items-center">المحاضرة الاولى
+                        : مسائل تدريبية صفحة 11
+                        <div>
+                            <div
+                                class="form-check form-switch d-flex flex-row-reverse align-items-center justify-content-between">
+                                <div class="form-check-label ms-2 purple" for="flexSwitchCheckDefault ">Light</div>
+                                <div> <input class="form-check-input m-0" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+
+                                </div>
+                                <div class="form-check-label me-2 Green" for="flexSwitchCheckDefault">Dark</div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-lg-8">
-                            <div class="WhiteBG VideoPart p-4 h-100 d-flex justify-content-center align-items-center">
+                            <div class="WhiteBG VideoPart p-lg-4 p-md-3 p-2 h-100 d-flex justify-content-center align-items-center">
                                 <video controls class="w-100" src="images/Video" poster="images/videoPoster.png">
                                     <source src="video/hsoub.mp4" type="video/webm">
                                     <source src="video/hsoub.webm" type="video/mp4">
@@ -354,7 +422,7 @@
                             <div class="WhiteBG px-3 py-2 SmallWhiteBg">
                                 <div class="text purple mb-3"> <b> الفيزياء - أول ثانوي </b></div>
                                 <a href="">
-                                    <div class="card">
+                                    <div class="card WhiteBG bg-transparent">
                                         <div class="row g-0">
                                             <div class="col-lg-2 d-flex justify-content-center align-items-center">
                                                 <img src="images/TeacherPhoto.png" class="img-fluid rounded-start"
@@ -448,7 +516,7 @@
                             </h2>
 
                         </div>
-                        <ul class="nav nav-pills mb-5 p-3" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills mb-5 p-3 WhiteBG" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-ClassOneHigh-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-ClassOneHigh" type="button" role="tab"
@@ -471,7 +539,25 @@
                             </li>
 
                         </ul>
+                        <!--Empty Section For Registered-->
                         <div class="tab-content" id="pills-tabContent">
+                            <div class="d-flex flex-column justify-content-center align-items-center h-100 EmptyOffer">
+                                <img src="images/EmptyCourses.png" alt="Empty Cpurses" class="">
+                                <h4 class="w-75 mt-3">لم يتم إضافة مرفقات بعد , انتظر التحديثات</h4>
+                            </div>
+
+                            <!--Empty Section For nOt Registered -->
+                            <div class="d-flex flex-column justify-content-center align-items-center h-100 EmptyOffer">
+                                <img src="images/notregistered.png" alt="notregistered" class="">
+                                <h4 class="w-75 mt-3">عذراً عليك تسجيل الدخول لمشاهدة النقاشات</h4>
+                                <a class="btn btn-primary ms-2 p-0 RegisterButton w-50" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button">
+                                    <button type="button"
+                                        class="btn btn-success px-5 py-2 w-100 d-flex justify-content-center align-items-center">
+                                        تسجيل <img loading="lazy" src="images/import.svg" alt="">
+                                    </button>
+                                </a>
+                            </div>
 
                             <div class="d-flex justify-content-center SpinnerPart">
                                 <div class="spinner-border" role="status">
@@ -506,8 +592,8 @@
                                                 </div>
                                             </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div id="collapseOne" class="accordion-collapse collapse" ||||||||||a
+                                            ria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <div class="row w-100 ">
                                                     <div class="col-lg-5">
@@ -525,15 +611,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -546,7 +634,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -567,15 +656,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -588,7 +679,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -609,15 +701,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -632,8 +726,8 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingTwo">
                                             <button class="accordion-button py-2" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                aria-expanded="false" aria-controls="collapseOne">
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
                                                 <div class="row w-100">
                                                     <div class="col-lg-7 col-sm-5 text">
                                                         <b> تعريف بالأستاذ والمادة</b>
@@ -668,15 +762,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -689,7 +785,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -710,15 +807,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -731,7 +830,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -752,15 +852,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -775,8 +877,8 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingThree">
                                             <button class="accordion-button py-2" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                aria-expanded="false" aria-controls="collapseOne">
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
                                                 <div class="row w-100">
                                                     <div class="col-lg-7 col-sm-5 text">
                                                         <b> تعريف بالأستاذ والمادة</b>
@@ -811,15 +913,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -832,7 +936,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -853,15 +958,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -874,7 +981,8 @@
                                                         <a href="" class="second"><button
                                                                 class="btn btn-secondary addToCart py-1  " type="button"
                                                                 alt="button">
-                                                                <img src="images/shareIcon.svg" alt="shareIcon" class="m-auto">
+                                                                <img src="images/shareIcon.svg" alt="shareIcon"
+                                                                    class="m-auto">
                                                             </button></a>
 
                                                     </div>
@@ -895,15 +1003,17 @@
                                                                         <span class=" ">مجاناً</span>
                                                                     </div>
                                                                 </div>
-                                                         
+
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Calendar.png" alt="Calendar" class="me-md-2">
                                                         2022-08-27
                                                     </div>
-                                                    <div class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
+                                                    <div
+                                                        class="col-lg-2 col-sm-3 col-6 mt-2 mt-lg-0 text disabled centered">
                                                         <img src="images/Clock.png" alt="Clock" class="me-md-2">
                                                         01:00:14
                                                     </div>
@@ -923,10 +1033,57 @@
                             <!--CLass Two-->
                             <!--CLass Two-->
 
-                            <div class="tab-pane fade" id="pills-ClassTwoHigh" role="tabpanel"
+                            <div class="tab-pane fade WhiteBG p-3 CourseLibrary" id="pills-ClassTwoHigh" role="tabpanel"
                                 aria-labelledby="pills-ClassTwoHigh-tab" tabindex="0">
-                                <div class="row">
+                                <div class="row w-100">
+                                    <div class="col-md-1 col-2 Number d-flex align-items-center">
+                                        <img src="images/FilePurpBG.png" alt="File Purple BG" class="FirstImage">
+                                    </div>
+                                    <div class="col-lg-9 col-md-11 col-10 ContenTitlte text p-0 d-flex align-items-center">
+                                        <b>
+                                            مرفق الدرس حل التقويم (4-2) +مرفق ملخص الفصل , الوحدة
+                                            الفصل الثاني - الطاقة والتغيرات الكيميائية
+                                        </b>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="Buttons mt-2 mt-lg-0 d-flex align-items-center">
+                                            <a href="" class="first"><button class="btn btn-primary addToCart py-1 "
+                                                type="button" alt="button">
+                                                <img src="images/downloadIcon.svg" alt="downloadIcon">
+                                            </button></a>
+                                        <a href="" class="second"><button class="btn btn-secondary addToCart py-1 text "
+                                                type="button" alt="button">
+                                                Docx
+                                            </button></a>
+                                        </div>
+                                       
 
+                                    </div>
+                                </div>
+                                <div class="row w-100 mt-3">
+                                    <div class="col-md-1 col-2 Number d-flex align-items-center">
+                                        <img src="images/FilePurpBG.png" alt="File Purple BG" class="FirstImage">
+                                    </div>
+                                    <div class="col-lg-9 col-md-11 col-10 ContenTitlte text p-0 d-flex align-items-center">
+                                        <b>
+                                            مرفق الدرس حل التقويم (4-2) +مرفق ملخص الفصل , الوحدة
+                                            الفصل الثاني - الطاقة والتغيرات الكيميائية
+                                        </b>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="Buttons mt-2 mt-lg-0 d-flex align-items-center">
+                                            <a href="" class="first"><button class="btn btn-primary addToCart py-1 "
+                                                type="button" alt="button">
+                                                <img src="images/downloadIcon.svg" alt="downloadIcon">
+                                            </button></a>
+                                        <a href="" class="second"><button class="btn btn-secondary addToCart py-1 text "
+                                                type="button" alt="button">
+                                                Docx
+                                            </button></a>
+                                        </div>
+                                       
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -950,7 +1107,7 @@
                                         alt="button"> أضف
                                         سؤالاً
                                     </button>
-                                    <div class="QNA mt-5">
+                                    <div class="QNA mt-5 WhiteBG">
                                         <div class="row  mx-0 w-100 Question">
                                             <div
                                                 class="col-sm-1 px-0 text d-flex justify-content-center align-items-center QuestionTab">
@@ -958,7 +1115,7 @@
                                             </div>
                                             <div class="col-sm-11 px-0 QuestionContent">
                                                 <div
-                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    class="card WhiteBG mb-3 w-100 h-100  d-flex flex-column justify-content-center">
                                                     <div class="row g-0">
                                                         <div class="col-md-1">
                                                             <img src="images/TeacherPhoto.png"
@@ -992,7 +1149,7 @@
                                             </div>
                                             <div class="col-sm-11 px-0 AnswerContent">
                                                 <div
-                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    class="card WhiteBG mb-3 w-100 h-100  d-flex flex-column justify-content-center">
                                                     <div class="row g-0">
                                                         <div class="col-md-1">
                                                             <img src="images/TeacherPhoto.png"
@@ -1033,7 +1190,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="QNA mt-4">
+                                    <div class="QNA mt-4 WhiteBG">
                                         <div class="row  mx-0 w-100 Question">
                                             <div
                                                 class="col-sm-1 px-0 text d-flex justify-content-center align-items-center QuestionTab">
@@ -1041,7 +1198,7 @@
                                             </div>
                                             <div class="col-sm-11 px-0 QuestionContent">
                                                 <div
-                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    class="card WhiteBG mb-3 w-100 h-100  d-flex flex-column justify-content-center">
                                                     <div class="row g-0">
                                                         <div class="col-md-1">
                                                             <img src="images/TeacherPhoto.png"
@@ -1075,7 +1232,7 @@
                                             </div>
                                             <div class="col-sm-11 px-0 AnswerContent">
                                                 <div
-                                                    class="card mb-3 w-100 h-100  d-flex flex-column justify-content-center">
+                                                    class="card WhiteBG mb-3 w-100 h-100  d-flex flex-column justify-content-center">
                                                     <div class="row g-0">
                                                         <div class="col-md-1">
                                                             <img src="images/TeacherPhoto.png"
@@ -1119,24 +1276,7 @@
                                 </div>
                             </div>
 
-                            <!--CLass five-->
-                            <!--CLass five-->
-                            <div class="tab-pane fade" id="pills-ClassFiveHigh" role="tabpanel"
-                                aria-labelledby="pills-ClassFiveHigh-tab" tabindex="0">
-                                <div class="row">
 
-                                </div>
-                            </div>
-
-                            <!--CLass Six-->
-                            <!--CLass Six-->
-                            <div class="tab-pane fade" id="pills-ClassSixHigh" role="tabpanel"
-                                aria-labelledby="pills-ClassSixHigh-tab" tabindex="0">
-                                <div class="row">
-
-
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -1150,7 +1290,7 @@
                     <h3 class="sectionSubTitle mb-2">الطلاب الذين اشتركوا في هذا المقرر قاموا أيضا بالاشتراك بهذه
                         المقررات</h3>
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
-                        <div class="card py-3 px-2">
+                        <div class="card WhiteBG py-3 px-2">
                             <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle2.png" alt="" />
                             <div class="card-body pb-0 px-2">
                                 <h5 class="card-title"> <b>الكيمياء 1 </b> <span class="float-end">114 درس</span></h5>
@@ -1175,7 +1315,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
-                        <div class="card py-3 px-2">
+                        <div class="card WhiteBG py-3 px-2">
                             <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle3.png" alt="" />
 
                             <div class="card-body pb-0 px-2">
@@ -1202,7 +1342,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
-                        <div class="card py-3 px-2">
+                        <div class="card WhiteBG py-3 px-2">
                             <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle4.png" alt="" />
 
                             <div class="card-body pb-0 px-2">
@@ -1229,7 +1369,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3  BundelCard">
-                        <div class="card py-3 px-2">
+                        <div class="card WhiteBG py-3 px-2">
                             <img class="lazy" src="images/Rectangle lazy-bg.png" imgsrc="images/Bundle5.png" alt="" />
 
                             <div class="card-body pb-0 px-2">
@@ -1391,5 +1531,6 @@
 <script src="js/js.js"></script>
 <script src="js/TeacherCarousel.js"></script>
 <script src="js/lazyload.js"></script>
+<script src="js/darkmode.js"></script>
 
 </html>
