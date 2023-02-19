@@ -19,9 +19,7 @@ body {
     transition: 0.5s ease-in-out all;
 
 }
-.purple {
-    color: #7453C6 ;
-}
+
 
 .purpleTop {
     background-color: #7453C6;
@@ -60,7 +58,9 @@ body {
     line-height: 37px;
     color: #242424;
 }
-
+.purple {
+    color: #7453C6 ;
+}
 .sectionTitle {
     font-size: 35px;
     line-height: 75px;
@@ -1790,11 +1790,12 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 
 
-.VideoPage .accordion-item .accordion-body .Buttons .btn-secondary,.VideoPage  .CourseLibrary .btn-secondary  {
+.VideoPage .accordion-item .accordion-body .Buttons .btn-secondary,.VideoPage  .CourseLibrary .btn-secondary,.VideoPage  .CourseTEST .btn-primary.addToCart  {
     background-color: #7353c652;
     border: none;
     line-height: 34px;
     width: 100%;
+    height: 100%;
 }
 
 .VideoPage .accordion-item .accordion-body .centered {
@@ -1811,14 +1812,13 @@ section.WatchVideo .VideoPart .PlayIcon {
 .VideoPage  .CourseLibrary .first{
     margin-left: 5px;
 }
-.VideoPage  .CourseLibrary .btn-secondary.text{
+.VideoPage  .CourseLibrary .btn-secondary.text,.VideoPage  .CourseTEST .btn-primary.addToCart {
     font-size: 16px;
     color: #7A5CC8;
     text-transform: capitalize;
     border-radius: 8px;
     width: 100%;
     height: 100%;
-
 }
 
 .VideoPage .CourseLibrary .Buttons a.second {
@@ -1827,7 +1827,7 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 }
 
-.VideoPage .CourseLibrary .Buttons a.first {
+.VideoPage .CourseLibrary .Buttons a.first{
     width: 39%;
     height: 100%;
 }
@@ -1836,14 +1836,35 @@ section.WatchVideo .VideoPart .PlayIcon {
     float: left;
     height: 100%;
 }
-.VideoPage .CourseLibrary .Buttons a.first button{
+.VideoPage .CourseLibrary .Buttons a.first button,.VideoPage .CourseTEST .Buttons a.second button{
     background-color: #40DCB2;
     height: 100%;
+    border: none;
 }
 .VideoPage .CourseLibrary .Buttons a.first button img{
-    width: 60%;
+    width: 100%;
     height: 100%;
 }
+.VideoPage  .CourseTEST .Buttons a{
+    width: 49%;
+    height: 100%;
+}
+.VideoPage  .CourseTEST .Buttons a.first{
+    margin-left: 5px;
+}
+.VideoPage  .CourseTEST .Buttons a.first button{
+    background-color: #F1EEF9;
+}
+.VideoPage .CourseTEST .Buttons a.first button{
+    border-radius: 16px;
+}
+.VideoPage .CourseTEST .Buttons a.second button{
+    width: 100%; 
+    color: white;
+    border-radius: 16px;
+} 
+
+
 /***************************
 ************Media *********
 ****************************/
