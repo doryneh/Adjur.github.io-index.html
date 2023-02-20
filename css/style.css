@@ -1923,6 +1923,10 @@ BAQA
     border-bottom-right-radius: 0px;
 }
 
+.BAQA section.ClassBAQA .row{
+    justify-content: center;
+    align-items: center;
+}
 .BAQA section.Discount .overlay {
     background-image: url(../images/DiscountBG.png);
     background-size: cover;
@@ -1991,7 +1995,15 @@ BAQA
     border-radius: 20px;
 
 }
-
+.BAQA section.ChooseBAQA .WhiteBG{
+    transition: 0.4s ease all;
+}
+.BAQA section.ChooseBAQA .WhiteBG:Hover h1{
+    background: transparent;
+}
+.BAQA section.ChooseBAQA .WhiteBG:Hover{
+    background:linear-gradient(to top left, #CBFFF1,#3FDBB1) !important ;
+}
 .BAQA section.ChooseBAQA .addToCart {
     transition: 0s ease all;
 }
