@@ -76,8 +76,15 @@ body {
     border: none;
 }
 
-.card img, .Overlay img, iframe,.player, .player *, .player ::after, .player ::before {
+.card img, .Overlay img, iframe {
     border-radius: 15px !important;
+}
+.player{
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    height: 320px;
+    width: 480px;
 }
 
 img[imgsrc] {
@@ -2098,6 +2105,9 @@ ENd Cart
     .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
         top: -15%;
     }
+    .CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 750px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -2108,11 +2118,15 @@ ENd Cart
     nav.navbar .navbar-brand img {
         width: 60% !important;
     }
-
+    .CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 650px;
+    }
 }
 
 @media (max-width: 1200px) {
-
+    .CourseForRegistered section.WatchVideo .VideoPart {
+    min-height: 550px;
+    }
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 13px;
     }
@@ -2205,7 +2219,7 @@ ENd Cart
     section.Banner .col-lg-5 {
         display: flex;
     }
-    section.WatchVideo .VideoPart {
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 415px;
     margin-bottom: 30px;
     }
@@ -2331,7 +2345,7 @@ ENd Cart
         width: 100% !important;
         font-size: 13px;
     }
-    section.WatchVideo .VideoPart {
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 315px;
     }
     .form-switch .form-check-input {
@@ -2419,7 +2433,7 @@ ENd Cart
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-    section.WatchVideo .VideoPart{
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 270px;
     }
     .BAQA section.Discount .CarouselText a button {
@@ -2550,7 +2564,7 @@ ENd Cart
     }
 }
 @media (max-width: 575px) {
-    section.WatchVideo .VideoPart{
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 240px;
     }
 }
