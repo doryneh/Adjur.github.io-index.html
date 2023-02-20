@@ -816,7 +816,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     border-left: none !important;
 }
 
-section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart {
+section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -836,7 +836,7 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
 
@@ -1267,7 +1267,6 @@ Green Section
     position: relative;
     min-height: 350px;
     background-color: white !important;
-
 }
 
 section.GreenSection {
@@ -1572,7 +1571,7 @@ End Footer
     margin-left: 5px;
 }
 
-.PackagesCourse .OfferCard .card .smallText {
+.PackagesCourse .OfferCard .card .smallText ,.SmallText{
     background-color: transparent;
     font-size: 14px;
 }
@@ -2004,6 +2003,7 @@ BAQA
 }
 .BAQA section.ChooseBAQA .WhiteBG{
     transition: 0.4s ease all;
+    border-radius: 20px;
 }
 .BAQA section.ChooseBAQA .WhiteBG:Hover h1{
     background: transparent;
@@ -2074,6 +2074,71 @@ Cart
 .CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 button{
     margin: 0px;
 }
+
+.CartPage .CouponDiscountCode{
+    height: fit-content;
+}
+.CartPage .CouponDiscountCode form input{
+    border-radius: 6px !important;
+    border: 1px solid #C6C6C6 !important;
+    color: #C6C6C6;
+    box-shadow: none;
+}
+.CartPage .CouponDiscountCode form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C6C6C6;
+    opacity: 1; /* Firefox */
+  }
+  
+  .CartPage .CouponDiscountCode form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C6C6C6;
+  }
+  
+  .CartPage .CouponDiscountCode form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C6C6C6;
+  }
+.CartPage .CouponDiscountCode form span{
+    background-color: #3FDBB1;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px !important;
+    
+}
+.CartPage .PricesAndTotal  .text{
+    font-weight: 500;
+}
+.CartPage .PricesAndTotal  .text span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.CartPage .PricesAndTotal  .total.text{
+    border-top: 0.3px solid #8282824d;
+}
+.CartPage .PricesAndTotal  .total.text .span{
+    font-weight: bold;
+}
+.CartPage .PricesAndTotal .addToCart{
+    font-size: 13px;
+}
+.CartPage .PricesAndTotal .btn-secondary.addToCart{
+    background-color: white;
+    border: 1px solid #7453C5;
+    color: #7453C5;
+    font-weight: bold;
+}
+.PaymentOptions .LevelOfEducation section.CarouselPart{
+    background-image: none;
+}
+.PaymentOptions.BAQA section.ChooseBAQA .WhiteBG{
+    filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.055));
+}
+.PaymentOptions.BAQA section.ChooseBAQA h1 {
+    font-size: 27px;
+    line-height: 15px;
+    width: unset;
+}
+.PaymentOptions.BAQA section.ChooseBAQA .Darkgreen{
+    color: #569F7D;
+}
 /***************************
 ENd Cart
 ****************************/
@@ -2100,6 +2165,9 @@ ENd Cart
 }
 .green{
     color: #3FDBB1;
+}
+.black{
+    color: #242424;
 }
 @media (min-width: 1400px) {
     .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
@@ -2344,6 +2412,15 @@ ENd Cart
     section.CarouselPart .text {
         width: 100% !important;
         font-size: 13px;
+    }
+    .TeacherPageRow .card-body{
+        align-items: center !important;
+    }
+    .TeacherPageRow .card-body .sectionSubTitle{
+        margin-bottom:0px !important;
+    }
+    .TeacherPageRow img{
+        width: 50% !important;
     }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 315px;
