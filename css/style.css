@@ -76,8 +76,8 @@ body {
     border: none;
 }
 
-.card img, .Overlay img, video {
-    border-radius: 15px;
+.card img, .Overlay img, iframe,.player, .player *, .player ::after, .player ::before {
+    border-radius: 15px !important;
 }
 
 img[imgsrc] {
@@ -1716,14 +1716,14 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 }
 
-.VideoPage .QNA .Question button, .VideoPage .QNA .Answer button {
+.VideoPage .QNA .Question button, .VideoPage .QNA .Answer button,.deleteBtn {
     border: none;
     background-color: transparent;
     width: 25px;
     padding: 0px;
 }
 
-.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img {
+.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img ,.deleteBtn{
     width: 25px;
 
 }
@@ -2052,6 +2052,26 @@ ENd BAQA
 
 
 
+/***************************
+Cart
+****************************/
+.CartPage section.CarouselPart img{
+    width: 25%;
+}
+.CartPage.PackagesCourse .BundelCard .col-md-3 img{
+    background-image: unset;
+}
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25{
+    width: 35% !important;
+}
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 button{
+    margin: 0px;
+}
+/***************************
+ENd Cart
+****************************/
+
+
 
 
 
@@ -2071,7 +2091,9 @@ ENd BAQA
 .purple {
     color: #7453C6;
 }
-
+.green{
+    color: #3FDBB1;
+}
 @media (min-width: 1400px) {
     .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
         top: -15%;
@@ -2183,7 +2205,16 @@ ENd BAQA
     section.Banner .col-lg-5 {
         display: flex;
     }
-
+    section.WatchVideo .VideoPart {
+    min-height: 415px;
+    margin-bottom: 30px;
+    }
+    section.WatchVideo .WhiteBG{
+        text-align: center;
+    }
+    section.WatchVideo .col-lg-8{
+        margin-bottom: 25px;
+    }
     section.Banner .col-lg-5 img {
         width: 75% !important;
         margin: 0 auto;
@@ -2300,7 +2331,9 @@ ENd BAQA
         width: 100% !important;
         font-size: 13px;
     }
-
+    section.WatchVideo .VideoPart {
+    min-height: 315px;
+    }
     .form-switch .form-check-input {
         width: 50px;
         height: 20px;
@@ -2386,7 +2419,9 @@ ENd BAQA
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-
+    section.WatchVideo .VideoPart{
+        min-height: 270px;
+    }
     .BAQA section.Discount .CarouselText a button {
         width: 100%;
     }
@@ -2512,5 +2547,10 @@ ENd BAQA
 
     .VideoPage .accordion-item .accordion-header .disabled img {
         width: 25px;
+    }
+}
+@media (max-width: 575px) {
+    section.WatchVideo .VideoPart{
+        min-height: 240px;
     }
 }
