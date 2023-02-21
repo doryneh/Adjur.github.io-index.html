@@ -9,6 +9,20 @@ body {
     background-color: #F6F2FF;
 }
 
+.dark-mode {
+    background-color: #1F1E27 !important;
+    color: #fff !important;
+    transition: 0.5s ease-in-out all;
+}
+
+.WhiteBG.dark-mode, footer.footer.dark-mode {
+    background-color: #281267 !important;
+    color: white !important;
+    transition: 0.5s ease-in-out all;
+
+}
+
+
 .purpleTop {
     background-color: #7453C6;
 }
@@ -41,11 +55,6 @@ body {
     padding-bottom: 200px;
 }
 
-.text {
-    font-size: 20px;
-    line-height: 37px;
-    color: #242424;
-}
 
 .sectionTitle {
     font-size: 35px;
@@ -55,8 +64,46 @@ body {
     margin-bottom: 25px;
 }
 
+.sectionSubTitle {
+    font-size: 25px;
+    line-height: 52px;
+    color: #706E6E;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
 .card {
     border: none;
+}
+
+.card img, .Overlay img, iframe {
+    border-radius: 15px !important;
+}
+.player{
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    height: 320px;
+    width: 480px;
+}
+
+img[imgsrc] {
+    width: 100%;
+
+    background-color: #eee;
+}
+
+.disabled {
+    color: #706E6E;
+}
+
+.EmptyOffer .RegisterButton button img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.EmptyOffer .RegisterButton button {
+    font-size: 25px;
 }
 
 /***********
@@ -79,12 +126,13 @@ nav.navbar .navbar-toggler {
     border: 1px solid #7453C6;
     padding: 10px;
 }
+
 nav.navbar ul.navbar-nav li.nav-item:first-of-type {
     margin-right: 0;
 }
 
 nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 18px;
+    font-size: 16px;
     color: #242424;
     line-height: 34px;
     transition: 0.2s ease all;
@@ -99,7 +147,18 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #7453C6;
 }
 
-nav.navbar .NavButtons a.purpleBtn, section.LevelOfEducation .card .purpleBtn, section.LevelOfEducation .card .AddedToCart {
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link {
+    background-color: #7554C6;
+    border-radius: 20px;
+    color: white;
+    line-height: 20px;
+}
+
+nav.navbar ul.navbar-nav li.nav-item.Offers a.nav-link img {
+    width: 25px;
+}
+
+nav.navbar .NavButtons a.purpleBtn, nav.navbar .NavButtons .NotificationDropdown button, section.LevelOfEducation .card .purpleBtn, section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
     width: 50px;
     height: 50px;
     background-color: #7453C6;
@@ -113,29 +172,186 @@ nav.navbar .NavButtons a.purpleBtn, section.LevelOfEducation .card .purpleBtn, s
 
 }
 
-nav.navbar .NavButtons a.purpleBtn:hover {
+nav.navbar .NavButtons .NotificationDropdown button.dropdown-toggle::after {
+    display: none;
+}
+
+nav.navbar .NavButtons .NotificationDropdown .badge {
+    background-color: white !important;
+    color: #7453C6;
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.15));
+    right: 5% !important;
+}
+
+nav.navbar .NavButtons .NotificationDropdown .dropdown-item a {
+    overflow: hidden;
+}
+
+nav.navbar .NavButtons .NotificationDropdown .dropdown-item span {
+    white-space: nowrap;
+
+}
+
+section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
+    height: 100%;
+}
+
+nav.navbar .NavButtons a.purpleBtn:hover, nav.navbar .NavButtons .NotificationDropdown button:hover {
     background-color: #50398a;
 }
 
-nav.navbar .NavButtons a button {
+nav.navbar .NavButtons a button, .EmptyOffer .RegisterButton button, .EmptyOffer a.RegisterButton {
     height: 50px;
     border-radius: 16px;
     background-color: #3FDBB1;
     transition: 0.2s ease all;
     border: none;
 }
-nav.navbar .NavButtons a.btn-primary{
+
+nav.navbar .NavButtons a.btn-primary {
     background-color: transparent;
     border: transparent;
     box-shadow: none;
 }
+
 nav.navbar .NavButtons a button:hover {
     background-color: #2ea183;
 }
-nav.navbar .dropdownBtn button{
+
+section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
+    background-color: transparent;
+    border: 1px solid #242424;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 15px;
+    line-height: 25px;
+    padding: 7px 10px;
+}
+
+nav.navbar .dropdownBtn button {
     border: 1px solid #7A5CC8;
     color: #7A5CC8;
+    height: 50px;
 }
+
+nav.navbar .dropdownBtn.ProfileDropdown button {
+    background-color: #7A5CC8;
+    color: white !important;
+    height: 50px;
+}
+
+nav.navbar .dropdownBtn.ProfileDropdown button img,.ProfilePic {
+    border-radius: 50%;
+}
+
+nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
+    width: 180px;
+
+}
+
+.dropdownBtn .dropdown-menu, nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529 !important;
+    text-align: right;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdownBtn.NotificationDropdown .dropdown-menu {
+    left: 0;
+    width: 150px;
+    max-height: 160px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+
+}
+
+/* width */
+.dropdownBtn.NotificationDropdown .dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.dropdownBtn.NotificationDropdown .dropdown-menu::-webkit-scrollbar-track {
+    background: #7454c618;
+}
+
+/* Handle */
+.dropdownBtn.NotificationDropdown .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #7554C6;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.dropdownBtn.NotificationDropdown .dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #523b8b;
+}
+
+.dropdownBtn.NotificationDropdown .dropdown-menu a {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.dropdownBtn .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #7453C6 !important;
+    font-size: 12px;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdownBtn .dropdown-item:hover {
+    background-color: #ececec;
+}
+
+.dropdownBtn .dropdown-item.logoutBtn {
+    padding: 0 10px;
+    width: 90% !important;
+}
+
+.dropdownBtn .dropdown-item.logoutBtn, .dropdownBtn .dropdown-item.logoutBtn button {
+    background-color: #FECDCD !important;
+    border-radius: 5px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    height: fit-content !important;
+    width: fit-content;
+    margin: auto;
+    font-size: 12px !important;
+
+}
+
+nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button {
+    color: #F30E37 !important;
+
+
+}
+
+.dropdownBtn .dropdown-item.logoutBtn button {
+    padding: 0px 10px !important;
+
+}
+
 /***********
 ***********
 End Navbar
@@ -149,26 +365,31 @@ Modal
 *************/
 .modal {
     background-color: rgba(255, 255, 255, 0.1);
-  filter: blur(50%);
+    filter: blur(50%);
 }
-.modal-dialog{
+
+.modal-dialog {
     max-width: 770px;
 }
-.modal .modal-content{
+
+.modal .modal-content {
     background-color: white;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 51px hsla(0, 0%, 0%, 0.21));
 }
-.modal .modal-header{
+
+.modal .modal-header {
     display: inline-block;
     border: none;
 }
-.modal .modal-title{
+
+.modal .modal-title {
     font-size: 24px;
     color: #7453C6;
     font-weight: bold;
-    line-height: 45px;    
+    line-height: 45px;
 }
+
 .modal .btn-close {
     width: fit-content;
     float: left;
@@ -179,63 +400,74 @@ Modal
     height: 30px;
     border-radius: 8px;
 }
-.modal .text{
+
+.modal .text {
     font-size: 16px;
-    
+
 }
-.modal .feedback{
+
+.modal .feedback {
     font-size: 13px;
     color: red;
     margin-right: 15px;
     margin-top: 10px;
     display: none;
 }
+
 .modal .SignUpUsingGoogle {
     border-radius: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: white;
 
 }
+
 .modal .SignUpUsingGoogle:hover {
     background-color: rgb(238, 238, 238);
 }
 
-.modal .SignUpUsingGoogle img ,.modal .SignUpUsingTwiter img{
+.modal .SignUpUsingGoogle img, .modal .SignUpUsingTwiter img {
     width: 35px;
     margin-left: 10px;
 }
-.modal .SignUpUsingTwiter{
+
+.modal .SignUpUsingTwiter {
     background-color: #0A93E2;
     border-radius: 10px;
 
 }
-.modal .SignUpUsingTwiter:hover{
+
+.modal .SignUpUsingTwiter:hover {
     background-color: #0877b8;
 }
-.modal .SignUpUsingTwiter a span{
+
+.modal .SignUpUsingTwiter a span {
     color: white;
 
 }
-.modal .SignUpText .col-4{
- 
+
+.modal .SignUpText {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.modal .borderRow{
+
+.modal .borderRow {
     width: 100%;
     height: 1px;
     border: 1px solid #A09EA5;
 }
-.modal .DownloadAppRow a{
+
+.modal .DownloadAppRow a {
     width: fit-content;
 }
+
 .modal .DownloadAppRow {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.modal input,.modal select{
+
+.modal input, .modal select,.ProfileForm input,.ProfileForm select {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -244,25 +476,79 @@ Modal
     background-color: white;
     box-shadow: none !important;
 }
-.modal .textPurp{
+.ProfileForm input,.ProfileForm select{
+    height: 45px;
+}
+.modal .textPurp {
     color: #7A5CC8;
-} 
-.modal .SubmitBtn {
+}
+
+.modal .SubmitBtn,.ProfileForm .SubmitBtn {
     background-color: #7A5CC8;
     border-radius: 8px;
     border: none;
 
 }
+
 .modal .SubmitBtn:hover {
     background-color: #6B4BBF;
 }
-.modal .textSmall{
+
+.modal .textSmall {
     font-size: 14px;
     font-weight: bolder;
 }
-.modal .textSmall a{
+
+.modal .textSmall a {
     color: #7A5CC8;
 }
+
+
+/*Coupon modal */
+#OfferModalLabel img {
+    width: 15%;
+}
+
+#text-to-copy {
+    color: #8A4CE9;
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: bold;
+
+}
+
+#copy-button {
+    background-color: #8A4CE9;
+    border-radius: 8px;
+    height: 100%;
+    color: white;
+    border: none;
+    border: 3px solid #8A4CE9;
+}
+
+#OfferModal .CopyPart {
+    border: 1px solid #8A4CE9;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+}
+
+#OfferModal .tags a, section.WatchVideo .WhiteBG .tags a {
+    width: 100%;
+    margin-left: 0 !important;
+    min-width: 200px;
+}
+
+#OfferModal .tags a span, section.WatchVideo .WhiteBG .tags a span {
+    font-size: 18px;
+    width: 100%;
+    display: inline-block;
+}
+
+#OfferModal .tags a img, section.WatchVideo .WhiteBG .tags a img {
+    width: 35px;
+}
+
 /***********
 ***********
 End Modal
@@ -289,12 +575,12 @@ section.Banner .BannerText h1 span {
 
 section.Banner .BannerText h5 {
     color: #242424;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 71px;
 }
 
 section.Banner .BannerText h6 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 47px;
     color: #7453C6;
 }
@@ -316,11 +602,18 @@ Search Section
     border-radius: 20px;
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.055));
     transition: 0.5s ease all;
+    z-index: 1000;
 }
 
 .SearchLine:hover {
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.3));
 
+}
+
+.SearchLine form {
+    width: 100% !important;
+    margin: 0;
+    padding: 0px !important;
 }
 
 .SearchLine .SelectPart {
@@ -351,10 +644,16 @@ Search Section
     width: 90%;
 }
 
-.SearchLine a.ButtonPurp{
-    width: 100% ;
+.SearchLine a.ButtonPurp {
+    width: 100%;
     height: 100%;
 }
+
+.SearchLine .ButtonPurp {
+    padding: 0px !important;
+
+}
+
 .SearchLine .ButtonPurp button {
     background-color: #7453C6;
     width: 100%;
@@ -389,8 +688,10 @@ End Search Section
 Why Us
 ************
 *************/
+
 section.WhyUs .card {
     border-radius: 30px;
+
 }
 
 
@@ -437,14 +738,14 @@ End Why Us
 Bundels
 ************
 *************/
-section.Bundels .card, section.LevelOfEducation .card {
+section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEducation .Overlay, .VideoPage .Suggestions .BundelCard .card {
     border-radius: 20px;
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.05));
     transition: 0.3s ease all;
-
+    background-color: white;
 }
 
-section.LevelOfEducation .card:hover {
+section.LevelOfEducation .card:hover, .VideoPage .Suggestions .BundelCard .card:hover {
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
@@ -455,33 +756,35 @@ section.Bundels .card .ImgPart {
     border-radius: 20px;
 }
 
-section.Bundels .card .card-title, section.LevelOfEducation .card .card-title {
-    font-size: 16px;
+section.Bundels .card .card-title, section.LevelOfEducation .card .card-title, section.Bundels .card .card-title, .VideoPage .card .card-title {
+    font-size: 13px;
     color: #242424;
     font-weight: 600;
     line-height: 34px;
 }
 
-section.Bundels .card .card-text {
+section.Bundels .card .card-text, .PackagesCourse .BundelCard .card .card-text, .VideoPage .BundelCard .card .card-text {
     font-size: 18px;
     color: #707070;
     font-weight: 500;
     line-height: 30px;
 }
 
-section.Bundels .card .PriceAndRating, section.LevelOfEducation .card .PriceAndRating {
+section.Bundels .card .PriceAndRating, section.LevelOfEducation .card .PriceAndRating, .VideoPage .PriceAndRating, .BAQA section.ChooseBAQA .PriceAndRating {
     font-size: 18px;
     color: #5032AD;
     line-height: 34px;
+    display: flex;
 }
 
-section.Bundels .card .PriceAndRating span.OldPrice, section.LevelOfEducation .card .PriceAndRating span.OldPrice {
+section.Bundels .card .PriceAndRating span.OldPrice, section.LevelOfEducation .card .PriceAndRating span.OldPrice, .VideoPage .PriceAndRating span.OldPrice, .BAQA section.ChooseBAQA .PriceAndRating span.OldPrice {
 
     font-size: 14px;
     color: #242424;
     font-weight: 400;
     margin-right: 15px;
     text-decoration: line-through;
+    text-decoration-color: #FC2121;
 }
 
 section.Bundels .card .PriceAndRating {
@@ -510,13 +813,14 @@ section.Bundels .card .card-text span {
     padding-left: 10px;
 }
 
-section.Bundels .card .Rating, section.LevelOfEducation .card .Rating {
+section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPage .card .Rating {
     color: #FCCC21;
     font-weight: 500;
     border-left: none !important;
+    display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart {
+section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -531,10 +835,12 @@ section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .ca
     box-shadow: none;
     width: 100%;
 }
-section.Bundels .card a, section.LevelOfEducation .card a{
-width: 100%;
-} 
-section.Bundels .card button.btn-primary.addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover {
+
+section.Bundels .card a, section.LevelOfEducation .card a {
+    width: 100%;
+}
+
+section.Bundels .card button.btn-primary.addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
 
@@ -627,25 +933,38 @@ div.item {
     filter: drop-shadow(0px 1px 10px hsla(0, 0%, 0%, 0.49));
 
 }
-section.CarouselPart .carousel-inner,section.CarouselPart .carousel,section.CarouselPart .carousel-item,section.CarouselPart .carousel .row ,section.CarouselPart .carousel .col-sm-6 {
+
+section.CarouselPart .carousel-inner, section.CarouselPart .carousel, section.CarouselPart .carousel-item, section.CarouselPart .carousel .row, section.CarouselPart .carousel .col-sm-6 {
     overflow-y: visible !important;
 }
+
 section.CarouselPart .card {
     height: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px !important;
     border: none;
 }
-section.CarouselPart .Overlay {
+
+section.CarouselPart .Overlay, .CoursesPage .LevelOfEducation .Overlay {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     z-index: 200;
     text-align: center !important;
 }
 
-section.CarouselPart .Overlay img.TeacherProfile {
+section.CarouselPart .Overlay .purpleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 !important;
+}
+
+section.CarouselPart .Overlay img.TeacherProfile, .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
     position: absolute;
     left: 50%;
     top: -10%;
@@ -654,7 +973,7 @@ section.CarouselPart .Overlay img.TeacherProfile {
 
 }
 
-section.CarouselPart .Overlay .Rating {
+section.CarouselPart .Overlay .Rating, .CoursesPage .LevelOfEducation .Overlay .Rating, .VideoPage .card .Rating {
     color: #D9B019;
     display: flex;
     align-items: center;
@@ -664,27 +983,34 @@ section.CarouselPart .Overlay .Rating {
     background-color: hsla(47, 79%, 48%, 0.19);
     border-radius: 10px;
     width: 90px;
-    height: 35px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+    opacity: 0;
 }
 
-section.CarouselPart .Overlay .Rating img {
+section.CarouselPart .Overlay .Rating img, .CoursesPage .LevelOfEducation .Overlay .Rating img {
     margin-right: 5px;
 }
 
-section.CarouselPart .Overlay .CardText, section.CarouselPart .Overlay .CardTextSmall {
+section.CarouselPart .Overlay .CardText, section.CarouselPart .Overlay .CardTextSmall, .CoursesPage .LevelOfEducation .Overlay .CardTextSmall {
     font-size: 14px;
     line-height: 25px;
     color: #242424;
+    width: 100%;
 }
 
-section.CarouselPart .Overlay .CardTextSmall {
+section.CarouselPart .Overlay .CardText {
+    max-height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+section.CarouselPart .Overlay .CardTextSmall, .CoursesPage .LevelOfEducation .Overlay .CardTextSmall {
     font-size: 12px;
 }
 
-section.CarouselPart .Overlay a.purpleBtn {
+section.CarouselPart .Overlay a.purpleBtn, .CoursesPage .LevelOfEducation .Overlay a.purpleBtn {
     display: flex;
     width: 35px;
     height: 35px;
@@ -696,6 +1022,10 @@ section.CarouselPart .Overlay a.purpleBtn {
     align-items: center;
     margin: auto;
     margin-top: 10px;
+}
+
+section.CarouselPart .Overlay a.purpleBtn:hover, .CoursesPage .LevelOfEducation .Overlay a.purpleBtn:hover {
+    background-color: #5032AD;
 }
 
 /*Indicators*/
@@ -736,7 +1066,6 @@ section.CarouselPart .carousel-indicator input:checked {
     border: none;
     background-color: transparent;
     width: fit-content;
-    height: 300%;
     position: absolute;
     top: 60%;
 
@@ -777,12 +1106,15 @@ section.LevelOfEducation .nav-pills {
 
 section.LevelOfEducation .nav-pills li button {
     color: #242424;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: bold;
     opacity: 0.5;
     line-height: 37px;
+    padding: 10px 50px;
 }
-
+section.LevelOfEducation .NoPaddingBTN.nav-pills li button {
+    padding: 10px  10px;
+}
 section.LevelOfEducation .nav-pills .nav-link.active, section.LevelOfEducation .nav-pills .show>.nav-link {
     opacity: 1 !important;
     background-color: #7453C6;
@@ -796,10 +1128,10 @@ section.LevelOfEducation .card {
 }
 
 section.LevelOfEducation .card .PriceAndRating {
-    font-size: 25px;
+    font-size: 22px;
 }
 
-section.LevelOfEducation .card .Rating {
+section.LevelOfEducation .card .Rating, .VideoPage .card .Rating {
     position: absolute;
     top: 8%;
     left: 7%;
@@ -809,11 +1141,30 @@ section.LevelOfEducation .card .Rating {
     font-size: 16px;
 }
 
-section.LevelOfEducation .card .Rating img {
+.card .Favorite {
+    position: absolute;
+    top: 8%;
+    right: 7%;
+}
+
+.card .Favorite button {
+    background-color: transparent;
+    border: none;
+}
+
+.card .Favorite button img {
+    width: 35px;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+section.LevelOfEducation .card .Rating img, .VideoPage .card .Rating img {
     width: 20px;
 }
 
-section.LevelOfEducation .card .purpleBtn {
+section.LevelOfEducation .card .purpleBtn, .VideoPage .card .purpleBtn {
     border-radius: 8px !important;
     background-color: #40DCB2;
     border: none;
@@ -821,29 +1172,40 @@ section.LevelOfEducation .card .purpleBtn {
     height: unset;
 }
 
-section.LevelOfEducation .card .purpleBtn:hover {
+section.LevelOfEducation .card .purpleBtn:hover, .VideoPage .card .purpleBtn:hover {
     background-color: #2ea183;
 }
 
-section.LevelOfEducation .card button.btn-primary.addToCart {
+section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart {
     width: 95%;
 }
 
-section.LevelOfEducation .card .AddedToCart {
+section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
     background-color: hsla(164, 69%, 56%, 0.39) !important;
     border-radius: 8px !important;
     border: none;
+    height: 100%;
 }
 
-section.LevelOfEducation .card .AddedToCart img {
-    width: 100%;
+section.LevelOfEducation .card .AddedToCart img, .VideoPage .card .AddedToCart img {
+    width: 60%;
 }
 
-section.LevelOfEducation .card .AddedToCart:hover {
+section.LevelOfEducation .card .AddedToCart:hover, .VideoPage .card .AddedToCart:hover {
     background-color: hsla(164, 54%, 27%, 0.39) !important;
 }
 
-section.LevelOfEducation .dropdownBtn button,.navbar .dropdownBtn button{
+section.LevelOfEducation .dropdownBtn select {
+    direction: rtl;
+    background-image: url(../images/arrow-down.svg);
+    background-position: 5%;
+    background-size: 20px;
+    padding-left: 40px !important;
+    width: fit-content;
+
+}
+
+section.LevelOfEducation .dropdownBtn select, .navbar .dropdownBtn select {
     background-color: transparent;
     border: 1px solid #242424;
     color: #242424;
@@ -854,36 +1216,40 @@ section.LevelOfEducation .dropdownBtn button,.navbar .dropdownBtn button{
     padding: 7px 10px;
 }
 
-section.LevelOfEducation .dropdown-toggle::after, 
-.navbar .dropdown-toggle::after{
+section.LevelOfEducation .dropdown-toggle::after, .dropstart .dropdown-toggle::before {
     display: none;
 }
-section.LevelOfEducation  .dropdown ,.navbar  .dropdown{
+
+section.LevelOfEducation .dropdown {
     position: relative;
-  }
-  
-  section.LevelOfEducation  .dropdown-toggle,.navbar  .dropdown-toggle {
+}
+
+section.LevelOfEducation .dropdown-toggle {
     background-color: white;
     border: 1px solid gray;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  section.LevelOfEducation  .dropdown-menu, .navbar  .dropdown-menu {
+}
+
+section.LevelOfEducation .dropdown-menu {
     display: none;
     position: absolute;
     background-color: white;
     border: 1px solid gray;
     min-width: 100px;
     line-height: 25px;
-  }
-  
-  section.LevelOfEducation  .dropdown-menu li a ,  
-  .navbar  .dropdown-menu li a{
+}
+
+section.LevelOfEducation .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
     color: #242424;
-  }
+}
+
+.SpinnerPart {
+    display: none !important;
+}
+
 /***********
 ***********
 End Level Of Education
@@ -896,7 +1262,7 @@ End Level Of Education
 Green Section
 ************
 *************/
-.WhiteBgOne{
+.WhiteBgOne {
     max-width: 100vw;
     background-color: white !important;
     position: unset;
@@ -906,8 +1272,8 @@ Green Section
     position: relative;
     min-height: 350px;
     background-color: white !important;
-
 }
+
 section.GreenSection {
     background-image: linear-gradient(to top left, #3FDBB1, #A5E7D5);
     border-radius: 30px;
@@ -955,6 +1321,10 @@ footer.footer p.TextSemiBold {
     font-weight: 400;
 }
 
+footer.footer .TopText {
+    font-size: 14px;
+}
+
 footer.footer .firstFooterPart img.whatsapp {
     width: 30px;
 }
@@ -968,7 +1338,7 @@ footer.footer a:hover {
 }
 
 footer.footer .footerTitle {
-    font-size: 24px;
+    font-size: 21px;
     line-height: 136.7%;
     font-weight: bold;
     color: white;
@@ -1000,13 +1370,14 @@ End Footer
 /***************************
 ************Courses Page *********
 ****************************/
-.CoursesPage section.CarouselPart .CarouselText{
+.CoursesPage section.CarouselPart .CarouselText {
     position: relative;
     margin: auto;
     margin-bottom: 40px;
     width: fit-content;
 }
-.CoursesPage section.CarouselPart .CarouselText h5{
+
+.CoursesPage section.CarouselPart .CarouselText h5 {
     line-height: 71px;
 }
 
@@ -1015,34 +1386,819 @@ End Footer
     right: -20%;
     top: -25%;
 }
+
+.CoursesPage section.CarouselPart .CarouselText img.PAckageImg {
+    right: -45%;
+    top: -50%;
+}
+
 .CoursesPage section.CarouselPart .SearchLine .ButtonPurp button {
     background-color: #3FDBB1;
 }
-.CoursesPage section.CarouselPart .SearchLine  label.text{
+
+.CoursesPage section.CarouselPart .SearchLine label.text {
     color: #242424 !important;
     width: 100%;
     text-align: start !important;
     font-weight: 500;
 
 }
-.CoursesPage section.LevelOfEducation .WhiteBG{
+
+.WhiteBG {
     background-color: white;
     border-radius: 15px;
     filter: drop-shadow(0px -1px 34px rgba(0, 0, 0, 0.05));
+    height: 100%;
 }
-.CoursesPage section.LevelOfEducation .card {
+
+.CoursesPage section.LevelOfEducation .card, .CoursesPage .LevelOfEducation .Overlay {
     border-radius: 20px;
     filter: drop-shadow(0px 1px 26px hsla(0, 0%, 0%, 0.1));
 }
 
+/*Filter Part */
+
+.CoursesPage section.LevelOfEducation .FilterPart {
+
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0px -1px 34px rgba(0, 0, 0, 0.05));
+    position: relative;
+    padding-top: 40px;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .filterBtn {
+    background-color: #7453C6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: 400;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .filterBtn:hover {
+    background-color: #5032AD;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .form-check {
+    display: flex;
+    align-items: center;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .form-check .form-check-input {
+    border-radius: 2.5px;
+    border: 1px solid #7453C6;
+    width: 18px;
+    height: 18px;
+    box-shadow: none !important;
+    margin-left: 10px;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .form-check .form-check-input:checked {
+    background-color: #7453C6;
+}
+
+.CoursesPage section.LevelOfEducation .FilterPart .form-check label {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/***************************
+************Packages and offers Page *********
+****************************/
+.PackagesCourse .BundelCard .card .card-text {
+    font-size: 12px;
+}
+
+.PackagesCourse .BundelCard .card .card-text span {
+    border-left: 1px solid hsla(257, 50%, 55%, 0.705);
+    padding-left: 15px;
+}
+
+.PackagesCourse .BundelCard .card .card-text .Rating {
+    position: unset !important;
+    background-color: transparent;
+    font-size: 12px !important;
+}
+
+.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
+    font-size: 14px;
+    height: fit-content !important;
+}
+
+.PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
+    font-size: 18px;
+    color: #7A5CC8;
+    line-height: 37px;
+}
+
+.pagination .page-item a.page-link {
+    background-color: transparent !important;
+    border: none !important;
+    color: #242424;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.pagination .page-item:first-child .page-link {
+    font-weight: 300 !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #7453C6 !important;
+    color: white;
+    border-radius: 5px;
+}
+
+.PackagesCourse .OfferCard .OfferCardImg, .PackagesCourse .BundelCard .col-md-3 img {
+    width: 157px;
+    height: 157px !important;
+    border-radius: 20px !important;
+    background-image: linear-gradient(to top, #3FDBB1, #A5E7D5);
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    line-height: 64px
+}
+
+.PackagesCourse section.LevelOfEducation .card .card-title {
+    font-size: 16px;
+}
+.PackagesCourse section.LevelOfEducation .card .card-title span{
+    color: #919191;
+}
+.PackagesCourse .OfferCard .OfferCardImg span {
+    font-size: 20px;
+    line-height: 37px
+}
+
+.PackagesCourse .OfferCard .card .title {
+    font-size: 16px;
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+
+.PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText, #OfferModal .tags span, section.WatchVideo .WhiteBG .tags a span {
+    font-size: 11px;
+    line-height: 30px;
+    color: #7453C6;
+    border-radius: 8px;
+    background-color: #7453c61f;
+    padding: 3px 10px;
+}
+
+.PackagesCourse .OfferCard .card .tags img, #OfferModal .tags img, section.WatchVideo .WhiteBG .tags a img {
+    border-radius: 0px;
+    max-width: 20px;
+    margin-left: 5px;
+}
+
+.PackagesCourse .OfferCard .card .tags a, #OfferModal .tags a, section.WatchVideo .WhiteBG .tags a {
+    width: fit-content;
+    margin-left: 10px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.PackagesCourse .OfferCard .card .card-body {
+    min-height: 100%;
+    height: fit-content;
+}
+
+.PackagesCourse .OfferCard .card .PriceAndRating {
+    font-size: 16px;
+    color: #919191;
+}
+
+.PackagesCourse .OfferCard .card .PriceAndRating img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.PackagesCourse .OfferCard .card .smallText ,.SmallText{
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.EmptyOffer {
+    display: none !important;
+    background-color: white !important;
+    border-radius: 15px;
+}
+
+.EmptyOffer img {
+    width: 40%;
+}
+
+.EmptyOffer h4 {
+    font-size: 25px;
+    line-height: 52px;
+    color: hsla(0, 0%, 14%, 0.5);
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-switch .form-check-input {
+    width: 100px;
+    height: 40px;
+    transform: rotate(180deg);
+    box-shadow: none;
+    background-color: transparent;
+    transition: background-position 0.5s ease-in-out;
+    box-shadow: inset 0px 6px 8px rgba(0, 0, 0, 0.20);
+
+}
+
+.form-switch .form-check-input:checked {
+    background-color: green;
+    border: grey;
+}
+
+/***************************
+************NotRegisteredNego *********
+****************************/
+section.WatchVideo .WhiteBG {
+    height: fit-content;
+}
+
+section.WatchVideo .SmallWhiteBg .text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+section.WatchVideo .SmallWhiteBg .WhiteBgRows {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid hsla(257, 50%, 55%, 0.38);
+}
+
+section.WatchVideo .SmallWhiteBg .WhiteBgRows img {
+    width: 25px;
+}
+
+section.WatchVideo .SmallWhiteBg .WhiteBgRows .Details {
+    width: 76px;
+}
+
+section.WatchVideo .SmallWhiteBg .WhiteBgRows .Details2 {
+    width: 40px;
+}
+
+section.WatchVideo .WhiteBG .tags a {
+    min-width: 0 !important;
+    width: 100%;
+}
+
+section.WatchVideo .WhiteBG .tags a span {
+    font-size: 9px;
+    text-align: center;
+}
+
+section.WatchVideo .VideoPart {
+    position: relative;
+}
+
+section.WatchVideo .VideoPart .PlayIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 20%;
+}
+
+.VideoPage .card .Rating {
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    width: fit-content !important;
+}
+
+.VideoPage .QNA {
+    background-color: white;
+    border-radius: 8px;
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.05));
+    padding: 20px;
+}
+
+.VideoPage .QNA .Question, .VideoPage .QNA .Answer {
+    border-radius: 6px;
+}
+
+.VideoPage .QNA .card {
+    background-color: transparent;
+    border-radius: 0px;
+
+}
+
+.VideoPage .QNA .card:hover {
+    transform: none;
+
+}
+
+.VideoPage .QNA .Question .QuestionTab, .VideoPage .QNA .Answer .AnswerTab {
+    color: white;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.VideoPage .QNA .Question .QuestionTab {
+    background-color: #7453C6;
+}
+
+.VideoPage .QNA .Answer .AnswerTab {
+    background-color: #40DCB2;
+}
+
+.VideoPage .QNA .Question .QuestionContent, .VideoPage .QNA .Answer .AnswerContent {
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+}
+
+.VideoPage .QNA .Question .QuestionContent {
+    background-color: #F4E1FE !important;
+
+}
+
+.VideoPage .QNA .Answer .AnswerContent {
+    background-color: #E4FCF5 !important;
+
+}
+
+.VideoPage .QNA .Question button, .VideoPage .QNA .Answer button,.deleteBtn {
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    padding: 0px;
+}
+
+.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img ,.deleteBtn{
+    width: 25px;
+
+}
+
+.VideoPage .QNA form input {
+    border: 1px solid #C6C6C6;
+    background-color: white;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.VideoPage .QNA form .AnswerTab {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.VideoPage .QNA form .AnswerTab:hover {
+    background-color: #2c977b;
+}
+
+.VideoPage .tab-pane button.btn-primary.addToCart {
+    z-index: 1000;
+    position: relative;
+}
+
+.VideoPage .accordion-item {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.VideoPage .accordion-item .accordion-button {
+    background-color: white;
+    border: 1px solid #E1E1E1;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.VideoPage .accordion-item .disabled {
+    font-size: 14px;
+}
+
+.VideoPage .accordion-item .accordion-button:not(.collapsed)::after, .VideoPage .accordion-item .accordion-button::after {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.VideoPage .accordion-item .accordion-body .Number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #E1E1E1;
+}
+
+.VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree {
+    color: white;
+    font-size: 14px;
+    background-color: #3FDBB1;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.VideoPage .accordion-item .accordion-header .disabled img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.VideoPage .accordion-item .accordion-body .Buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VideoPage .accordion-item .accordion-body .Buttons a.first {
+    width: 73%;
+}
+
+.VideoPage .accordion-item .accordion-body .Buttons a.second {
+    width: 24%;
+}
 
 
 
+.VideoPage .accordion-item .accordion-body .Buttons .btn-secondary, .VideoPage .CourseLibrary .btn-secondary, .VideoPage .CourseTEST .btn-primary.addToCart {
+    background-color: #7353c652;
+    border: none;
+    line-height: 34px;
+    width: 100%;
+    height: 100%;
+}
+
+.VideoPage .accordion-item .accordion-body .centered {
+    display: flex;
+    align-items: center;
+}
+
+.VideoPage .CourseLibrary .text {
+    font-size: 13px;
+}
+
+.VideoPage .CourseLibrary .FirstImage {
+    width: 60%;
+}
+
+.VideoPage .CourseLibrary .first {
+    margin-left: 5px;
+}
+
+.VideoPage .CourseLibrary .btn-secondary.text, .VideoPage .CourseTEST .btn-primary.addToCart {
+    font-size: 16px;
+    color: #7A5CC8;
+    text-transform: capitalize;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.VideoPage .CourseLibrary .Buttons a.second {
+    width: 58%;
+    height: 100%;
+
+}
+
+.VideoPage .CourseLibrary .Buttons a.first {
+    width: 39%;
+    height: 100%;
+}
+
+.VideoPage .CourseLibrary .Buttons {
+    max-width: 181px;
+    float: left;
+    height: 100%;
+}
+
+.VideoPage .CourseLibrary .Buttons a.first button, .VideoPage .CourseTEST .Buttons a.second button {
+    background-color: #40DCB2;
+    height: 100%;
+    border: none;
+}
+
+.VideoPage .CourseLibrary .Buttons a.first button img {
+    width: 100%;
+    height: 100%;
+}
+
+.VideoPage .CourseTEST .Buttons a {
+    width: 49%;
+    height: 100%;
+}
+
+.VideoPage .CourseTEST .Buttons a.first {
+    margin-left: 5px;
+}
+
+.VideoPage .CourseTEST .Buttons a.first button {
+    background-color: #F1EEF9;
+}
+
+.VideoPage .CourseTEST .Buttons a.first button {
+    border-radius: 16px;
+}
+
+.VideoPage .CourseTEST .Buttons a.second button {
+    width: 100%;
+    color: white;
+    border-radius: 16px;
+}
+
+/***************************
+************End NotRegisteredNego *********
+****************************/
+
+/***************************
+BAQA
+****************************/
+.BAQA .sectionTitle {
+    font-size: 30px;
+    line-height: 55px;
+
+}
+
+.BAQA section.ClassBAQA .WhiteBG {
+    filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.08));
+}
+
+.BAQA section.ClassBAQA .text {
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.BAQA section.ClassBAQA img {
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.BAQA section.ClassBAQA .row{
+    justify-content: center;
+    align-items: center;
+}
+.BAQA section.Discount .overlay {
+    background-image: url(../images/DiscountBG.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+
+}
+
+.BAQA section.Discount .CarouselText h5, .BAQA section.ChooseBAQA .CarouselText h5 {
+    font-size: 25px;
+}
+
+.BAQA section.Discount .CarouselText h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    line-height: 150px;
+    background: linear-gradient(0deg, #ffffff, #40DCB2);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.BAQA section.Discount .CarouselText a button {
+    background-color: #3FDBB1;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    width: 20%;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0s ease all;
+}
+
+.BAQA section.Discount .CarouselText a button:hover {
+    background-color: #2c977b;
+
+}
+
+.BAQA section.ChooseBAQA .CarouselText h6 {
+    font-size: 20px;
+    color: white;
+    line-height: 47px;
+}
+
+.BAQA section.ChooseBAQA .text {
+    color: #242424;
+    font-weight: 600;
+}
+
+.BAQA section.ChooseBAQA .PriceAndRating {
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.BAQA section.ChooseBAQA h1 {
+    color: #7453C6;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(63, 219, 177, 0) 0%, rgba(63, 219, 177, 1) 50%, rgba(63, 219, 177, 0) 100%);
+    width: 150px;
+    border-radius: 20px;
+
+}
+.BAQA section.ChooseBAQA .WhiteBG{
+    transition: 0.4s ease all;
+    border-radius: 20px;
+}
+.BAQA section.ChooseBAQA .WhiteBG:Hover h1{
+    background: transparent;
+}
+.BAQA section.ChooseBAQA .WhiteBG:Hover{
+    background:linear-gradient(to top left, #CBFFF1,#3FDBB1) !important ;
+}
+.BAQA section.ChooseBAQA .addToCart {
+    transition: 0s ease all;
+}
+
+.BAQA section.FAQ .accordion-item {
+    border-radius: 15px;
+    background-color: #7453C6;
+    border: 1px solid #E1E1E1;
+    padding-right: 15px;
+}
+.BAQA section.FAQ .accordion .white{
+    background-color: white;
+   border-radius: 15px;
+}
+
+.BAQA section.FAQ .accordion-header button {
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid #E1E1E1;
+  
+
+    box-shadow: none !important;
+}
+
+.BAQA section.FAQ .accordion-body {
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #E1E1E1;
+    border-top: none;
+
+}
+
+.BAQA section.FAQ .accordion-button:not(.collapsed) {
+    color: #7453C6;
+}
+
+.BAQA section.FAQ .accordion-button::after, .accordion-button:not(.collapsed)::after {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+/***************************
+ENd BAQA
+****************************/
 
 
 
+/***************************
+Cart
+****************************/
+.CartPage section.CarouselPart img{
+    width: 25%;
+}
+.CartPage.PackagesCourse .BundelCard .col-md-3 img{
+    background-image: unset;
+}
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25{
+    width: 35% !important;
+}
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 button{
+    margin: 0px;
+}
+
+.CartPage .CouponDiscountCode{
+    height: fit-content;
+}
+.CartPage .CouponDiscountCode form input{
+    border-radius: 6px !important;
+    border: 1px solid #C6C6C6 !important;
+    color: #C6C6C6;
+    box-shadow: none;
+}
+.CartPage .CouponDiscountCode form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C6C6C6;
+    opacity: 1; /* Firefox */
+  }
+  
+  .CartPage .CouponDiscountCode form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C6C6C6;
+  }
+  
+  .CartPage .CouponDiscountCode form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C6C6C6;
+  }
+.CartPage .CouponDiscountCode form span{
+    background-color: #3FDBB1;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px !important;
+    
+}
+.CartPage .PricesAndTotal  .text{
+    font-weight: 500;
+}
+.CartPage .PricesAndTotal  .text span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.CartPage .PricesAndTotal  .total.text{
+    border-top: 0.3px solid #8282824d;
+}
+.CartPage .PricesAndTotal  .total.text .span{
+    font-weight: bold;
+}
+.CartPage .PricesAndTotal .addToCart{
+    font-size: 13px;
+}
+.CartPage .PricesAndTotal .btn-secondary.addToCart{
+    background-color: white;
+    border: 1px solid #7453C5;
+    color: #7453C5;
+    font-weight: bold;
+}
+.PaymentOptions .LevelOfEducation section.CarouselPart{
+    background-image: none;
+}
+.PaymentOptions.BAQA section.ChooseBAQA .WhiteBG{
+    filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.055));
+}
+.PaymentOptions.BAQA section.ChooseBAQA h1 {
+    font-size: 27px;
+    line-height: 15px;
+    width: unset;
+}
+.PaymentOptions.BAQA section.ChooseBAQA .Darkgreen{
+    color: #569F7D;
+}
+/***************************
+ENd Cart
+****************************/
 
 
+/***************************
+SideNav
+****************************/
+.SideNav .SideNavRow a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #858585;
+    font-weight: 400;
+    font-size: 14px;
+}
+.SideNav .SideNavRow a img{
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.SideNav .SideNavRow a.active{
+    background-color: #7353c525;
+    border-radius: 8px;
+    color: #7353c5;
+    font-weight: 600;
+}
+.SideNav .SideNavRow a.active img{
+    filter: grayscale(0%);
+}
+.SideNav .SideNavRow .BiggerSidenavText a,.MoreBigText {
+    font-size: 16px;
+
+}
+.ProfileForm .FileInputLabel {
+    position: relative;
+    cursor:pointer;
+}
+.ProfileForm .FileInputLabel .ChangeProfileIcon{
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 30%;
+}
+/***************************
+End SideNav
+****************************/
 
 
 
@@ -1051,19 +2207,66 @@ End Footer
 /***************************
 ************Media *********
 ****************************/
+
+
+
+.text {
+    font-size: 16px;
+    line-height: 37px;
+    color: #242424;
+}
+
+.purple {
+    color: #7453C6;
+}
+.green{
+    color: #3FDBB1;
+}
+.black{
+    color: #242424;
+}
+
+
+
+
+
+
+
+@media (min-width: 1400px) {
+    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
+        top: -15%;
+    }
+    .CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 750px;
+    }
+    section.GreenSection{
+        top: -70%;
+    }
+}
+
 @media (max-width: 1400px) {
     nav.navbar .navbar-brand {
         width: 150px;
     }
-    nav.navbar .navbar-brand img{
-        width: 60%  !important;
-    }
-    
-}
-@media (max-width: 1200px) {
 
+    nav.navbar .navbar-brand img {
+        width: 60% !important;
+    }
+    .CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .CourseForRegistered section.WatchVideo .VideoPart {
+    min-height: 550px;
+    }
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 14px;
+        font-size: 13px;
+    }
+
+    .PackagesCourse .BundelCard .card .card-text {
+        font-size: 8px;
     }
 
     section.Banner .BannerText h5 {
@@ -1091,7 +2294,7 @@ End Footer
     }
 
     section.LevelOfEducation .nav-pills li button {
-        font-size: 15px;
+        font-size: 14px;
         padding: 5px 10px;
     }
 
@@ -1105,133 +2308,436 @@ End Footer
     }
 
     nav.navbar .navbar-brand {
-        width: 150px;
+        width: 100px;
     }
 
     nav.navbar .navbar-brand img {
         width: 70px !important;
     }
-    footer.footer p.TextSemiBold{
+
+    footer.footer p.TextSemiBold {
         text-align: start !important;
     }
-    footer.footer .footerTitle{
+
+    footer.footer .footerTitle {
         width: unset;
     }
+
     footer.footer .FooterLink {
         text-align: center !important;
     }
+
     main#carousel {
-    height: 240px;
-  
+        height: 240px;
+
     }
-    div.item{
-          width: 30%;
+
+    div.item {
+        width: 30%;
+    }
+
+    .PackagesCourse .OfferCard .card .title, .PackagesCourse section.LevelOfEducation .card .card-title {
+        font-size: 12px;
+    }
+
+    .PackagesCourse .BundelCard .card .card-text .Rating {
+        padding: 0;
+    }
+
+    .VideoPage .accordion-item .accordion-body .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.Banner .col-lg-5 {
+        display: flex;
+    }
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
+    min-height: 415px;
+    margin-bottom: 30px;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn  {
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .SideNav .SideNavRow .BiggerSidenavText a {
+    padding: 0 !important;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 div,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText div{
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn img{
+        width: 50px !important;
     }
     
-}
-@media (max-width: 991px){
-    section.Banner .col-lg-5{
-        display: flex;
+    section.WatchVideo .WhiteBG{
+        text-align: center;
+    }
+    section.WatchVideo .col-lg-8{
+        margin-bottom: 25px;
     }
     section.Banner .col-lg-5 img {
         width: 75% !important;
-        margin: 0 auto ;
+        margin: 0 auto;
     }
-    .SearchLine .ButtonPurp button{
+
+    .SearchLine .ButtonPurp button {
         border-top-left-radius: 0px;
         border-bottom-right-radius: 20px;
     }
+
     section.WhyUs .card.purple {
-    z-index: 100;
+        z-index: 100;
     }
-    section.GreenSection{
+
+    section.GreenSection {
         position: unset;
         transform: unset;
     }
-    .purpleTop .BigBox{
+
+    .purpleTop .BigBox {
         padding-bottom: 0px;
     }
+
     .text {
         font-size: 17px;
         line-height: 30px;
     }
-    section.CarouselPart .CarouselText h5{
+
+    section.CarouselPart .CarouselText h5 {
         font-size: 25px;
     }
-    footer.footer{
+
+    footer.footer {
         text-align: center;
     }
-    footer.footer .firstFooterPart{
-        text-align: center ;
+
+    footer.footer .firstFooterPart {
+        text-align: center;
     }
-    footer.footer p.TextSemiBold{
+
+    footer.footer p.TextSemiBold {
         text-align: center !important;
     }
+
     section.LevelOfEducation .nav-pills li button {
-        font-size: 13px;
+        font-size: 12px;
         padding: 4px 8px;
     }
-    section.LevelOfEducation .card .PriceAndRating{
-        font-size: 20px;
+
+    section.LevelOfEducation .card .PriceAndRating {
+        font-size: 19px;
 
     }
-    section.Bundels .card .card-title, section.LevelOfEducation .card .card-title{
+
+    section.Bundels .card .card-title, section.LevelOfEducation .card .card-title {
         font-size: 14px;
     }
-    .GreenSection .firstSection{
+
+    .GreenSection .firstSection {
         text-align: center;
         padding: 20px 0 !important;
     }
-    section.Banner .BannerText{
+
+    section.Banner .BannerText {
         text-align: center;
     }
+
     .sectionTitle {
         font-size: 30px;
     }
-    nav.navbar ul.navbar-nav li.nav-item{
+
+    nav.navbar ul.navbar-nav li.nav-item {
         margin-right: 0;
     }
-    nav.navbar .NavButtons{
+
+    nav.navbar .NavButtons {
         margin-bottom: 25px;
         justify-content: center;
     }
-    nav.navbar ul.navbar-nav li.nav-item a.nav-link{
+
+    nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         text-align: center;
     }
-    section.CarouselPart .carousel-control-prev, section.CarouselPart .carousel-control-next{
+
+    section.CarouselPart .carousel-control-prev, section.CarouselPart .carousel-control-next {
         display: inline-block;
-        position: unset ;
-        margin:30px 20px 0;
+        position: unset;
+        margin: 30px 20px 0;
     }
+
     footer.footer .footerTitle {
         text-align: center !important;
     }
+
+    .VideoPage .CourseLibrary .FirstImage {
+        width: 100%;
+    }
+
+    .form-switch .form-check-input {
+        width: 75px;
+        height: 30px;
+    }
+
+    .BAQA section.Discount .CarouselText a button {
+        width: 30%;
+    }
+    .BAQA section.FAQ  .text{
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 756px){
+@media (max-width: 767px) {
     section.CarouselPart .text {
         width: 100% !important;
         font-size: 13px;
     }
-    section.CarouselPart .CarouselText h5{
+    .TeacherPageRow .card-body{
+        align-items: center !important;
+    }
+    .TeacherPageRow .card-body .sectionSubTitle{
+        margin-bottom:0px !important;
+    }
+    .TeacherPageRow img{
+        width: 50% !important;
+    }
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
+    min-height: 315px;
+    }
+    .form-switch .form-check-input {
+        width: 50px;
+        height: 20px;
+    }
+
+    .CoursesPage section.LevelOfEducation .FilterPart .form-check label {
+        font-size: 15px;
+    }
+
+    section.CarouselPart .CarouselText h5 {
         font-size: 20px;
     }
- 
+
+    .CoursesPage section.CarouselPart .CarouselText h5 img {
+        top: 10%;
+        width: 50px;
+
+    }
+
+    .CoursesPage section.CarouselPart .CarouselText {
+        margin-bottom: 0px;
+    }
+
+    .CoursesPage section.CarouselPart .CarouselText img.PAckageImg {
+        position: unset;
+    }
+
+    .PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
+        font-size: 13px;
+    }
+
+    .PackagesCourse .OfferCard .OfferCardImg, .PackagesCourse .BundelCard .col-md-3 img {
+        margin: auto;
+    }
+
+    .PackagesCourse .OfferCard .card .PriceAndRating {
+        font-size: 14px;
+    }
+
+    .VideoPage .accordion-item .text {
+        font-size: 15px;
+    }
+
+    .VideoPage .accordion-item .accordion-body .centered {
+        font-size: 11px;
+    }
+
+    .VideoPage .accordion-item .accordion-body .centered img {
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    .VideoPage .tab-pane .accordion-item button.btn-primary.addToCart {
+        font-size: 15px;
+    }
+
+    .VideoPage .accordion-item .accordion-header .disabled {
+        font-size: 12px;
+    }
+
+    .VideoPage .accordion-item .accordion-header .disabled img {
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    .VideoPage .CourseLibrary .FirstImage {
+        width: 75%;
+    }
+
+    .sectionSubTitle {
+        font-size: 15px;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .BAQA section.Discount .CarouselText a button {
+        width: 50%;
+    }
 }
 
-@media (max-width: 565px){
-    .modal .DownloadAppRow a{
+@media (max-width: 575px) {
+    .PackagesCourse .OfferCard .card .card-body {
+        padding: 0 !important;
+    }
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 270px;
+    }
+    .BAQA section.Discount .CarouselText a button {
+        width: 100%;
+    }
+
+    .VideoPage .CourseLibrary .FirstImage {
+        width: 100%;
+    }
+
+    .modal .DownloadAppRow a {
         margin-top: 5px;
-     
-     
-     
-     
-     
-     
-     
-     
-       padding: 5px;
-        }
+        padding: 5px;
+    }
 
+
+    .PackagesCourse .OfferCard .card .tags, #OfferModal .tags, section.WatchVideo .WhiteBG .tags {
+        flex-direction: column;
+    }
+
+    .PackagesCourse .OfferCard .card .tags span, .PackagesCourse .OfferCard .card .smallText {
+        float: right;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+        width: fit-content;
+    }
+
+    .CoursesPage.PackagesCourse section.LevelOfEducation .card {
+        padding: 5px !important;
+    }
+
+    .CoursesPage section.CarouselPart .CarouselText h5 {
+        font-size: 17px;
+    }
+
+    .CoursesPage section.LevelOfEducation .FilterPart {
+        text-align: center;
+    }
+
+    .CoursesPage section.CarouselPart .CarouselText img {
+        position: unset;
+        display: block;
+        margin: auto;
+        width: 50px;
+    }
+
+    .SearchLine {
+        display: flex;
+        justify-content: center;
+    }
+
+    .SearchLine select {
+        font-size: 14px;
+    }
+
+    .SearchLine .text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .CoursesPage section.LevelOfEducation .FilterPart .FilterRow .form-check {
+        justify-content: center;
+    }
+
+    .CoursesPage section.LevelOfEducation .card, .CoursesPage .LevelOfEducation .Overlay, section.LevelOfEducation .card {
+        padding: 15px 30px !important;
+    }
+
+    .PackagesCourse .BundelCard .card .card-text span {
+        border-left: none;
+        display: block;
+    }
+
+    .PackagesCourse .BundelCard .card .card-text {
+        font-size: 10px;
+    }
+
+    .PackagesCourse section.LevelOfEducation .BundelCard .card a.card-text small {
+        font-size: 13px;
+    }
+
+    .PackagesCourse .OfferCard .card .PriceAndRating {
+        flex-direction: column !important;
+        padding: 0 !important;
+        font-size: 13px;
+    }
+
+    section.LevelOfEducation .card .PriceAndRating {
+        font-size: 16px;
+    }
+
+    section.LevelOfEducation .card:hover {
+        transform: none;
+    }
+
+    section.LevelOfEducation .card .Rating {
+        left: 15%;
+    }
+
+    .purpleTop p.TopText, footer.footer .TopText {
+        font-size: 12px;
+    }
+
+    .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
+        position: unset;
+        transform: unset;
+    }
+
+    .VideoPage .accordion-item .text, .VideoPage .accordion-item .accordion-body .text {
+        font-size: 12px;
+
+    }
+
+    .VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree {
+        font-size: 10px;
+        height: fit-content !important;
+    }
+
+    .VideoPage .accordion-item .accordion-header .disabled img {
+        width: 25px;
+    }
 }
-
+@media (max-width: 575px) {
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 240px;
+    }
+}
