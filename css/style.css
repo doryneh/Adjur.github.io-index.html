@@ -467,7 +467,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select {
+.modal input, .modal select,.ProfileForm input,.ProfileForm select {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -476,12 +476,14 @@ Modal
     background-color: white;
     box-shadow: none !important;
 }
-
+.ProfileForm input,.ProfileForm select{
+    height: 45px;
+}
 .modal .textPurp {
     color: #7A5CC8;
 }
 
-.modal .SubmitBtn {
+.modal .SubmitBtn,.ProfileForm .SubmitBtn {
     background-color: #7A5CC8;
     border-radius: 8px;
     border: none;
@@ -782,6 +784,7 @@ section.Bundels .card .PriceAndRating span.OldPrice, section.LevelOfEducation .c
     font-weight: 400;
     margin-right: 15px;
     text-decoration: line-through;
+    text-decoration-color: #FC2121;
 }
 
 section.Bundels .card .PriceAndRating {
@@ -1107,8 +1110,11 @@ section.LevelOfEducation .nav-pills li button {
     font-weight: bold;
     opacity: 0.5;
     line-height: 37px;
+    padding: 10px 50px;
 }
-
+section.LevelOfEducation .NoPaddingBTN.nav-pills li button {
+    padding: 10px  10px;
+}
 section.LevelOfEducation .nav-pills .nav-link.active, section.LevelOfEducation .nav-pills .show>.nav-link {
     opacity: 1 !important;
     background-color: #7453C6;
@@ -1520,7 +1526,9 @@ End Footer
 .PackagesCourse section.LevelOfEducation .card .card-title {
     font-size: 16px;
 }
-
+.PackagesCourse section.LevelOfEducation .card .card-title span{
+    color: #919191;
+}
 .PackagesCourse .OfferCard .OfferCardImg span {
     font-size: 20px;
     line-height: 37px
@@ -1793,6 +1801,11 @@ section.WatchVideo .VideoPart .PlayIcon {
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .VideoPage .accordion-item .accordion-header .disabled img {
