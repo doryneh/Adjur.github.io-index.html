@@ -2144,6 +2144,38 @@ ENd Cart
 ****************************/
 
 
+/***************************
+SideNav
+****************************/
+.SideNav .SideNavRow a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #858585;
+    font-weight: 400;
+    font-size: 14px;
+}
+.SideNav .SideNavRow a img{
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.SideNav .SideNavRow a.active{
+    background-color: #7353c525;
+    border-radius: 8px;
+    color: #7353c5;
+    font-weight: 600;
+}
+.SideNav .SideNavRow a.active img{
+    filter: grayscale(0%);
+}
+.SideNav .SideNavRow .BiggerSidenavText a {
+    font-size: 16px;
+}
+/***************************
+End SideNav
+****************************/
+
 
 
 
@@ -2169,6 +2201,13 @@ ENd Cart
 .black{
     color: #242424;
 }
+
+
+
+
+
+
+
 @media (min-width: 1400px) {
     .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
         top: -15%;
