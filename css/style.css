@@ -241,7 +241,7 @@ nav.navbar .dropdownBtn.ProfileDropdown button {
     height: 50px;
 }
 
-nav.navbar .dropdownBtn.ProfileDropdown button img {
+nav.navbar .dropdownBtn.ProfileDropdown button img,.ProfilePic {
     border-radius: 50%;
 }
 
@@ -1920,6 +1920,7 @@ BAQA
 
 .BAQA section.ClassBAQA .text {
     font-weight: bold;
+    line-height: 50px;
 }
 
 .BAQA section.ClassBAQA img {
