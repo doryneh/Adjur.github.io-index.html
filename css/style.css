@@ -2182,8 +2182,19 @@ SideNav
 .SideNav .SideNavRow a.active img{
     filter: grayscale(0%);
 }
-.SideNav .SideNavRow .BiggerSidenavText a {
+.SideNav .SideNavRow .BiggerSidenavText a,.MoreBigText {
     font-size: 16px;
+
+}
+.ProfileForm .FileInputLabel {
+    position: relative;
+    cursor:pointer;
+}
+.ProfileForm .FileInputLabel .ChangeProfileIcon{
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 30%;
 }
 /***************************
 End SideNav
@@ -2346,6 +2357,39 @@ End SideNav
     min-height: 415px;
     margin-bottom: 30px;
     }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn  {
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .SideNav .SideNavRow .BiggerSidenavText a {
+    padding: 0 !important;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 div,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText div{
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn img{
+        width: 50px !important;
+    }
+    
     section.WatchVideo .WhiteBG{
         text-align: center;
     }
@@ -2581,9 +2625,6 @@ End SideNav
         padding: 5px;
     }
 
-    nav.navbar .NavButtons {
-        flex-direction: column;
-    }
 
     .PackagesCourse .OfferCard .card .tags, #OfferModal .tags, section.WatchVideo .WhiteBG .tags {
         flex-direction: column;

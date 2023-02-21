@@ -50,5 +50,7 @@ Changing the add to cart button on click (HomePage)
   alert("Copied the text: " + text);
 });
 
+
+
 });
 
