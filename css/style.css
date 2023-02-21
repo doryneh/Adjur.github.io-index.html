@@ -814,6 +814,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     color: #FCCC21;
     font-weight: 500;
     border-left: none !important;
+    display: none;
 }
 
 section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
@@ -979,10 +980,8 @@ section.CarouselPart .Overlay .Rating, .CoursesPage .LevelOfEducation .Overlay .
     background-color: hsla(47, 79%, 48%, 0.19);
     border-radius: 10px;
     width: 90px;
-    height: 35px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+    opacity: 0;
 }
 
 section.CarouselPart .Overlay .Rating img, .CoursesPage .LevelOfEducation .Overlay .Rating img {
@@ -2175,6 +2174,9 @@ ENd Cart
     }
     .CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 750px;
+    }
+    section.GreenSection{
+        top: -70%;
     }
 }
 
