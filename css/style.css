@@ -470,7 +470,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select,.ProfileForm input,.ProfileForm select {
+.modal input, .modal select,.ProfileForm input,.ProfileForm select,.ProfileForm textarea {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -2221,6 +2221,39 @@ Account Status
 End Account Status
 ****************************/
 
+/***************************
+Contact US
+****************************/
+.ContactUs .WhiteBG {
+    height: fit-content;
+}
+.ContactUs .mb-4.WhiteBG{
+    padding-bottom: 65px !important;
+}
+.ContactUs .SocialMedia a{
+    margin-left: 15px;
+} 
+.ContactUs .SocialMedia a img{
+    width: 45px;
+    transition: 0.3s ease all;
+}
+.ContactUs .SocialMedia a:hover img{
+    transform: scale(1.1);
+}
+.ShowPassword,.ShowPassword2{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+
+} 
+/***************************
+End Contact US
+****************************/
+
+
 
 /***************************
 ************Media *********
@@ -2642,6 +2675,14 @@ End Account Status
     }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 270px;
+    }
+    .ContactUs .SocialMedia .d-flex{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ContactUs .SocialMedia .d-flex div{
+        margin-bottom: 15px;
     }
     .BAQA section.Discount .CarouselText a button {
         width: 100%;

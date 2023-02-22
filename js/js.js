@@ -51,6 +51,26 @@ Changing the add to cart button on click (HomePage)
 });
 
 
+/*********
+ SHow Password
+ *******/
+ $(".ShowPassword").click(function() {
+  var x = $("#exampleInputPassword3");
+  if (x.attr("type") === "password") {
+    x.attr("type", "text");
+  } else {
+    x.attr("type", "password");
+  }
+});
+
+$(".ShowPassword2").click(function() {
+  var x = $("#exampleInputPassword4");
+  if (x.attr("type") === "password") {
+    x.attr("type", "text");
+  } else {
+    x.attr("type", "password");
+  }
+});
 
 });
 
