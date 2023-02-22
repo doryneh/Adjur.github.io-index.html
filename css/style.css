@@ -240,7 +240,10 @@ nav.navbar .dropdownBtn.ProfileDropdown button {
     color: white !important;
     height: 50px;
 }
-
+nav.navbar .dropdownBtn.ProfileDropdown button img {
+    width: 15%;
+    margin-left: 10px;
+}
 nav.navbar .dropdownBtn.ProfileDropdown button img,.ProfilePic {
     border-radius: 50%;
 }
@@ -1691,7 +1694,7 @@ section.WatchVideo .VideoPart .PlayIcon {
 .VideoPage .QNA .card {
     background-color: transparent;
     border-radius: 0px;
-
+    padding-right: 10px;
 }
 
 .VideoPage .QNA .card:hover {
