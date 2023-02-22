@@ -2249,6 +2249,13 @@ Contact US
     transform: translateY(-50%);
 
 } 
+.PrivacyPolicy .SmallText{
+    line-height: 35px;
+}
+.PrivacyPolicy  .Shadow{
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
+    border-radius: 8px;
+}
 /***************************
 End Contact US
 ****************************/

@@ -21,7 +21,7 @@
     <!--Big Box-->
 
     <div class=" pb-5">
-        <div class="BigBox CoursesPage">
+        <div class="BigBox CoursesPage BAQA">
             <div class="container">
                 <!--Navbar-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -317,8 +317,8 @@
                                 <div class="row FilterRow SideNavRow pb-4 mt-5 pt-lg-5 collapse-md" id="collapseFilter">
                                     <div class="mt-2">
                                         <div>
-                                            <a href="" class=" w-100 px-3 py-2 "><img
-                                                    src="images/sidenavIcon1.svg" alt="sidenavIcon1" class="me-2">الملف
+                                            <a href="" class=" w-100 px-3 py-2 "><img src="images/sidenavIcon1.svg"
+                                                    alt="sidenavIcon1" class="me-2">الملف
                                                 الشخصي</a>
                                             <a href="" class=" w-100 px-3 py-2 mt-2 "><img src="images/sidenavIcon2.svg"
                                                     alt="sidenavIcon1" class="me-2">المقررات المسجلة</a>
@@ -332,7 +332,7 @@
                                                 المفضلة </a>
                                         </div>
                                         <div>
-                                            <a href="" class=" w-100 px-3 py-2  mt-2 active"><img
+                                            <a href="" class=" w-100 px-3 py-2  mt-2 "><img
                                                     src="images/sidenavIcon5.svg" alt="sidenavIcon1" class="me-2">تغيير
                                                 كلمة المرور </a>
                                             <a href="" class=" w-100 px-3 py-2  mt-2 "><img
@@ -347,7 +347,7 @@
                                     <div class=" BiggerSidenavText">
                                         <div>
                                             <a href="" class=" w-100 px-3 py-2 mt-2 ">عن أجدر </a>
-                                            <a href="" class=" w-100 px-3 py-2  mt-2 ">كيف تستخدم </a>
+                                            <a href="" class=" w-100 px-3 py-2  mt-2 active">كيف تستخدم </a>
                                         </div>
                                         <div>
                                             <a href="" class=" w-100 px-3 py-2  mt-2 "> شروط الخدمة </a>
@@ -364,44 +364,110 @@
                         <div class="col-lg-9 ContactUs">
                             <div class="mb-4 WhiteBG p-4">
                                 <div class="sectionSubTitle purple">
-                                    <b> تغيير كلمة المرور</b>
+                                    <b> عن أجدر </b>
                                 </div>
 
+                                <section class="FAQ WhiteBG " id="FAQ">
 
-                                <div class="mt-5">
-                                    <form>
-                                        <div class="row mb-4">
 
-                                            <div class="col-md-6">
-                                                <label for="exampleInputPassword3" class="form-label text"> <b> كلمة
-                                                        المرور الحالية
-                                                    </b></label>
-                                                    <div class="position-relative">
-                                                <input type="password" class="form-control py-2"
-                                                    id="exampleInputPassword3" required>
-                                                    <a class="ShowPassword"><img src="images/ShowPasswordIcon.svg" alt="ShowPasswordIcon"></a>
-                                          
-                                                </div>   
-                                               </div>
-                                            <div class="col-md-6">
-                                                <label for="exampleInputPassword4" class="form-label text"> <b> كلمة
-                                                        المرور الجديدة
-                                                    </b></label>
-                                                    <div class="position-relative">
-                                                <input type="password" class="form-control py-2"
-                                                    id="exampleInputPassword4" required>
-                                                    <a class="ShowPassword2"><img src="images/ShowPasswordIcon.svg" alt="ShowPasswordIcon"></a>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <div class="white">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button text purple" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        <b>من نحن؟ </b>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body text">
+                                                        <strong>منصة تعليمية إلكترونية تقدم كورسات لمواد دراسية أكاديمية ومحاضرات مسجلة لاغلب التخصصات في الجامعات السعودية،  بإمكانكم مشاهدتها أينما كنتم وفي الوقت الذي يناسبكم</strong>
                                                     </div>
-
+                                                </div>
                                             </div>
                                         </div>
-                                        <button type="submit"
-                                            class="btn btn-primary px-5 w-25 SubmitBtn py-2 float-end">حفظ
-                                        </button>
+                                        <div class="accordion-item mt-4">
+                                            <div class="white">
 
-                                 
-                                    </form>
-                                </div>
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed text purple" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        <b>ما هو رقم الحساب واسم صاحب الحساب الذي سيتم تسديد رسوم الكورس عليه</b>
+
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>لا يوجد فرق في المحتوى سواء كان في اشتراك باقة أو اشتراك
+                                                            مادة منفردة ماعدا التوفير الاقتصادي عند الاشتراك بالباقة و
+                                                            استفادتك من جميع المواد المتاحه في مرحلتك الدراسية</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item mt-4">
+                                            <div class="white">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed text purple" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        <b>اسم صاحب الحساب: شركة أجدر للتجارة </b>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>لا يوجد فرق في المحتوى سواء كان في اشتراك باقة أو اشتراك
+                                                            مادة منفردة ماعدا التوفير الاقتصادي عند الاشتراك بالباقة و
+                                                            استفادتك من جميع المواد المتاحه في مرحلتك الدراسية</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item mt-4">
+                                            <div class="white">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed text purple" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        <b>هل يمكنني التحويل من بنك غير بنك الراجحي, كيف؟</b>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>لا يوجد فرق في المحتوى سواء كان في اشتراك باقة أو اشتراك
+                                                            مادة منفردة ماعدا التوفير الاقتصادي عند الاشتراك بالباقة و
+                                                            استفادتك من جميع المواد المتاحه في مرحلتك الدراسية</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item mt-4">
+                                            <div class="white">
+                                                <h2 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed text purple" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        <b>هل يمكنني التحويل من بنك غير بنك الراجحي, كيف؟</b>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>لا يوجد فرق في المحتوى سواء كان في اشتراك باقة أو اشتراك
+                                                            مادة منفردة ماعدا التوفير الاقتصادي عند الاشتراك بالباقة و
+                                                            استفادتك من جميع المواد المتاحه في مرحلتك الدراسية</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
 
                             </div>
