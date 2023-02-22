@@ -2214,6 +2214,9 @@ Account Status
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
     border-radius: 8px;
 }
+.AccountStatus .card .Favorite {
+    right: 0%;
+}
 /***************************
 End Account Status
 ****************************/
@@ -2278,6 +2281,7 @@ End Account Status
     .CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 550px;
     }
+   
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 13px;
     }
@@ -2314,7 +2318,7 @@ End Account Status
 
     section.LevelOfEducation .nav-pills li button {
         font-size: 14px;
-        padding: 5px 10px;
+        padding: 5px 35px;
     }
 
     section.GreenSection h3 {
@@ -2464,7 +2468,6 @@ End Account Status
 
     section.LevelOfEducation .nav-pills li button {
         font-size: 12px;
-        padding: 4px 8px;
     }
 
     section.LevelOfEducation .card .PriceAndRating {
@@ -2533,6 +2536,9 @@ End Account Status
     section.CarouselPart .text {
         width: 100% !important;
         font-size: 13px;
+    }
+    .AccountStatus .card .Favorite {
+    right: 35%;
     }
     .TeacherPageRow .card-body{
         align-items: center !important;
@@ -2630,6 +2636,9 @@ End Account Status
 @media (max-width: 575px) {
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
+    }
+    .AccountStatus .card .Favorite{
+        right: unset;
     }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 270px;
