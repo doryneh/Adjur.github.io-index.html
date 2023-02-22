@@ -745,7 +745,7 @@ section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEduc
     background-color: white;
 }
 
-section.LevelOfEducation .card:hover, .VideoPage .Suggestions .BundelCard .card:hover {
+section.LevelOfEducation .tab-content .card:hover, .VideoPage .Suggestions .BundelCard .card:hover {
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
@@ -2201,7 +2201,19 @@ End SideNav
 ****************************/
 
 
-
+/***************************
+Account Status
+****************************/
+.AccountStatus .card img {
+    border-radius: 0px  !important ;
+}
+.AccountStatus .CardsPart .WhiteBG {
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
+    border-radius: 8px;
+}
+/***************************
+End Account Status
+****************************/
 
 
 /***************************
@@ -2225,7 +2237,9 @@ End SideNav
 .black{
     color: #242424;
 }
-
+.red{
+    color: #C65353 ;
+}
 
 
 
@@ -2264,7 +2278,9 @@ End SideNav
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 13px;
     }
-
+    .AccountStatus .CardsPart .WhiteBG .text.mt-3{
+        font-size: 13px;
+    }
     .PackagesCourse .BundelCard .card .card-text {
         font-size: 8px;
     }
@@ -2352,6 +2368,9 @@ End SideNav
 @media (max-width: 991px) {
     section.Banner .col-lg-5 {
         display: flex;
+    }
+    .AccountStatus .CardsPart .WhiteBG .text.mt-3{
+        font-size: 16px;
     }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 415px;
