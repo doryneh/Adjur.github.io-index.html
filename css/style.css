@@ -2176,13 +2176,13 @@ SideNav
     opacity: 0.75;
 }
 
-.SideNav .SideNavRow a.active{
+.SideNav .SideNavRow a.active,.SideNav .SideNavRow a:hover{
     background-color: #7353c525;
     border-radius: 8px;
     color: #7353c5;
     font-weight: 600;
 }
-.SideNav .SideNavRow a.active img{
+.SideNav .SideNavRow a.active img,.SideNav .SideNavRow a:hover img{
     filter: grayscale(0%);
 }
 .SideNav .SideNavRow .BiggerSidenavText a,.MoreBigText {
