@@ -2182,6 +2182,12 @@ SideNav
     color: #7353c5;
     font-weight: 600;
 }
+.MoreBigText:hover{
+    background-color: transparent !important;
+    border-radius: 0px;
+    color: #858585 !important;
+    font-weight:400 !important;
+}
 .SideNav .SideNavRow a.active img,.SideNav .SideNavRow a:hover img{
     filter: grayscale(0%);
 }
@@ -2260,7 +2266,41 @@ Contact US
 End Contact US
 ****************************/
 
+/***************************
+Bank Account
+****************************/
+.BankAccount .text,.BankAccount .SmallText {
+    font-weight: 600;
+}
+.BankAccount .text {
+    font-size: 14px;
+}
+.BankAccount .SmallText{
+    font-size: 13px;
+} 
+.BankAccount  .BankCard{
+    background-color: white;
+    border: 0.5px solid #7353c649;
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+.BankAccount  .BankCard .tags{
+    background-color: #7353c61c;
+    border-radius: 8px;
+}
+.BankAccount  .Stretch {
+    display: flex;
+    align-items: stretch;
 
+}
+.BankAccount  .Stretch img {
+    object-fit: cover;
+    height: 55px;
+
+}
+/***************************
+End ank Account
+****************************/
 
 /***************************
 ************Media *********
