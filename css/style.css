@@ -239,6 +239,7 @@ nav.navbar .dropdownBtn.ProfileDropdown button {
     background-color: #7A5CC8;
     color: white !important;
     height: 50px;
+    width: 250px;
 }
 nav.navbar .dropdownBtn.ProfileDropdown button img {
     width: 15%;
