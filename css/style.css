@@ -375,7 +375,11 @@ Modal
 .modal-dialog {
     max-width: 770px;
 }
-
+#PaymentOptions .modal-dialog{
+    max-width: unset;
+    width: 100vw;
+    height: 100%;
+}
 .modal .modal-content {
     background-color: white;
     border-radius: 15px;
@@ -2199,6 +2203,9 @@ Cart
     height: 100%;
     border: 2px dashed #C6C6C6;
     border-radius: 12px;
+}
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart{
+    width: 35% !important;
 }
 /***************************
 
