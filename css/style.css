@@ -200,7 +200,7 @@ nav.navbar .NavButtons a.purpleBtn:hover, nav.navbar .NavButtons .NotificationDr
     background-color: #50398a;
 }
 
-nav.navbar .NavButtons a button, .EmptyOffer .RegisterButton button, .EmptyOffer a.RegisterButton {
+nav.navbar .NavButtons a button, .EmptyOffer .RegisterButton button, .EmptyOffer a.RegisterButton ,.Exam .StartBTN{
     height: 50px;
     border-radius: 16px;
     background-color: #3FDBB1;
@@ -214,10 +214,13 @@ nav.navbar .NavButtons a.btn-primary {
     box-shadow: none;
 }
 
-nav.navbar .NavButtons a button:hover {
+nav.navbar .NavButtons a button:hover ,.Exam .StartBTN:hover,.EmptyOffer .RegisterButton button:hover, .EmptyOffer a.RegisterButton:hover{
     background-color: #2ea183;
 }
-
+.Exam .StartBTN {
+    height: unset;
+    color: white;
+}
 section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
     background-color: transparent;
     border: 1px solid #242424;
@@ -2140,11 +2143,18 @@ Cart
 .CartPage .PricesAndTotal .addToCart{
     font-size: 13px;
 }
-.CartPage .PricesAndTotal .btn-secondary.addToCart{
+.CartPage .PricesAndTotal .btn-secondary.addToCart,.Exam .BackBTN{
     background-color: white;
     border: 1px solid #7453C5;
     color: #7453C5;
     font-weight: bold;
+}
+.CartPage .PricesAndTotal .btn-secondary.addToCart:hover,.Exam .BackBTN:hover{
+    background-color: #7453C5;
+    color: white;
+}
+.Exam .BackBTN {
+    border-radius: 16px;
 }
 .PaymentOptions .LevelOfEducation section.CarouselPart{
     background-image: none;
@@ -2354,6 +2364,42 @@ Bank Account
 /***************************
 End ank Account
 ****************************/
+
+/***************************
+Exam
+****************************/
+.Exam .timer img{
+    width: 30px;
+  }
+  .Exam .progress {
+    height: 20px;
+    background-color: #E7E7E8;
+    border-radius: 40px;
+  }
+  .Exam .progress .progress-bar{
+    background-color: #3FDBB1;
+    border-radius: 20px;
+  }
+.Exit{
+    font-size: 25px;
+    color: #242424;
+}
+.Exit:hover{
+    color: #7A5CC8;
+}
+.Exam  .ExamDetails .sectionSubTitle,.text{
+    color: #A0A1A4;
+}
+.Exam  .ExamDetails .sectionSubTitle span{
+    font-size: 80px;
+    font-family:'Courier New', Courier, monospace !important;
+}
+/***************************
+End Exam
+****************************/
+
+
+
 
 /***************************
 ************Media *********
