@@ -2446,7 +2446,11 @@ Exam
     width: 100%;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
+    transition: 0.3s ease all;
 
+}
+.Exam .ExamImage:hover{
+    transform: scale(1.02);
 }
 .Exam .ImageInQuestion{
     width: 100px;
