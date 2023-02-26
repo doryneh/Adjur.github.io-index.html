@@ -34,8 +34,13 @@ Changing the add to cart button on click (HomePage)
 /***************
  Changing the favorite icon color 
  ***********/
- $("section.LevelOfEducation .card .Favorite button img").click(function() {
-  $(this).toggleClass("grayscale");
+ $('.Favorite button').click(function() {
+  var img = $(this).find('img');
+  if (img.attr('src') === 'images/FilledHeartShape.svg') {
+    img.attr('src', 'images/HeartShape.svg');
+  } else {
+    img.attr('src', 'images/FilledHeartShape.svg');
+  }
 });
 
 /********
