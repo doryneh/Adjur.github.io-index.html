@@ -831,7 +831,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
+section.Bundels .card button.btn-primary.addToCart,.Exam .addToCart , section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -851,7 +851,7 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover,.Exam .addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
 
@@ -2394,6 +2394,66 @@ Exam
     font-size: 80px;
     font-family:'Courier New', Courier, monospace !important;
 }
+.Exam .AnswerNumber{
+    width: 40px;
+    height: 40px;
+    background-color:  #D9D9D9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.Exam .QNA .WhiteBG{
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
+}
+.Exam .QNA .WhiteBG:hover{
+    background-color: #7b5cc818;
+}
+.Exam .Continue{
+    background-color: #C3C3C6;
+}
+.Exam .TrueAnswer {
+    border: 2px solid #3FDBB1;
+}
+.Exam .WrongAnswer {
+    border: 2px solid #DB2323;
+}
+.Exam .RedBG{
+    background-color: #DB2323;
+}
+.Exam  .WrongMessage{
+    display: flex;
+    align-items: center;
+}
+.Exam  .WrongMessage img{
+    width: 50px;
+    margin-left: 15px;
+
+}
+.Exam .TrueAnswer img,.Exam .WrongAnswer img{
+    width: 100%;
+}
+.Exam .TrueAnswer .AnswerNumber,.Exam .WrongAnswer .AnswerNumber{
+    background-color: transparent;
+}
+.Exam .addToCart{
+    width: 50% !important;
+    display: inline-block;
+}
+.Exam .ExamImage{
+    width: 100%;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
+
+}
+.Exam .ImageInQuestion{
+    width: 100px;
+    max-height:80px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
 /***************************
 End Exam
 ****************************/
@@ -2424,6 +2484,9 @@ End Exam
 }
 .red{
     color: #C65353 ;
+}
+.DarkRed{
+    color: #DB2323;
 }
 
 
@@ -2555,6 +2618,9 @@ End Exam
     section.Banner .col-lg-5 {
         display: flex;
     }
+    .Exam .WhiteBg a button{
+        width: 98% !important;
+     }
     .AccountStatus .CardsPart .WhiteBG .text.mt-3{
         font-size: 16px;
     }
@@ -2719,6 +2785,9 @@ End Exam
     .AccountStatus .card .Favorite {
     right: 35%;
     }
+    .Exam .QNA .WhiteBG{
+        width: 100% !important;
+    }
     .TeacherPageRow .card-body{
         align-items: center !important;
     }
@@ -2810,14 +2879,32 @@ End Exam
     .BAQA section.Discount .CarouselText a button {
         width: 50%;
     }
+    .Exam .sectionSubTitle{
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 575px) {
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
+    
     .AccountStatus .card .Favorite{
         right: unset;
+    }
+    .WrongMessage{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .Exam .WhiteBg .d-flex{
+        flex-direction: column;
+    }
+    .Exam .WhiteBg a {
+        width: 75% !important;
+    }
+    .Exam .WhiteBg a button {
+        width: 100% !important;
+        margin-bottom: 10px;
     }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 270px;
