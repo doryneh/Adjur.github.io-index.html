@@ -2034,10 +2034,10 @@ BAQA
     transition: 0.4s ease all;
     border-radius: 20px;
 }
-.BAQA section.ChooseBAQA .WhiteBG:Hover h1{
+.BAQA section.ChooseBAQA .WhiteBG:Hover h1,.GreenBG h1{
     background: transparent;
 }
-.BAQA section.ChooseBAQA .WhiteBG:Hover{
+.BAQA section.ChooseBAQA .WhiteBG:Hover,.GreenBG{
     background:linear-gradient(to top left, #CBFFF1,#3FDBB1) !important ;
 }
 .BAQA section.ChooseBAQA .addToCart {
@@ -2222,6 +2222,20 @@ Cart
 .CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart{
     width: 35% !important;
 }
+
+.BAQACarousel .carousel-cell {
+    width: 50%;
+    height: fit-content;
+    margin-right: 10px;
+    background: transparent;
+    counter-increment: carousel-cell;
+  }
+  
+  /* cell number */
+  .BAQACarousel .carousel-cell:before {
+    display: none;
+   
+  }
 /***************************
 
 ENd Cart
@@ -2900,6 +2914,9 @@ End Error
     .Exam .sectionSubTitle{
         font-size: 17px;
     }
+    section.CarouselPart{
+        border-radius: 0px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -2910,6 +2927,14 @@ End Error
     .AccountStatus .card .Favorite{
         right: unset;
     }
+    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
+        min-height: 240px;
+    }
+    
+.BAQACarousel .carousel-cell {
+    width: 66%;
+   
+  }
     .WrongMessage{
         justify-content: center;
         margin-bottom: 20px;
@@ -3057,10 +3082,5 @@ End Error
 
     .VideoPage .accordion-item .accordion-header .disabled img {
         width: 25px;
-    }
-}
-@media (max-width: 575px) {
-    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
-        min-height: 240px;
     }
 }
