@@ -2,6 +2,11 @@
     font-family: Cairo;
     src: url(../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
 }
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
 
 body {
     direction: rtl;
@@ -831,7 +836,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart,.Exam .addToCart , section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
+section.Bundels .card button.btn-primary.addToCart,.Error .addToCart,.Exam .addToCart , section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -851,7 +856,7 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover,.Exam .addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover,.Error .addToCart:hover,.Exam .addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
 
@@ -2462,8 +2467,17 @@ Exam
 End Exam
 ****************************/
 
-
-
+/***************************
+Error
+****************************/
+.Error .sectionTitle.Big{
+    font-family: Pacifico;
+    font-size: 150px;
+    font-weight: 300;
+}
+/***************************
+End Error
+****************************/
 
 /***************************
 ************Media *********
