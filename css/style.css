@@ -181,7 +181,7 @@ nav.navbar .NavButtons .NotificationDropdown button.dropdown-toggle::after {
     display: none;
 }
 
-nav.navbar .NavButtons .NotificationDropdown .badge {
+nav.navbar .NavButtons  .badge {
     background-color: white !important;
     color: #7453C6;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.15));

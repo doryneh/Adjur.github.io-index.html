@@ -77,5 +77,19 @@ $(".ShowPassword2").click(function() {
   }
 });
 
+
+/*********
+Hide Form When check the applepay
+ *******/
+ // Listen for changes in the radio buttons
+ $('input[name="inlineRadioOptions"]').change(function() {
+  // If Apple Pay is checked, hide the PaymentForm
+  if ($('#inlineRadio4').is(':checked')) {
+    $('.PaymentForm').hide();
+  } else {
+    // If any other option is checked, show the PaymentForm
+    $('.PaymentForm').show();
+  }
+});
 });
 
