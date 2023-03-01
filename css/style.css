@@ -2927,14 +2927,16 @@ End Error
     .AccountStatus .card .Favorite{
         right: unset;
     }
+    nav.navbar .NavButtons a button{
+        font-size: 12px;
+    }
     section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
         min-height: 240px;
     }
     
-.BAQACarousel .carousel-cell {
-    width: 66%;
-   
-  }
+    .BAQACarousel .carousel-cell {
+        width: 55%;
+    }
     .WrongMessage{
         justify-content: center;
         margin-bottom: 20px;
