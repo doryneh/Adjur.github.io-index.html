@@ -9,9 +9,9 @@ $(document).ready(function () {
   $('section.Bundels .Prev').click(function () {
     $('#carouselExample').carousel('prev');
   });
-  $(".dropdown-toggle").click(function () {
-    $(".dropdown-menu").toggle();
-  });
+  // $(".dropdown-toggle").click(function () {
+  //   $(".dropdown-menu").toggle();
+  // });
 
 
 /**** 
@@ -34,14 +34,14 @@ Changing the add to cart button on click (HomePage)
 /***************
  Changing the favorite icon color 
  ***********/
- $('.Favorite button').click(function() {
-  var img = $(this).find('img');
-  if (img.attr('src') === 'images/FilledHeartShape.svg') {
-    img.attr('src', 'images/HeartShape.svg');
-  } else {
-    img.attr('src', 'images/FilledHeartShape.svg');
-  }
-});
+//  $('.Favorite button').click(function() {
+//   var img = $(this).find('img');
+//   if (img.attr('src') === 'images/FilledHeartShape.svg') {
+//     img.attr('src', 'images/HeartShape.svg');
+//   } else {
+//     img.attr('src', 'images/FilledHeartShape.svg');
+//   }
+// });
 
 /********
  COpy Btn 
