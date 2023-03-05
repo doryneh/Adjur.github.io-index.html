@@ -91,5 +91,37 @@ Hide Form When check the applepay
     $('.PaymentForm').show();
   }
 });
+
+
+
+
+/***************
+ Exam Hide and display
+ ***************/
+  // Select the StartExam button
+  var startBtn = $('.StartExam');
+var Exit = $('.Exit');
+  // Attach a click event listener to the StartExam button
+  startBtn.click(function() {
+    // Find the tab-content element and hide it
+    var tabContent = $('.tab-content');
+    tabContent.css('display', 'none');
+
+    // Find the Exam element and show it
+    var exam = $('.Exam');
+    exam.css('display', 'block');
+  });
+  Exit.click(function() {
+    // Find the tab-content element and hide it
+    var tabContent = $('.tab-content');
+    tabContent.css('display', 'block');
+
+    // Find the Exam element and show it
+    var exam = $('.Exam');
+    exam.css('display', 'none');
+  });
+
+
+
 });
 
