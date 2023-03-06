@@ -34,7 +34,7 @@ body {
 
 .purpleTop p.TopText, footer.footer .TopText {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -57,9 +57,11 @@ body {
     background-color: #F6F2FF;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    padding-bottom: 200px;
 }
+ .BigBox.indexPage{
+    padding-bottom: 200px;
 
+}
 
 .sectionTitle {
     font-size: 35px;
@@ -744,6 +746,9 @@ section.WhyUs .card img {
     margin: 15px 0px;
 }
 
+.CoursesPage section.WhyUs .card img {
+    width: 55%;
+}
 /***********
 ***********
 End Why Us
@@ -775,7 +780,7 @@ section.Bundels .card .ImgPart {
 }
 
 section.Bundels .card .card-title, section.LevelOfEducation .card .card-title, section.Bundels .card .card-title, .VideoPage .card .card-title {
-    font-size: 13px;
+    font-size: 16px;
     color: #242424;
     font-weight: 600;
     line-height: 34px;
@@ -1187,15 +1192,17 @@ section.LevelOfEducation .card .purpleBtn, .VideoPage .card .purpleBtn {
     background-color: #40DCB2;
     border: none;
     width: 100%;
-    height: unset;
+    height: 40px !important;
 }
 
 section.LevelOfEducation .card .purpleBtn:hover, .VideoPage .card .purpleBtn:hover {
     background-color: #2ea183;
+
 }
 
 section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart {
     width: 95%;
+    height: 40px !important;
 }
 
 section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
@@ -1205,8 +1212,11 @@ section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
     height: 100%;
 }
 
-section.LevelOfEducation .card .AddedToCart img, .VideoPage .card .AddedToCart img {
-    width: 60%;
+section.LevelOfEducation .card .AddedToCart img{
+    width: 80%;
+}
+.VideoPage .card .AddedToCart img {
+    width: 100%;
 }
 
 section.LevelOfEducation .card .AddedToCart:hover, .VideoPage .card .AddedToCart:hover {
@@ -1608,7 +1618,7 @@ End Footer
 }
 
 .EmptyOffer img {
-    width: 40%;
+    width: 25%;
 }
 
 .EmptyOffer h4 {
@@ -1751,13 +1761,19 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 .VideoPage .QNA .Question button, .VideoPage .QNA .Answer button,.deleteBtn {
     border: none;
-    background-color: transparent;
-    width: 25px;
-    padding: 0px;
+    background-color: #fecdcd33;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+
 }
 
-.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img ,.deleteBtn{
-    width: 25px;
+.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img ,.deleteBtn img{
+    width: 20px;
 
 }
 
@@ -2195,7 +2211,8 @@ Cart
 }
 .PaymentMethods .form-check .form-check-input{
     box-shadow: none !important;
-
+    height: 20px;
+    width: 20px;
 }
 .PaymentMethods .form-check .form-check-input:checked{
     background-color: #7453C6;
@@ -2307,7 +2324,13 @@ Account Status
     border-radius: 8px;
 }
 .AccountStatus .card .Favorite {
-    right: 0%;
+    right: 5%;
+    top: 5%;
+}
+.AboutAjdur .WhiteBG{
+    filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
+   padding: 40px 0px;
+   height: 100% !important;
 }
 /***************************
 End Account Status
@@ -2507,9 +2530,46 @@ Discussion
 .Discussion .Chats .WhiteBG{
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.05));
 }
-.Discussion .Chats  {
-    min-height: 90vh;
+.Discussion .Chats .WhiteBG.NewMessage{
+    max-height: 95vh;
+
 }
+.Discussion .Chats .WhiteBG.DiscussionPart{
+    max-height: 85vh;
+}
+.Discussion .Chats {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.Discussion .Chats .WhiteBG .ChatPart,.Discussion .Chats .WhiteBG .ChatCardPart{
+    
+    overflow-y: scroll;
+}
+.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar ,.Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar {
+    width: 6px;
+
+  }
+  
+  /* Track */
+  .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-track,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb {
+    background: #7353c64b;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+    .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb:hover,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb:hover {
+    background: #533c8d2c;
+  }
+
+
+
+
+
 .Discussion .SearchMessage {
     width: 100%;
 }
@@ -2534,7 +2594,7 @@ Discussion
     width: 100%;
     background-color: #F1EEF9;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 7px;
     border: 1px solid #F1EEF9;
 
@@ -2585,17 +2645,78 @@ Discussion
     text-overflow: ellipsis; 
     max-width: 100%;
 }
-.Discussion .MyChat {
+.Discussion .MyChat ,.Discussion .OtherChat{
+width: fit-content;
+}
+.Discussion .MyChat .text,.Discussion .OtherChat .text{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
     background-color: #DDF1EC;
     border-radius: 10px;
     max-width: 75%;
     width: fit-content;
     padding: 10px;
+    position: relative;
+
 }
-.Discussion .MyChat .text{
-    font-size: 13px;
+.Discussion .MyChat .time,.Discussion .OtherChat .time{
+    color: #727272;
+    font-size: 12px;
     font-weight: 600;
-    line-height: 22px;
+    position: absolute;
+    left: 1%;
+    bottom: -40%;
+    direction: ltr;
+}
+.Discussion .OtherChat{
+    direction: ltr;
+    float: left;
+}
+.Discussion .OtherChat .text{
+    background-color: #F1EEF9;
+
+}
+.Discussion .OtherChat  .text{
+    direction: rtl;
+}
+.Discussion .OtherChat .time{
+    left: unset;
+    right: 1%;
+}
+
+.Discussion .TypeMessageRow{
+width: 100%;
+background-color: #F0F2F5;
+border-radius: 15px;
+
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+position: absolute;
+bottom: 0;
+left: 0;
+display: flex;
+align-items: center;
+}
+.Discussion .TypeMessageRow form{
+    width: 80%;
+}
+.Discussion .TypeMessageRow form input{
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #666769;
+    font-size: 13px;
+    height: 35px;
+    border: none;
+
+}
+.Discussion .TypeMessageRow form button{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0px;
 }
 /***************************
 End Discussion
@@ -2925,6 +3046,17 @@ End Discussion
         width: 100% !important;
         font-size: 13px;
     }
+    .Discussion .ChatCard .MessagesNumber{
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+        left: 25%;
+        bottom: unset;
+        top: -3%;
+    }
+    .Discussion .ChatCard .MessageTime {
+    font-size: 7px;
+    }
     .AccountStatus .card .Favorite {
     right: 35%;
     }
@@ -3034,7 +3166,17 @@ End Discussion
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-    
+    .Discussion .ChatCard .MessagesNumber{
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        left: 2%;
+        bottom: 0;
+        top:unset;
+    }
+    .Discussion .ChatCard .MessageTime {
+    font-size: 12px;
+    }
     .AccountStatus .card .Favorite{
         right: unset;
     }
