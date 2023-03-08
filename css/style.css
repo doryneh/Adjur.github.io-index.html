@@ -1402,12 +1402,14 @@ footer.footer .DownloadApp .footerTitle {
     border-bottom: none;
     font-weight: 500;
 }
-
-footer.footer .SocialIcons img {
+footer.footer .SocialIcons img{
+    filter: brightness(0) invert(1);
+}
+footer.footer .SocialIcons img,.Error .SocialIcons img {
     width: 30px;
 }
 
-footer.footer .SocialIcons img.whatsapp {
+footer.footer .SocialIcons img.whatsapp ,.Error .SocialIcons img.whatsapp {
     width: 25px;
 }
 
