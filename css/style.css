@@ -2245,7 +2245,7 @@ Cart
 .CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart{
     width: 35% !important;
 }
-
+.BankAccount
 .BAQACarousel .carousel-cell {
     width: 50%;
     height: fit-content;
@@ -2380,10 +2380,10 @@ End Contact US
 /***************************
 Bank Account
 ****************************/
-.BankAccount .text,.BankAccount .SmallText {
+.BankAccount .BankCard .text,.BankAccount .SmallText {
     font-weight: 600;
 }
-.BankAccount .text {
+.BankAccount .BankCard .text {
     font-size: 14px;
 }
 .BankAccount .SmallText{
@@ -2409,6 +2409,9 @@ Bank Account
     object-fit: cover;
     height: 55px;
 
+}
+.BankAccountPage .PayOp .row .WhiteBG{
+    filter: drop-shadow(0px 4px 4px hsla(0, 0%, 0%, 0.25));
 }
 /***************************
 End ank Account
@@ -2890,6 +2893,16 @@ End Discussion
     .BankAccount .SmallText{
         font-size: 13px;
     }
+    .sectionSubTitle  {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .BankAccountPage .PayOp .row .WhiteBG img{
+        width: 60% !important;
+    }
+    .BankAccountPage .PayOp .row .WhiteBG img.ApplePay{
+        width: 50% !important;
+    }
     .Exam .WhiteBg a button{
         width: 98% !important;
      }
@@ -3006,9 +3019,12 @@ End Discussion
     }
 
     .sectionTitle {
-        font-size: 30px;
+        font-size: 20px;
+        line-height: 50px;
     }
-
+    .BankAccountBanner{
+        width: 100% !important;
+    }
     nav.navbar ul.navbar-nav li.nav-item {
         margin-right: 0;
     }
@@ -3062,6 +3078,18 @@ End Discussion
     section.CarouselPart .text {
         width: 100% !important;
         font-size: 13px;
+    }
+    .sectionTitle{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .sectionSubTitle {
+        font-size: 14px;
+        line-height: 25px;
     }
     .Discussion .ChatCard .MessagesNumber{
         width: 15px;
@@ -3161,13 +3189,7 @@ End Discussion
         width: 75%;
     }
 
-    .sectionSubTitle {
-        font-size: 15px;
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-    }
-
+     
     .BAQA section.Discount .CarouselText a button {
         width: 50%;
     }
@@ -3182,6 +3204,9 @@ End Discussion
 @media (max-width: 575px) {
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
+    }
+    .BankAccountBanner {
+        width: 25% !important;
     }
     .Discussion .ChatCard .MessagesNumber{
         width: 18px;
