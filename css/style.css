@@ -855,7 +855,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart, .Error .addToCart, .Exam .addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart, .CartPage .PricesAndTotal .addToCart, .PaymentOptions.BAQA .addToCart {
+section.Bundels .card button.btn-primary.addToCart, .Error .addToCart, .Exam .addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart, .CartPage .PricesAndTotal .addToCart, .PaymentOptions.BAQA .addToCart ,.Devices .addToCart{
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -875,10 +875,12 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover, .Error .addToCart:hover, .Exam .addToCart:hover, .PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover, .CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover,.Devices .addToCart:hover, .Error .addToCart:hover, .Exam .addToCart:hover, .PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover, .CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
-
+.Devices .addToCart{
+    background-color: #3FDBB1;
+}
 section.Bundels .carousel {
     max-width: 100% !important;
 }
@@ -1993,6 +1995,9 @@ section.WatchVideo .VideoPart .PlayIcon {
 .Devices img{
     width: 66px !important;
 }
+.UncompletedRegistration .Devices img{
+    width: 100px !important;
+}
 /***************************
 ************End NotRegisteredNego *********
 ****************************/
@@ -3063,11 +3068,20 @@ End Discussion
     section.Banner .col-lg-5 {
         display: flex;
     }
+    .UncompletedRegistration .Devices{
+        flex-direction: column;
+    width: fit-content !important;
+    display: inline-block !important;
+    margin: auto;
+    text-align: center;    
+}
 
     .BankAccount .SmallText {
         font-size: 13px;
     }
-
+.UncompletedCards{
+    flex-direction: row !important;
+}
     .sectionSubTitle {
         font-size: 18px;
         line-height: 35px;
@@ -3279,7 +3293,9 @@ End Discussion
         font-size: 17px;
         line-height: 30px;
     }
-
+    .UncompletedCards{
+        flex-direction: column !important;
+    }
  
 
     .sectionSubTitle {
