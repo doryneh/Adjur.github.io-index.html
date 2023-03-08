@@ -2208,6 +2208,8 @@ Cart
 }
 .PaymentMethods .form-check .form-check-label img{
     height: 80px;
+    object-fit: contain;
+    width: 50%;
 }
 .PaymentMethods .form-check .form-check-input{
     box-shadow: none !important;
@@ -2386,6 +2388,7 @@ Bank Account
 }
 .BankAccount .SmallText{
     font-size: 13px;
+    text-align: center;
 } 
 .BankAccount  .BankCard{
     background-color: white;
@@ -2787,7 +2790,9 @@ End Discussion
     .CourseForRegistered section.WatchVideo .VideoPart {
     min-height: 550px;
     }
-   
+    .BankAccount .SmallText{
+        font-size: 11px;
+    }
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 13px;
     }
@@ -2841,7 +2846,7 @@ End Discussion
     }
 
     nav.navbar .navbar-brand img {
-        width: 70px !important;
+        width: 65px !important;
     }
 
     footer.footer p.TextSemiBold {
@@ -2881,6 +2886,9 @@ End Discussion
 @media (max-width: 991px) {
     section.Banner .col-lg-5 {
         display: flex;
+    }
+    .BankAccount .SmallText{
+        font-size: 13px;
     }
     .Exam .WhiteBg a button{
         width: 98% !important;
@@ -3039,6 +3047,15 @@ End Discussion
     .BAQA section.FAQ  .text{
         font-size: 14px;
     }
+    .CoursesPage section.CarouselPart .CarouselText{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .CoursesPage section.CarouselPart .CarouselText img{
+        margin: 0 !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -3158,7 +3175,7 @@ End Discussion
         font-size: 17px;
     }
     section.CarouselPart{
-        border-radius: 0px;
+        border-radius: 10px;
     }
 }
 
