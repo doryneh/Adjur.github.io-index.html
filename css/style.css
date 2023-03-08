@@ -126,7 +126,11 @@ nav.navbar ul.navbar-nav li.nav-item {
 }
 
 nav.navbar .navbar-brand {
-    width: fit-content;
+    width: 150px;
+}
+
+nav.navbar .navbar-brand img {
+    width: 50% !important;
 }
 
 nav.navbar .navbar-toggler {
@@ -496,7 +500,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select, .ProfileForm input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input {
+.modal input, .modal select, .ProfileForm input,.Error input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input,.PaymentMethods select,.PaymentMethods .form-control:disabled,.PaymentMethods .form-control[readonly] {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -855,7 +859,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart, .Error .addToCart, .Exam .addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart, .CartPage .PricesAndTotal .addToCart, .PaymentOptions.BAQA .addToCart ,.Devices .addToCart{
+section.Bundels .card button.btn-primary.addToCart, .Error .addToCart, .Exam .addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart, .CartPage .PricesAndTotal .addToCart, .PaymentOptions.BAQA .addToCart, .Devices .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -875,12 +879,14 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover,.Devices .addToCart:hover, .Error .addToCart:hover, .Exam .addToCart:hover, .PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover, .CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover, .Devices .addToCart:hover, .Error .addToCart:hover, .Exam .addToCart:hover, .PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover, .CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
-.Devices .addToCart{
+
+.Devices .addToCart {
     background-color: #3FDBB1;
 }
+
 section.Bundels .carousel {
     max-width: 100% !important;
 }
@@ -1992,12 +1998,15 @@ section.WatchVideo .VideoPart .PlayIcon {
 .Devices {
     filter: drop-shadow(0px 1px 26px hsla(0, 0%, 0%, 0.1));
 }
-.Devices img{
+
+.Devices img {
     width: 66px !important;
 }
-.UncompletedRegistration .Devices img{
+
+.UncompletedRegistration .Devices img {
     width: 100px !important;
 }
+
 /***************************
 ************End NotRegisteredNego *********
 ****************************/
@@ -2927,7 +2936,8 @@ End Discussion
 .DarkRed {
     color: #DB2323;
 }
-.grey{
+
+.grey {
     color: #646365;
 }
 
@@ -2943,20 +2953,15 @@ End Discussion
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 750px;
     }
-
+   
     section.GreenSection {
         top: -70%;
     }
+   
 }
 
 @media (max-width: 1400px) {
-    nav.navbar .navbar-brand {
-        width: 150px;
-    }
-
-    nav.navbar .navbar-brand img {
-        width: 60% !important;
-    }
+  
 
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 650px;
@@ -3068,20 +3073,23 @@ End Discussion
     section.Banner .col-lg-5 {
         display: flex;
     }
-    .UncompletedRegistration .Devices{
+
+    .UncompletedRegistration .Devices {
         flex-direction: column;
-    width: fit-content !important;
-    display: inline-block !important;
-    margin: auto;
-    text-align: center;    
-}
+        width: fit-content !important;
+        display: inline-block !important;
+        margin: auto;
+        text-align: center;
+    }
 
     .BankAccount .SmallText {
         font-size: 13px;
     }
-.UncompletedCards{
-    flex-direction: row !important;
-}
+
+    .UncompletedCards {
+        flex-direction: row !important;
+    }
+
     .sectionSubTitle {
         font-size: 18px;
         line-height: 35px;
@@ -3286,17 +3294,20 @@ End Discussion
         width: 100% !important;
         font-size: 13px;
     }
-    .Devices{
+
+    .Devices {
         width: 100% !important;
     }
+
     .sectionTitle {
         font-size: 17px;
         line-height: 30px;
     }
-    .UncompletedCards{
+
+    .UncompletedCards {
         flex-direction: column !important;
     }
- 
+
 
     .sectionSubTitle {
         font-size: 14px;
@@ -3431,7 +3442,7 @@ End Discussion
     .BankAccountBanner {
         width: 25% !important;
     }
- 
+
     .Discussion .ChatCard .MessagesNumber {
         width: 18px;
         height: 18px;
