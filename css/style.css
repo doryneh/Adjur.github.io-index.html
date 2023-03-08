@@ -2,6 +2,7 @@
     font-family: Cairo;
     src: url(../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
 }
+
 @font-face {
     font-family: Pacifico;
     src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
@@ -58,7 +59,8 @@ body {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
- .BigBox.indexPage{
+
+.BigBox.indexPage {
     padding-bottom: 200px;
 
 }
@@ -86,7 +88,8 @@ body {
 .card img, .Overlay img, iframe {
     border-radius: 15px !important;
 }
-.player{
+
+.player {
     border-radius: 15px;
     overflow: hidden;
     z-index: 1;
@@ -184,7 +187,7 @@ nav.navbar .NavButtons .NotificationDropdown button.dropdown-toggle::after {
     display: none;
 }
 
-nav.navbar .NavButtons  .badge {
+nav.navbar .NavButtons .badge {
     background-color: white !important;
     color: #7453C6;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.15));
@@ -209,7 +212,7 @@ nav.navbar .NavButtons a.purpleBtn:hover, nav.navbar .NavButtons .NotificationDr
     background-color: #50398a;
 }
 
-nav.navbar .NavButtons a button, .EmptyOffer .RegisterButton button, .EmptyOffer a.RegisterButton ,.Exam .StartBTN{
+nav.navbar .NavButtons a button, .EmptyOffer .RegisterButton button, .EmptyOffer a.RegisterButton, .Exam .StartBTN {
     height: 50px;
     border-radius: 16px;
     background-color: #3FDBB1;
@@ -223,13 +226,15 @@ nav.navbar .NavButtons a.btn-primary {
     box-shadow: none;
 }
 
-nav.navbar .NavButtons a button:hover ,.Exam .StartBTN:hover,.EmptyOffer .RegisterButton button:hover, .EmptyOffer a.RegisterButton:hover{
+nav.navbar .NavButtons a button:hover, .Exam .StartBTN:hover, .EmptyOffer .RegisterButton button:hover, .EmptyOffer a.RegisterButton:hover {
     background-color: #2ea183;
 }
+
 .Exam .StartBTN {
     height: unset;
     color: white;
 }
+
 section.LevelOfEducation .dropdownBtn button, .navbar .dropdownBtn button {
     background-color: transparent;
     border: 1px solid #242424;
@@ -253,11 +258,13 @@ nav.navbar .dropdownBtn.ProfileDropdown button {
     height: 50px;
     width: 250px;
 }
+
 nav.navbar .dropdownBtn.ProfileDropdown button img {
     width: 15%;
     margin-left: 10px;
 }
-nav.navbar .dropdownBtn.ProfileDropdown button img,.ProfilePic {
+
+nav.navbar .dropdownBtn.ProfileDropdown button img, .ProfilePic {
     border-radius: 50%;
 }
 
@@ -387,11 +394,13 @@ Modal
 .modal-dialog {
     max-width: 770px;
 }
-#PaymentOptions .modal-dialog{
+
+#PaymentOptions .modal-dialog {
     max-width: unset;
     width: 100vw;
     height: 100%;
 }
+
 .modal .modal-content {
     background-color: white;
     border-radius: 15px;
@@ -487,7 +496,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select,.ProfileForm input,.ProfileForm select,.ProfileForm textarea ,.PaymentMethods input{
+.modal input, .modal select, .ProfileForm input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -496,14 +505,16 @@ Modal
     background-color: white;
     box-shadow: none !important;
 }
-.ProfileForm input,.ProfileForm select{
+
+.ProfileForm input, .ProfileForm select {
     height: 45px;
 }
+
 .modal .textPurp {
     color: #7A5CC8;
 }
 
-.modal .SubmitBtn,.ProfileForm .SubmitBtn,.PaymentMethods .SubmitBtn {
+.modal .SubmitBtn, .ProfileForm .SubmitBtn, .PaymentMethods .SubmitBtn {
     background-color: #7A5CC8;
     border-radius: 8px;
     border: none;
@@ -749,6 +760,7 @@ section.WhyUs .card img {
 .CoursesPage section.WhyUs .card img {
     width: 55%;
 }
+
 /***********
 ***********
 End Why Us
@@ -843,7 +855,7 @@ section.Bundels .card .Rating, section.LevelOfEducation .card .Rating, .VideoPag
     display: none;
 }
 
-section.Bundels .card button.btn-primary.addToCart,.Error .addToCart,.Exam .addToCart , section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart ,.CartPage .PricesAndTotal .addToCart,.PaymentOptions.BAQA  .addToCart {
+section.Bundels .card button.btn-primary.addToCart, .Error .addToCart, .Exam .addToCart, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage button.btn-primary.addToCart, .BAQA section.ChooseBAQA .addToCart, .CartPage .PricesAndTotal .addToCart, .PaymentOptions.BAQA .addToCart {
     background-color: #7453C6;
     border: none;
     border-radius: 8px;
@@ -863,7 +875,7 @@ section.Bundels .card a, section.LevelOfEducation .card a {
     width: 100%;
 }
 
-section.Bundels .card button.btn-primary.addToCart:hover,.Error .addToCart:hover,.Exam .addToCart:hover,.PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover,.CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
+section.Bundels .card button.btn-primary.addToCart:hover, .Error .addToCart:hover, .Exam .addToCart:hover, .PaymentOptions.BAQA section.ChooseBAQA .addToCart:hover, .CartPage .PricesAndTotal .addToCart:hover, section.LevelOfEducation .card button.btn-primary.addToCart:hover, .VideoPage button.btn-primary.addToCart:hover, .BAQA section.ChooseBAQA .addToCart:hover {
     background-color: #50398a;
 }
 
@@ -1135,9 +1147,11 @@ section.LevelOfEducation .nav-pills li button {
     line-height: 37px;
     padding: 10px 50px;
 }
+
 section.LevelOfEducation .NoPaddingBTN.nav-pills li button {
-    padding: 10px  10px;
+    padding: 10px 10px;
 }
+
 section.LevelOfEducation .nav-pills .nav-link.active, section.LevelOfEducation .nav-pills .show>.nav-link {
     opacity: 1 !important;
     background-color: #7453C6;
@@ -1212,9 +1226,10 @@ section.LevelOfEducation .card .AddedToCart, .VideoPage .card .AddedToCart {
     height: 100%;
 }
 
-section.LevelOfEducation .card .AddedToCart img{
+section.LevelOfEducation .card .AddedToCart img {
     width: 80%;
 }
+
 .VideoPage .card .AddedToCart img {
     width: 100%;
 }
@@ -1554,9 +1569,11 @@ End Footer
 .PackagesCourse section.LevelOfEducation .card .card-title {
     font-size: 16px;
 }
-.PackagesCourse section.LevelOfEducation .card .card-title span{
+
+.PackagesCourse section.LevelOfEducation .card .card-title span {
     color: #919191;
 }
+
 .PackagesCourse .OfferCard .OfferCardImg span {
     font-size: 20px;
     line-height: 37px
@@ -1606,7 +1623,7 @@ End Footer
     margin-left: 5px;
 }
 
-.PackagesCourse .OfferCard .card .smallText ,.SmallText{
+.PackagesCourse .OfferCard .card .smallText, .SmallText {
     background-color: transparent;
     font-size: 14px;
 }
@@ -1639,9 +1656,11 @@ End Footer
     box-shadow: inset 0px 6px 8px rgba(0, 0, 0, 0.20);
 
 }
+
 .DonePaymentPage {
     height: 100vh;
 }
+
 .form-switch .form-check-input:checked {
     background-color: green;
     border: grey;
@@ -1759,7 +1778,7 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 }
 
-.VideoPage .QNA .Question button, .VideoPage .QNA .Answer button,.deleteBtn {
+.VideoPage .QNA .Question button, .VideoPage .QNA .Answer button, .deleteBtn {
     border: none;
     background-color: #fecdcd33;
     width: 25px !important;
@@ -1772,7 +1791,7 @@ section.WatchVideo .VideoPart .PlayIcon {
 
 }
 
-.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img ,.deleteBtn img{
+.VideoPage .QNA .Question button img, .VideoPage .QNA .Answer button img, .deleteBtn img {
     width: 20px;
 
 }
@@ -1830,7 +1849,7 @@ section.WatchVideo .VideoPart .PlayIcon {
     border: 1px solid #E1E1E1;
 }
 
-.VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree {
+.VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree, .activatedDevice, .DeActivatedDevice, .ExitDevice {
     color: white;
     font-size: 14px;
     background-color: #3FDBB1;
@@ -1842,6 +1861,24 @@ section.WatchVideo .VideoPart .PlayIcon {
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.activatedDevice, .DeActivatedDevice, .ExitDevice {
+    font-weight: 400;
+    margin: unset;
+    width: fit-content;
+}
+
+.DeActivatedDevice {
+    background-color: #C4C5C4;
+}
+
+.ExitDevice {
+    background-color: #DB3F3F;
+}
+
+.ExitDevice:hover {
+    background-color: #9b2d2d;
 }
 
 .VideoPage .accordion-item .accordion-header .disabled img {
@@ -1950,9 +1987,16 @@ section.WatchVideo .VideoPart .PlayIcon {
     border-radius: 16px;
 }
 
+.Devices {
+    filter: drop-shadow(0px 1px 26px hsla(0, 0%, 0%, 0.1));
+}
+.Devices img{
+    width: 66px !important;
+}
 /***************************
 ************End NotRegisteredNego *********
 ****************************/
+
 
 /***************************
 BAQA
@@ -1978,10 +2022,11 @@ BAQA
     border-bottom-right-radius: 0px;
 }
 
-.BAQA section.ClassBAQA .row{
+.BAQA section.ClassBAQA .row {
     justify-content: center;
     align-items: center;
 }
+
 .BAQA section.Discount .overlay {
     background-image: url(../images/DiscountBG.png);
     background-size: cover;
@@ -2050,16 +2095,20 @@ BAQA
     border-radius: 20px;
 
 }
-.BAQA section.ChooseBAQA .WhiteBG{
+
+.BAQA section.ChooseBAQA .WhiteBG {
     transition: 0.4s ease all;
     border-radius: 20px;
 }
-.BAQA section.ChooseBAQA .WhiteBG:Hover h1,.GreenBG h1{
+
+.BAQA section.ChooseBAQA .WhiteBG:Hover h1, .GreenBG h1 {
     background: transparent;
 }
-.BAQA section.ChooseBAQA .WhiteBG:Hover,.GreenBG{
-    background:linear-gradient(to top left, #CBFFF1,#3FDBB1) !important ;
+
+.BAQA section.ChooseBAQA .WhiteBG:Hover, .GreenBG {
+    background: linear-gradient(to top left, #CBFFF1, #3FDBB1) !important;
 }
+
 .BAQA section.ChooseBAQA .addToCart {
     transition: 0s ease all;
 }
@@ -2070,16 +2119,17 @@ BAQA
     border: 1px solid #E1E1E1;
     padding-right: 15px;
 }
-.BAQA section.FAQ .accordion .white{
+
+.BAQA section.FAQ .accordion .white {
     background-color: white;
-   border-radius: 15px;
+    border-radius: 15px;
 }
 
 .BAQA section.FAQ .accordion-header button {
     border-radius: 15px;
     background-color: white;
     border: 1px solid #E1E1E1;
-  
+
 
     box-shadow: none !important;
 }
@@ -2111,129 +2161,161 @@ ENd BAQA
 /***************************
 Cart
 ****************************/
-.CartPage section.CarouselPart img{
+.CartPage section.CarouselPart img {
     width: 25%;
 }
-.CartPage.PackagesCourse .BundelCard .col-md-3 img{
+
+.CartPage.PackagesCourse .BundelCard .col-md-3 img {
     background-image: unset;
 }
-.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25{
+
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 {
     width: 35% !important;
 }
-.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 button{
+
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card a.w-25 button {
     margin: 0px;
 }
 
-.CartPage .CouponDiscountCode{
+.CartPage .CouponDiscountCode {
     height: fit-content;
 }
-.CartPage .CouponDiscountCode form input{
+
+.CartPage .CouponDiscountCode form input {
     border-radius: 6px !important;
     border: 1px solid #C6C6C6 !important;
     color: #C6C6C6;
     box-shadow: none;
 }
-.CartPage .CouponDiscountCode form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+.CartPage .CouponDiscountCode form input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #C6C6C6;
-    opacity: 1; /* Firefox */
-  }
-  
-  .CartPage .CouponDiscountCode form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 1;
+    /* Firefox */
+}
+
+.CartPage .CouponDiscountCode form input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #C6C6C6;
-  }
-  
-  .CartPage .CouponDiscountCode form input::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+.CartPage .CouponDiscountCode form input::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #C6C6C6;
-  }
-.CartPage .CouponDiscountCode form span{
+}
+
+.CartPage .CouponDiscountCode form span {
     background-color: #3FDBB1;
     color: white;
     font-weight: 500;
     border-radius: 6px !important;
-    
+
 }
-.CartPage .PricesAndTotal  .text{
+
+.CartPage .PricesAndTotal .text {
     font-weight: 500;
 }
-.CartPage .PricesAndTotal  .text span{
+
+.CartPage .PricesAndTotal .text span {
     font-size: 14px;
     font-weight: 400;
 }
-.CartPage .PricesAndTotal  .total.text{
+
+.CartPage .PricesAndTotal .total.text {
     border-top: 0.3px solid #8282824d;
 }
-.CartPage .PricesAndTotal  .total.text .span{
+
+.CartPage .PricesAndTotal .total.text .span {
     font-weight: bold;
 }
-.CartPage .PricesAndTotal .addToCart{
+
+.CartPage .PricesAndTotal .addToCart {
     font-size: 13px;
 }
-.CartPage .PricesAndTotal .btn-secondary.addToCart,.Exam .BackBTN{
+
+.CartPage .PricesAndTotal .btn-secondary.addToCart, .Exam .BackBTN {
     background-color: white;
     border: 1px solid #7453C5;
     color: #7453C5;
     font-weight: bold;
 }
-.CartPage .PricesAndTotal .btn-secondary.addToCart:hover,.Exam .BackBTN:hover{
+
+.CartPage .PricesAndTotal .btn-secondary.addToCart:hover, .Exam .BackBTN:hover {
     background-color: #7453C5;
     color: white;
 }
+
 .Exam .BackBTN {
     border-radius: 16px;
 }
-.PaymentOptions .LevelOfEducation section.CarouselPart{
+
+.PaymentOptions .LevelOfEducation section.CarouselPart {
     background-image: none;
 }
-.PaymentOptions.BAQA section.ChooseBAQA .WhiteBG{
+
+.PaymentOptions.BAQA section.ChooseBAQA .WhiteBG {
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.055));
 }
+
 .PaymentOptions.BAQA section.ChooseBAQA h1 {
     font-size: 27px;
     line-height: 15px;
     width: unset;
 }
-.PaymentOptions.BAQA section.ChooseBAQA .Darkgreen{
+
+.PaymentOptions.BAQA section.ChooseBAQA .Darkgreen {
     color: #569F7D;
 }
+
 .PaymentMethods .form-check {
     width: 100%;
 }
-.PaymentMethods .form-check .form-check-label{
-    padding: 20px ;
+
+.PaymentMethods .form-check .form-check-label {
+    padding: 20px;
     border: 1px solid #7453C6;
     border-radius: 20px;
     font-weight: 600;
     width: 100%;
     height: 100%;
 }
-.PaymentMethods .form-check .form-check-label img{
+
+.PaymentMethods .form-check .form-check-label img {
     height: 80px;
     object-fit: contain;
     width: 50%;
 }
-.PaymentMethods .form-check .form-check-input{
+
+.PaymentMethods .form-check .form-check-input {
     box-shadow: none !important;
     height: 20px;
     width: 20px;
 }
-.PaymentMethods .form-check .form-check-input:checked{
+
+.PaymentMethods .form-check .form-check-input:checked {
     background-color: #7453C6;
     border-color: #7453C6;
 }
-.PaymentMethods .labelSquare{
+
+.PaymentMethods .labelSquare {
     position: relative;
-    width: 100%; 
+    width: 100%;
     padding-top: 100%;
 }
-.PaymentMethods .labelSquare .FileInputLabel:hover{
+
+.PaymentMethods .labelSquare .FileInputLabel:hover {
     cursor: pointer;
 }
-.PaymentMethods .labelSquare:hover .FileInputLabel img{
+
+.PaymentMethods .labelSquare:hover .FileInputLabel img {
     transform: scale(1.2);
 }
-.PaymentMethods .FileInputLabel img{
+
+.PaymentMethods .FileInputLabel img {
     transition: 0.5s ease all;
 }
+
 .PaymentMethods .FileInputLabel {
     position: absolute;
     top: 0;
@@ -2242,23 +2324,25 @@ Cart
     border: 2px dashed #C6C6C6;
     border-radius: 12px;
 }
-.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart{
+
+.CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
     width: 35% !important;
 }
-.BankAccount
-.BAQACarousel .carousel-cell {
+
+.BankAccount .BAQACarousel .carousel-cell {
     width: 50%;
     height: fit-content;
     margin-right: 10px;
     background: transparent;
     counter-increment: carousel-cell;
-  }
-  
-  /* cell number */
-  .BAQACarousel .carousel-cell:before {
+}
+
+/* cell number */
+.BAQACarousel .carousel-cell:before {
     display: none;
-   
-  }
+
+}
+
 /***************************
 
 ENd Cart
@@ -2268,7 +2352,7 @@ ENd Cart
 /***************************
 SideNav
 ****************************/
-.SideNav .SideNavRow a{
+.SideNav .SideNavRow a {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -2276,40 +2360,47 @@ SideNav
     font-weight: 400;
     font-size: 14px;
 }
-.SideNav .SideNavRow a img{
+
+.SideNav .SideNavRow a img {
     filter: grayscale(100%);
     opacity: 0.75;
 }
 
-.SideNav .SideNavRow a.active,.SideNav .SideNavRow a:hover{
+.SideNav .SideNavRow a.active, .SideNav .SideNavRow a:hover {
     background-color: #7353c525;
     border-radius: 8px;
     color: #7353c5;
     font-weight: 600;
 }
-.MoreBigText:hover{
+
+.MoreBigText:hover {
     background-color: transparent !important;
     border-radius: 0px;
     color: #858585 !important;
-    font-weight:400 !important;
+    font-weight: 400 !important;
 }
-.SideNav .SideNavRow a.active img,.SideNav .SideNavRow a:hover img{
+
+.SideNav .SideNavRow a.active img, .SideNav .SideNavRow a:hover img {
     filter: grayscale(0%);
 }
-.SideNav .SideNavRow .BiggerSidenavText a,.MoreBigText {
+
+.SideNav .SideNavRow .BiggerSidenavText a, .MoreBigText {
     font-size: 16px;
 
 }
+
 .ProfileForm .FileInputLabel {
     position: relative;
-    cursor:pointer;
+    cursor: pointer;
 }
-.ProfileForm .FileInputLabel .ChangeProfileIcon{
+
+.ProfileForm .FileInputLabel .ChangeProfileIcon {
     position: absolute;
     bottom: 5%;
     right: 0%;
     width: 30%;
 }
+
 /***************************
 End SideNav
 ****************************/
@@ -2319,21 +2410,25 @@ End SideNav
 Account Status
 ****************************/
 .AccountStatus .card img {
-    border-radius: 0px  !important ;
+    border-radius: 0px !important;
 }
+
 .AccountStatus .CardsPart .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
     border-radius: 8px;
 }
+
 .AccountStatus .card .Favorite {
     right: 5%;
     top: 5%;
 }
-.AboutAjdur .WhiteBG{
+
+.AboutAjdur .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
-   padding: 40px 0px;
-   height: 100% !important;
+    padding: 40px 0px;
+    height: 100% !important;
 }
+
 /***************************
 End Account Status
 ****************************/
@@ -2344,20 +2439,25 @@ Contact US
 .ContactUs .WhiteBG {
     height: fit-content;
 }
-.ContactUs .mb-4.WhiteBG{
+
+.ContactUs .mb-4.WhiteBG {
     padding-bottom: 65px !important;
 }
-.ContactUs .SocialMedia a{
+
+.ContactUs .SocialMedia a {
     margin-left: 15px;
-} 
-.ContactUs .SocialMedia a img{
+}
+
+.ContactUs .SocialMedia a img {
     width: 45px;
     transition: 0.3s ease all;
 }
-.ContactUs .SocialMedia a:hover img{
+
+.ContactUs .SocialMedia a:hover img {
     transform: scale(1.1);
 }
-.ShowPassword,.ShowPassword2{
+
+.ShowPassword, .ShowPassword2 {
     background-color: transparent;
     border: transparent;
     position: absolute;
@@ -2365,14 +2465,17 @@ Contact US
     left: 3%;
     transform: translateY(-50%);
 
-} 
-.PrivacyPolicy .SmallText{
+}
+
+.PrivacyPolicy .SmallText {
     line-height: 35px;
 }
-.PrivacyPolicy  .Shadow{
+
+.PrivacyPolicy .Shadow {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
     border-radius: 8px;
 }
+
 /***************************
 End Contact US
 ****************************/
@@ -2380,39 +2483,47 @@ End Contact US
 /***************************
 Bank Account
 ****************************/
-.BankAccount .BankCard .text,.BankAccount .SmallText {
+.BankAccount .BankCard .text, .BankAccount .SmallText {
     font-weight: 600;
 }
+
 .BankAccount .BankCard .text {
     font-size: 14px;
 }
-.BankAccount .SmallText{
+
+.BankAccount .SmallText {
     font-size: 13px;
     text-align: center;
-} 
-.BankAccount  .BankCard{
+}
+
+.BankAccount .BankCard {
     background-color: white;
     border: 0.5px solid #7353c649;
     border-radius: 8px;
     padding: 20px 10px;
 }
-.BankAccount  .BankCard .tags{
+
+.BankAccount .BankCard .tags {
     background-color: #7353c61c;
     border-radius: 8px;
 }
-.BankAccount  .Stretch {
+
+.BankAccount .Stretch {
     display: flex;
     align-items: stretch;
 
 }
-.BankAccount  .Stretch img {
+
+.BankAccount .Stretch img {
     object-fit: cover;
     height: 55px;
 
 }
-.BankAccountPage .PayOp .row .WhiteBG{
+
+.BankAccountPage .PayOp .row .WhiteBG {
     filter: drop-shadow(0px 4px 4px hsla(0, 0%, 0%, 0.25));
 }
+
 /***************************
 End ank Account
 ****************************/
@@ -2423,96 +2534,119 @@ Exam
 .Exam {
     display: none;
 }
-.Exam .timer img{
+
+.Exam .timer img {
     width: 30px;
-  }
-  .Exam .progress {
+}
+
+.Exam .progress {
     height: 20px;
     background-color: #E7E7E8;
     border-radius: 40px;
-  }
-  .Exam .progress .progress-bar{
+}
+
+.Exam .progress .progress-bar {
     background-color: #3FDBB1;
     border-radius: 20px;
-  }
-.Exit{
+}
+
+.Exit {
     font-size: 25px;
     color: #242424;
 }
-.Exit:hover{
+
+.Exit:hover {
     color: #7A5CC8;
 }
-.Exam  .ExamDetails .sectionSubTitle,.text{
+
+.Exam .ExamDetails .sectionSubTitle, .text {
     color: #A0A1A4;
 }
-.Exam  .ExamDetails .sectionSubTitle span{
+
+.Exam .ExamDetails .sectionSubTitle span {
     font-size: 80px;
-    font-family:'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
-.Exam .AnswerNumber{
+
+.Exam .AnswerNumber {
     width: 40px;
     height: 40px;
-    background-color:  #D9D9D9;
+    background-color: #D9D9D9;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
 }
-.Exam .QNA .WhiteBG{
+
+.Exam .QNA .WhiteBG {
     border-radius: 20px;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
 }
-.Exam .QNA .WhiteBG:hover{
+
+.Exam .QNA .WhiteBG:hover {
     background-color: #7b5cc818;
 }
-.Exam .Continue{
+
+.Exam .Continue {
     background-color: #C3C3C6;
 }
+
 .Exam .TrueAnswer {
     border: 2px solid #3FDBB1;
 }
+
 .Exam .WrongAnswer {
     border: 2px solid #DB2323;
 }
-.Exam .RedBG{
+
+.Exam .RedBG {
     background-color: #DB2323;
 }
-.Exam  .WrongMessage{
+
+.Exam .WrongMessage {
     display: flex;
     align-items: center;
 }
-.Exam  .WrongMessage img{
+
+.Exam .WrongMessage img {
     width: 50px;
     margin-left: 15px;
 
 }
-.Exam .TrueAnswer img,.Exam .WrongAnswer img{
+
+.Exam .TrueAnswer img, .Exam .WrongAnswer img {
     width: 100%;
 }
-.Exam .TrueAnswer .AnswerNumber,.Exam .WrongAnswer .AnswerNumber{
+
+.Exam .TrueAnswer .AnswerNumber, .Exam .WrongAnswer .AnswerNumber {
     background-color: transparent;
 }
-.Exam .addToCart{
+
+.Exam .addToCart {
     width: 50% !important;
     display: inline-block;
 }
-.Exam .ExamImage{
+
+.Exam .ExamImage {
     width: 100%;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
     transition: 0.3s ease all;
 
 }
-.Exam .ExamImage:hover{
+
+.Exam .ExamImage:hover {
     transform: scale(1.02);
 }
-.Exam .ImageInQuestion{
+
+.Exam .ImageInQuestion {
     width: 100px;
-    max-height:80px;
+    max-height: 80px;
     border-radius: 20px;
     margin: 0px 20px;
 }
+
 /***************************
 End Exam
 ****************************/
@@ -2520,11 +2654,12 @@ End Exam
 /***************************
 Error
 ****************************/
-.Error .sectionTitle.Big{
+.Error .sectionTitle.Big {
     font-family: Pacifico;
     font-size: 150px;
     font-weight: 300;
 }
+
 /***************************
 End Error
 ****************************/
@@ -2533,44 +2668,49 @@ End Error
 /***************************
 Discussion
 ****************************/
-.Discussion .Chats .WhiteBG{
+.Discussion .Chats .WhiteBG {
     filter: drop-shadow(0px -1px 34px hsla(0, 0%, 0%, 0.05));
 }
-.Discussion .Chats .WhiteBG.NewMessage{
+
+.Discussion .Chats .WhiteBG.NewMessage {
     max-height: 95vh;
 
 }
-.Discussion .Chats .WhiteBG.DiscussionPart{
+
+.Discussion .Chats .WhiteBG.DiscussionPart {
     max-height: 85vh;
 }
+
 .Discussion .Chats {
     min-height: 100vh;
     max-height: 100vh;
 }
-.Discussion .Chats .WhiteBG .ChatPart,.Discussion .Chats .WhiteBG .ChatCardPart{
-    
+
+.Discussion .Chats .WhiteBG .ChatPart, .Discussion .Chats .WhiteBG .ChatCardPart {
+
     overflow-y: scroll;
 }
-.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar ,.Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar {
+
+.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar, .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar {
     width: 6px;
 
-  }
-  
-  /* Track */
-  .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-track,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-track {
+}
+
+/* Track */
+.Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-track, .Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  /* Handle */
-  .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+.Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb, .Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb {
     background: #7353c64b;
     border-radius: 20px;
-  }
-  
-  /* Handle on hover */
-    .Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb:hover,.Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+.Discussion .Chats .WhiteBG .ChatCardPart::-webkit-scrollbar-thumb:hover, .Discussion .Chats .WhiteBG .ChatPart::-webkit-scrollbar-thumb:hover {
     background: #533c8d2c;
-  }
+}
 
 
 
@@ -2579,14 +2719,16 @@ Discussion
 .Discussion .SearchMessage {
     width: 100%;
 }
-.Discussion .SearchMessage img{
+
+.Discussion .SearchMessage img {
     position: absolute;
     top: 50%;
     right: 7%;
     transform: translateY(-50%);
 
 }
-.Discussion .SearchMessage input{
+
+.Discussion .SearchMessage input {
     width: 100%;
     height: 100%;
     border-radius: 70px;
@@ -2594,9 +2736,10 @@ Discussion
     color: #A9A9A9;
     padding: 7px 45px 7px 0px;
     border: transparent;
-    box-shadow: none ;
+    box-shadow: none;
 }
-.Discussion .ChatCard{
+
+.Discussion .ChatCard {
     width: 100%;
     background-color: #F1EEF9;
     border-radius: 8px;
@@ -2605,31 +2748,37 @@ Discussion
     border: 1px solid #F1EEF9;
 
 }
-.Discussion .ChatCard.FirstChatCard,.Discussion .ChatCard:hover{
-   
+
+.Discussion .ChatCard.FirstChatCard, .Discussion .ChatCard:hover {
+
     border: 1px solid #7453C6;
     filter: drop-shadow(0px 4px 4px hsla(0, 0%, 0%, 0.25));
 }
-.Discussion .ChatCard .text{
+
+.Discussion .ChatCard .text {
     font-size: 12px;
     line-height: 20px;
 }
-.Discussion .ChatCard .card-body{
+
+.Discussion .ChatCard .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.Discussion .ChatCard .MessageTime{
+
+.Discussion .ChatCard .MessageTime {
     font-size: 11px;
     color: #808080;
     position: absolute;
     top: 0%;
     left: 2%;
 }
+
 .Discussion .ChatCard img {
     border-radius: 50%;
 }
+
 .Discussion .ChatCard .MessagesNumber {
     border-radius: 50%;
     background-color: #7453C6;
@@ -2646,15 +2795,17 @@ Discussion
 }
 
 .Discussion .ChatCard .MessageContent {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     max-width: 100%;
 }
-.Discussion .MyChat ,.Discussion .OtherChat{
-width: fit-content;
+
+.Discussion .MyChat, .Discussion .OtherChat {
+    width: fit-content;
 }
-.Discussion .MyChat .text,.Discussion .OtherChat .text{
+
+.Discussion .MyChat .text, .Discussion .OtherChat .text {
     font-size: 13px;
     font-weight: 600;
     line-height: 22px;
@@ -2666,7 +2817,8 @@ width: fit-content;
     position: relative;
 
 }
-.Discussion .MyChat .time,.Discussion .OtherChat .time{
+
+.Discussion .MyChat .time, .Discussion .OtherChat .time {
     color: #727272;
     font-size: 12px;
     font-weight: 600;
@@ -2675,39 +2827,45 @@ width: fit-content;
     bottom: -40%;
     direction: ltr;
 }
-.Discussion .OtherChat{
+
+.Discussion .OtherChat {
     direction: ltr;
     float: left;
 }
-.Discussion .OtherChat .text{
+
+.Discussion .OtherChat .text {
     background-color: #F1EEF9;
 
 }
-.Discussion .OtherChat  .text{
+
+.Discussion .OtherChat .text {
     direction: rtl;
 }
-.Discussion .OtherChat .time{
+
+.Discussion .OtherChat .time {
     left: unset;
     right: 1%;
 }
 
-.Discussion .TypeMessageRow{
-width: 100%;
-background-color: #F0F2F5;
-border-radius: 15px;
+.Discussion .TypeMessageRow {
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 15px;
 
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-position: absolute;
-bottom: 0;
-left: 0;
-display: flex;
-align-items: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
 }
-.Discussion .TypeMessageRow form{
+
+.Discussion .TypeMessageRow form {
     width: 80%;
 }
-.Discussion .TypeMessageRow form input{
+
+.Discussion .TypeMessageRow form input {
     border-radius: 15px;
     background-color: #FFFFFF;
     color: #666769;
@@ -2716,7 +2874,8 @@ align-items: center;
     border: none;
 
 }
-.Discussion .TypeMessageRow form button{
+
+.Discussion .TypeMessageRow form button {
     position: absolute;
     top: 50%;
     left: 0%;
@@ -2724,6 +2883,7 @@ align-items: center;
     background-color: transparent;
     border: 0px;
 }
+
 /***************************
 End Discussion
 ****************************/
@@ -2746,19 +2906,25 @@ End Discussion
 .purple {
     color: #7453C6;
 }
-.green{
+
+.green {
     color: #3FDBB1;
 }
-.black{
+
+.black {
     color: #242424;
 }
-.red{
-    color: #C65353 ;
-}
-.DarkRed{
-    color: #DB2323;
+
+.red {
+    color: #C65353;
 }
 
+.DarkRed {
+    color: #DB2323;
+}
+.grey{
+    color: #646365;
+}
 
 
 
@@ -2768,10 +2934,12 @@ End Discussion
     .CoursesPage .LevelOfEducation .Overlay img.TeacherProfile {
         top: -15%;
     }
-    .CourseForRegistered section.WatchVideo .VideoPart{
+
+    .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 750px;
     }
-    section.GreenSection{
+
+    section.GreenSection {
         top: -70%;
     }
 }
@@ -2784,24 +2952,29 @@ End Discussion
     nav.navbar .navbar-brand img {
         width: 60% !important;
     }
-    .CourseForRegistered section.WatchVideo .VideoPart{
+
+    .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 650px;
     }
 }
 
 @media (max-width: 1200px) {
     .CourseForRegistered section.WatchVideo .VideoPart {
-    min-height: 550px;
+        min-height: 550px;
     }
-    .BankAccount .SmallText{
+
+    .BankAccount .SmallText {
         font-size: 11px;
     }
+
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 13px;
     }
-    .AccountStatus .CardsPart .WhiteBG .text.mt-3{
+
+    .AccountStatus .CardsPart .WhiteBG .text.mt-3 {
         font-size: 13px;
     }
+
     .PackagesCourse .BundelCard .card .card-text {
         font-size: 8px;
     }
@@ -2890,68 +3063,83 @@ End Discussion
     section.Banner .col-lg-5 {
         display: flex;
     }
-    .BankAccount .SmallText{
+
+    .BankAccount .SmallText {
         font-size: 13px;
     }
-    .sectionSubTitle  {
+
+    .sectionSubTitle {
         font-size: 18px;
         line-height: 35px;
     }
-    .BankAccountPage .PayOp .row .WhiteBG img{
+
+    .BankAccountPage .PayOp .row .WhiteBG img {
         width: 60% !important;
     }
-    .BankAccountPage .PayOp .row .WhiteBG img.ApplePay{
+
+    .BankAccountPage .PayOp .row .WhiteBG img.ApplePay {
         width: 50% !important;
     }
-    .Exam .WhiteBg a button{
+
+    .Exam .WhiteBg a button {
         width: 98% !important;
-     }
-    .AccountStatus .CardsPart .WhiteBG .text.mt-3{
+    }
+
+    .AccountStatus .CardsPart .WhiteBG .text.mt-3 {
         font-size: 16px;
     }
-    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
-    min-height: 415px;
-    margin-bottom: 30px;
+
+    section.WatchVideo .VideoPart, .CourseForRegistered section.WatchVideo .VideoPart {
+        min-height: 415px;
+        margin-bottom: 30px;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn  {
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn {
         flex-direction: row !important;
         justify-content: center !important;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow{
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow {
         display: flex;
         justify-content: space-between;
     }
+
     .SideNav .SideNavRow .BiggerSidenavText a {
-    padding: 0 !important;
+        padding: 0 !important;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 a{
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow .mt-2 a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2 div,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText div{
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow .mt-2 div, .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow .BiggerSidenavText div {
         display: flex;
         justify-content: space-around;
         justify-content: center;
     }
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .BiggerSidenavText,.CoursesPage section.LevelOfEducation .FilterPart.SideNav  .SideNavRow .mt-2{
+
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow .BiggerSidenavText, .CoursesPage section.LevelOfEducation .FilterPart.SideNav .SideNavRow .mt-2 {
         display: flex;
         justify-content: space-between;
         max-width: 100%;
         flex-direction: column;
     }
 
-    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn img{
+    .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn img {
         width: 50px !important;
     }
-    
-    section.WatchVideo .WhiteBG{
+
+    section.WatchVideo .WhiteBG {
         text-align: center;
     }
-    section.WatchVideo .col-lg-8{
+
+    section.WatchVideo .col-lg-8 {
         margin-bottom: 25px;
     }
+
     section.Banner .col-lg-5 img {
         width: 75% !important;
         margin: 0 auto;
@@ -3022,9 +3210,11 @@ End Discussion
         font-size: 20px;
         line-height: 50px;
     }
-    .BankAccountBanner{
+
+    .BankAccountBanner {
         width: 100% !important;
     }
+
     nav.navbar ul.navbar-nav li.nav-item {
         margin-right: 0;
     }
@@ -3060,16 +3250,19 @@ End Discussion
     .BAQA section.Discount .CarouselText a button {
         width: 30%;
     }
-    .BAQA section.FAQ  .text{
+
+    .BAQA section.FAQ .text {
         font-size: 14px;
     }
-    .CoursesPage section.CarouselPart .CarouselText{
+
+    .CoursesPage section.CarouselPart .CarouselText {
         width: 100% !important;
         display: flex;
         justify-content: center;
-        
+
     }
-    .CoursesPage section.CarouselPart .CarouselText img{
+
+    .CoursesPage section.CarouselPart .CarouselText img {
         margin: 0 !important;
     }
 }
@@ -3079,19 +3272,22 @@ End Discussion
         width: 100% !important;
         font-size: 13px;
     }
-    .sectionTitle{
+    .Devices{
+        width: 100% !important;
+    }
+    .sectionTitle {
         font-size: 17px;
         line-height: 30px;
     }
-    .text {
-        font-size: 12px;
-        line-height: 20px;
-    }
+
+ 
+
     .sectionSubTitle {
         font-size: 14px;
         line-height: 25px;
     }
-    .Discussion .ChatCard .MessagesNumber{
+
+    .Discussion .ChatCard .MessagesNumber {
         width: 15px;
         height: 15px;
         font-size: 9px;
@@ -3099,27 +3295,35 @@ End Discussion
         bottom: unset;
         top: -3%;
     }
+
     .Discussion .ChatCard .MessageTime {
-    font-size: 7px;
+        font-size: 7px;
     }
+
     .AccountStatus .card .Favorite {
-    right: 35%;
+        right: 35%;
     }
-    .Exam .QNA .WhiteBG{
+
+    .Exam .QNA .WhiteBG {
         width: 100% !important;
     }
-    .TeacherPageRow .card-body{
+
+    .TeacherPageRow .card-body {
         align-items: center !important;
     }
-    .TeacherPageRow .card-body .sectionSubTitle{
-        margin-bottom:0px !important;
+
+    .TeacherPageRow .card-body .sectionSubTitle {
+        margin-bottom: 0px !important;
     }
-    .TeacherPageRow img{
+
+    .TeacherPageRow img {
         width: 50% !important;
     }
-    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart {
-    min-height: 315px;
+
+    section.WatchVideo .VideoPart, .CourseForRegistered section.WatchVideo .VideoPart {
+        min-height: 315px;
     }
+
     .form-switch .form-check-input {
         width: 50px;
         height: 20px;
@@ -3189,14 +3393,16 @@ End Discussion
         width: 75%;
     }
 
-     
+
     .BAQA section.Discount .CarouselText a button {
         width: 50%;
     }
-    .Exam .sectionSubTitle{
+
+    .Exam .sectionSubTitle {
         font-size: 17px;
     }
-    section.CarouselPart{
+
+    section.CarouselPart {
         border-radius: 10px;
     }
 }
@@ -3205,58 +3411,72 @@ End Discussion
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
+
     .BankAccountBanner {
         width: 25% !important;
     }
-    .Discussion .ChatCard .MessagesNumber{
+ 
+    .Discussion .ChatCard .MessagesNumber {
         width: 18px;
         height: 18px;
         font-size: 11px;
         left: 2%;
         bottom: 0;
-        top:unset;
+        top: unset;
     }
+
     .Discussion .ChatCard .MessageTime {
-    font-size: 12px;
-    }
-    .AccountStatus .card .Favorite{
-        right: unset;
-    }
-    nav.navbar .NavButtons a button{
         font-size: 12px;
     }
-    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
+
+    .AccountStatus .card .Favorite {
+        right: unset;
+    }
+
+    nav.navbar .NavButtons a button {
+        font-size: 12px;
+    }
+
+    section.WatchVideo .VideoPart, .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 240px;
     }
-    
+
     .BAQACarousel .carousel-cell {
         width: 55%;
     }
-    .WrongMessage{
+
+    .WrongMessage {
         justify-content: center;
         margin-bottom: 20px;
     }
-    .Exam .WhiteBg .d-flex{
+
+    .Exam .WhiteBg .d-flex {
         flex-direction: column;
     }
+
     .Exam .WhiteBg a {
         width: 75% !important;
     }
+
     .Exam .WhiteBg a button {
         width: 100% !important;
         margin-bottom: 10px;
     }
-    section.WatchVideo .VideoPart,.CourseForRegistered section.WatchVideo .VideoPart{
+
+    section.WatchVideo .VideoPart, .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 270px;
     }
-    .ContactUs .SocialMedia .d-flex{
+
+    .ContactUs .SocialMedia .d-flex {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .ContactUs .SocialMedia .d-flex div{
+
+    .ContactUs .SocialMedia .d-flex div {
         margin-bottom: 15px;
     }
+
     .BAQA section.Discount .CarouselText a button {
         width: 100%;
     }
