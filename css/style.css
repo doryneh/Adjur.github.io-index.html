@@ -28,7 +28,6 @@ body {
 
 }
 
-
 .purpleTop {
     background-color: #7453C6;
 }
@@ -193,7 +192,7 @@ nav.navbar .NavButtons .NotificationDropdown button.dropdown-toggle::after {
 
 nav.navbar .NavButtons .badge {
     background-color: white !important;
-    color: #7453C6;
+    color: #7453C6 !important;
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.15));
     right: 5% !important;
     top: 0 !important;
@@ -290,8 +289,8 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    border-radius: 8px;
+    width: 100%;
 }
 
 .dropdownBtn.NotificationDropdown .dropdown-menu {
@@ -345,7 +344,9 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     background-color: transparent;
     border: 0;
 }
-
+.dropdownBtn .dropdown-item span{
+    color: #7453C6 !important;
+}
 .dropdownBtn .dropdown-item:hover {
     background-color: #ececec;
 }
@@ -367,13 +368,17 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     font-size: 12px !important;
 
 }
-
+nav.navbar .dropdownBtn.ProfileDropdown button{
+    position: relative;
+}
 nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button {
     color: #F30E37 !important;
 
 
 }
-
+nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button img{
+    width: 15px !important;
+}
 .dropdownBtn .dropdown-item.logoutBtn button {
     padding: 0px 10px !important;
 
