@@ -275,13 +275,28 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     width: 180px;
 
 }
-
+.DropOverlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Triangle {
+    position: absolute;
+    right: 4%;
+    top: -28%;
+}
+.dropdownBtn.NotificationDropdown .Triangle{
+    right: unset;
+    left: 4%;
+    top: -10%;
+}
 .dropdownBtn .dropdown-menu, nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     position: absolute;
     z-index: 1000;
-    display: none;
+    display: block;
     min-width: 10rem;
     padding: 0.5rem 0;
+    margin-top: 15px !important;
     margin: 0;
     font-size: 1rem;
     color: #212529 !important;
@@ -367,6 +382,12 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     margin: auto;
     font-size: 12px !important;
 
+}
+.dropdownBtn {
+    position: relative;
+}
+.dropdownBtn .dropdown-item.logoutBtn img{
+    width: 15px !important;
 }
 nav.navbar .dropdownBtn.ProfileDropdown button{
     position: relative;
@@ -1652,7 +1673,11 @@ End Footer
 .EmptyOffer img {
     width: 25%;
 }
-
+.EmptyOffer svg{
+    font-size: 200px;
+    color: #5032AD;
+    margin: 30px 0px 15px 0px;
+}
 .EmptyOffer h4 {
     font-size: 25px;
     line-height: 52px;
@@ -2485,7 +2510,7 @@ Contact US
     top: 50%;
     left: 3%;
     transform: translateY(-50%);
-
+    color: #808080;
 }
 
 .PrivacyPolicy .SmallText {

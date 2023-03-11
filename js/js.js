@@ -59,23 +59,31 @@ $(document).ready(function () {
   /*********
    SHow Password
    *******/
-  $(".ShowPassword").click(function () {
-    var x = $("#exampleInputPassword3");
-    if (x.attr("type") === "password") {
-      x.attr("type", "text");
+
+  $('.ShowPassword').click(function() {
+    var passwordField = $('#exampleInputPassword3');
+    var passwordFieldType = passwordField.attr('type');
+    if (passwordFieldType == 'password') {
+      passwordField.attr('type', 'text');
+      $(this).html('<i class="fa-solid fa-eye"></i>');
     } else {
-      x.attr("type", "password");
+      passwordField.attr('type', 'password');
+      $(this).html('<i class="fa-solid fa-eye-slash"></i>');
     }
   });
 
-  $(".ShowPassword2").click(function () {
-    var x = $("#exampleInputPassword4");
-    if (x.attr("type") === "password") {
-      x.attr("type", "text");
+  $('.ShowPassword2').click(function() {
+    var passwordField = $('#exampleInputPassword4');
+    var passwordFieldType = passwordField.attr('type');
+    if (passwordFieldType == 'password') {
+      passwordField.attr('type', 'text');
+      $(this).html('<i class="fa-solid fa-eye"></i>');
     } else {
-      x.attr("type", "password");
+      passwordField.attr('type', 'password');
+      $(this).html('<i class="fa-solid fa-eye-slash"></i>');
     }
   });
+
 
 
   /*********
