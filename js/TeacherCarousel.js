@@ -81,21 +81,7 @@ $(document).ready(function () {
         }
       });
 
-      // setInterval function to increase position every 7 seconds
-      //  setInterval(function() {
-      //   position = (position + 1) % items;
-      //   if (position < 0) {
-      //     position += items;
-      //   }
-      //   $carousel.css('--position', position + 1);
-    
-      //   var currentPosition = parseInt($carousel.css('--position'));
-      //   var totalItems = parseInt($carousel.css('--items'));
-      //   if (currentPosition > totalItems) {
-      //     $carousel.css({'--position': totalItems });
-      //   }
-      // }, 7000);
-
+      
 
 });
 

@@ -139,6 +139,34 @@ $(document).ready(function () {
   });
 
 
-
+/************
+ Show and hide Coupon
+ *******/
+ $('.YesCOupon').click(function() {
+  $('.CouponForm').show();
 });
+$('.NoCOupon').click(function() {
+  $('.CouponForm').hide();
+});
+});
+
+
+
+/**********
+ *CHange border color for the payment method page
+ */
+
+ // Set default border color for checked input
+ $('.PaymentMethods .form-check .form-check-input:checked').siblings('.form-check-label').css('border-color', '#7453C6');
+
+ // Change border color on input change
+ $('.PaymentMethods .form-check .form-check-input').change(function() {
+   $('.PaymentMethods .form-check .form-check-input').each(function() {
+     if ($(this).is(':checked')) {
+       $(this).siblings('.form-check-label').css('border-color', '#7453C6');
+     } else {
+       $(this).siblings('.form-check-label').css('border-color', '#c9c9c9');
+     }
+   });
+ });
 

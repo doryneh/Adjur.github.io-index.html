@@ -293,7 +293,7 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
 .dropdownBtn .dropdown-menu, nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     position: absolute;
     z-index: 1000;
-    display: block;
+    display: none;
     min-width: 10rem;
     padding: 0.5rem 0;
     margin-top: 15px !important;
@@ -971,6 +971,7 @@ section.CarouselPart .carousel button {
     display: grid;
     align-items: center;
     justify-items: center;
+    z-index: 0;
 }
 
 main#carousel {
@@ -985,7 +986,7 @@ main#carousel {
     perspective: 400px;
     pointer-events: none;
     overflow: visible;
-    z-index: 0 !important;
+    z-index: 1000 !important;
 }
 
 div.item {
@@ -1781,6 +1782,7 @@ section.WatchVideo .VideoPart .PlayIcon {
     background-color: transparent;
     border-radius: 0px;
     padding-right: 10px;
+    transform: none !important;
 }
 
 .VideoPage .QNA .card:hover {
@@ -1887,6 +1889,7 @@ section.WatchVideo .VideoPart .PlayIcon {
     align-items: center;
     border-radius: 15px;
     border: 1px solid #E1E1E1;
+    max-height: 40px;
 }
 
 .VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree, .activatedDevice, .DeActivatedDevice, .ExitDevice {
@@ -2291,6 +2294,12 @@ Cart
     background-color: #7453C5;
     color: white;
 }
+.CartPage  .card:hover{
+    transform: none !important;
+}
+.CouponForm {
+    display: none;
+}
 
 .Exam .BackBTN {
     border-radius: 16px;
@@ -2320,7 +2329,7 @@ Cart
 
 .PaymentMethods .form-check .form-check-label {
     padding: 20px;
-    border: 1px solid #7453C6;
+    border: 1px solid #c9c9c9;
     border-radius: 20px;
     font-weight: 600;
     width: 100%;
