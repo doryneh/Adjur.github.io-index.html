@@ -1680,11 +1680,23 @@ End Footer
     background-color: transparent;
     font-size: 14px;
 }
+.CartPage  .BAQA section.ChooseBAQA h1 {
+    font-size: 25px;
+}
+.BAQACARDSROW {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .EmptyOffer {
     display: none !important;
     background-color: white !important;
     border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .EmptyOffer img {
@@ -3147,7 +3159,9 @@ End Discussion
     section.Banner .col-lg-5 {
         display: flex;
     }
-
+    img[imgsrc] {
+        background-color: transparent;
+    }
     .UncompletedRegistration .Devices {
         flex-direction: column;
         width: fit-content !important;
