@@ -824,7 +824,7 @@ section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEduc
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
-section.LevelOfEducation .tab-content ,section.LevelOfEducation .tab-content .tab-pane  ,section.LevelOfEducation .tab-content .row.p-4 {
+section.LevelOfEducation .tab-content ,section.LevelOfEducation .tab-content .tab-pane  ,section.LevelOfEducation .tab-content .row{
     height: 100% !important;
 }
 section.Bundels .card .ImgPart {
