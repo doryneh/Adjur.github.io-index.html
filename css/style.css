@@ -1889,17 +1889,18 @@ section.WatchVideo .VideoPart .PlayIcon {
     align-items: center;
     border-radius: 15px;
     border: 1px solid #E1E1E1;
-    max-height: 40px;
+    height: 40px;
+    margin: auto;
 }
 
 .VideoPage .accordion-item .accordion-body .ContenTitlte .Forfree, .activatedDevice, .DeActivatedDevice, .ExitDevice {
     color: white;
-    font-size: 14px;
+    font-size: 11px;
     background-color: #3FDBB1;
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
-    height: 30px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
