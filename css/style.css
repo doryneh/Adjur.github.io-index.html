@@ -263,12 +263,19 @@ nav.navbar .dropdownBtn.ProfileDropdown button {
 }
 
 nav.navbar .dropdownBtn.ProfileDropdown button img {
-    width: 15%;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
+    
 }
 
 nav.navbar .dropdownBtn.ProfileDropdown button img, .ProfilePic {
     border-radius: 50%;
+}
+.ProfilePic {
+    width: 70px !important;
+    height: 70px !important;
+
 }
 
 nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
@@ -295,7 +302,8 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     z-index: 1000;
     display: none;
     min-width: 10rem;
-    padding: 0.5rem 0;
+    padding: 0;
+    border:0px;
     margin-top: 15px !important;
     margin: 0;
     font-size: 1rem;
@@ -392,13 +400,14 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
 nav.navbar .dropdownBtn.ProfileDropdown button{
     position: relative;
 }
-nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button {
+nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button span {
     color: #F30E37 !important;
-
+    font-weight: 600;
 
 }
 nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button img{
     width: 15px !important;
+    height: unset;
 }
 .dropdownBtn .dropdown-item.logoutBtn button {
     padding: 0px 10px !important;
@@ -810,7 +819,7 @@ section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEduc
     background-color: white;
 }
 
-section.LevelOfEducation .tab-content .card:hover, .VideoPage .Suggestions .BundelCard .card:hover {
+.indexPage section.LevelOfEducation .tab-content .card:hover,.CoursesPage  section.LevelOfEducation .tab-content .card:hover{
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
@@ -984,7 +993,6 @@ main#carousel {
     justify-content: center;
     transform-style: flat;
     perspective: 400px;
-    pointer-events: none;
     overflow: visible;
     z-index: 1000 !important;
 }
@@ -1129,7 +1137,12 @@ section.CarouselPart .carousel-indicator input {
 section.CarouselPart .carousel-indicator input:checked {
     color: white;
 }
-
+.indexPage section.CarouselPart ,
+.indexPage section.CarouselPart .row,
+.indexPage section.CarouselPart .Teachercarousel,
+.indexPage section.CarouselPart .container {
+    position: relative;
+}
 #PrevBtn, #NextBtn {
     z-index: 100;
     color: white;
@@ -1138,7 +1151,7 @@ section.CarouselPart .carousel-indicator input:checked {
     width: fit-content;
     position: absolute;
     top: 60%;
-
+    height: 100%;
 }
 
 #NextBtn {
@@ -2449,7 +2462,10 @@ SideNav
     position: relative;
     cursor: pointer;
 }
-
+.ProfileForm .FileInputLabel img{
+    width: 200px !important;
+    height: 200px ;
+}
 .ProfileForm .FileInputLabel .ChangeProfileIcon {
     position: absolute;
     bottom: 5%;
@@ -2468,17 +2484,21 @@ Account Status
 .AccountStatus .card img {
     border-radius: 0px !important;
 }
-
+.AccountStatus .BundelCard .card img{
+    border-radius: 15px !important;
+}
 .AccountStatus .CardsPart .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
     border-radius: 8px;
 }
 
 .AccountStatus .card .Favorite {
-    right: 5%;
+    right: 3%;
     top: 5%;
 }
-
+.AccountStatus .card .Favorite img {
+    width: 30px;
+}
 .AboutAjdur .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
     padding: 40px 0px;
@@ -3014,7 +3034,12 @@ End Discussion
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 550px;
     }
-
+    #PrevBtn{
+        right: 7%;
+    }
+    #NextBtn{
+        left: 7%;
+    }
     .BankAccount .SmallText {
         font-size: 11px;
     }
@@ -3108,6 +3133,10 @@ End Discussion
 
     .VideoPage .accordion-item .accordion-body .text {
         font-size: 14px;
+    }
+    .AccountStatus .card .Favorite {
+        right: 3%;
+        top: 10%;
     }
 }
 
@@ -3327,7 +3356,9 @@ End Discussion
     }
 
     .CoursesPage section.CarouselPart .CarouselText img {
-        margin: 0 !important;
+        position: unset;
+        display: block;
+        margin: auto !important;
     }
 }
 
@@ -3480,7 +3511,10 @@ End Discussion
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-
+    section.Bundels .card a, section.LevelOfEducation .card a,section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart{
+        width: unset !important;
+        font-size: 13px;
+    }
     .BankAccountBanner {
         width: 25% !important;
     }
