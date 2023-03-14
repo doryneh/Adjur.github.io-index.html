@@ -831,9 +831,7 @@ section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEduc
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
-section.LevelOfEducation .tab-content ,section.LevelOfEducation .tab-content .tab-pane  ,section.LevelOfEducation .tab-content .row{
-    height: 100% !important;
-}
+
 section.Bundels .card .ImgPart {
     background-color: #FFDDF3;
     display: flex;
@@ -1111,7 +1109,10 @@ section.CarouselPart .Overlay a.purpleBtn, .CoursesPage .LevelOfEducation .Overl
     margin: auto;
     margin-top: 10px;
 }
-
+.CoursesPage .LevelOfEducation .Overlay a.purpleBtn{
+    margin: unset ;
+    margin-top: 20px;
+}
 section.CarouselPart .Overlay a.purpleBtn:hover, .CoursesPage .LevelOfEducation .Overlay a.purpleBtn:hover {
     background-color: #5032AD;
 }
@@ -1428,6 +1429,8 @@ footer.footer .TopText {
 
 footer.footer .firstFooterPart img.whatsapp {
     width: 30px;
+    filter: brightness(0) invert(1);
+
 }
 
 a {
@@ -1700,9 +1703,6 @@ End Footer
     display: none !important;
     background-color: white !important;
     border-radius: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -2172,7 +2172,7 @@ BAQA
 
 .BAQA section.ChooseBAQA h1 {
     color: #7453C6;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 20px;
     font-weight: bolder;
     background: linear-gradient(90deg, rgba(63, 219, 177, 0) 0%, rgba(63, 219, 177, 1) 50%, rgba(63, 219, 177, 0) 100%);
@@ -2184,6 +2184,7 @@ BAQA
 .BAQA section.ChooseBAQA .WhiteBG {
     transition: 0.4s ease all;
     border-radius: 20px;
+    height: 100%;
 }
 
 .BAQA section.ChooseBAQA .WhiteBG:Hover h1, .GreenBG h1 {
@@ -2420,9 +2421,10 @@ Cart
     width: 35% !important;
 }
 
-.BankAccount .BAQACarousel .carousel-cell {
+ .BAQACarousel .carousel-cell {
     width: 50%;
-    height: fit-content;
+    min-height: 400px;
+    height: 100%;
     margin-right: 10px;
     background: transparent;
     counter-increment: carousel-cell;
@@ -3376,7 +3378,7 @@ End Discussion
         width: 100% !important;
         display: flex;
         justify-content: center;
-
+        flex-direction: column;
     }
 
     .CoursesPage section.CarouselPart .CarouselText img {
