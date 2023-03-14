@@ -266,12 +266,13 @@ nav.navbar .dropdownBtn.ProfileDropdown button img {
     width: 35px;
     height: 35px;
     margin-left: 10px;
-    
+
 }
 
 nav.navbar .dropdownBtn.ProfileDropdown button img, .ProfilePic {
     border-radius: 50%;
 }
+
 .ProfilePic {
     width: 70px !important;
     height: 70px !important;
@@ -289,25 +290,28 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     position: relative;
     padding: 15px 0px;
 }
+
 .Triangle {
     position: absolute;
     right: 4%;
     top: -14px;
 }
-.dropdownBtn.NotificationDropdown .Triangle{
+
+.dropdownBtn.NotificationDropdown .Triangle {
     right: unset;
     left: 4%;
     top: -10%;
 }
+
 .dropdownBtn .dropdown-menu, nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     position: absolute;
     z-index: 1000;
     visibility: hidden;
-  opacity: 0;
-  display: block;
+    opacity: 0;
+    display: block;
     min-width: 10rem;
     padding: 0;
-    border:0px;
+    border: 0px;
     margin-top: 15px !important;
     margin: 0;
     font-size: 1rem;
@@ -320,10 +324,12 @@ nav.navbar .dropdownBtn.ProfileDropdown .dropdown-menu {
     width: 100%;
     transition: visibility 0.2s, opacity 0.5s linear;
 }
+
 nav.navbar .dropdownBtn:hover .dropdown-menu {
     visibility: visible !important;
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
+
 .dropdownBtn.NotificationDropdown .dropdown-menu {
     left: 0;
     width: 150px;
@@ -367,6 +373,7 @@ nav.navbar .dropdownBtn:hover .dropdown-menu {
     padding: 0.25rem 1rem;
     clear: both;
     font-weight: 400;
+    margin-bottom: 5px;
     color: #7453C6 !important;
     font-size: 12px;
     text-align: inherit;
@@ -375,9 +382,11 @@ nav.navbar .dropdownBtn:hover .dropdown-menu {
     background-color: transparent;
     border: 0;
 }
-.dropdownBtn .dropdown-item span{
+
+.dropdownBtn .dropdown-item span {
     color: #7453C6 !important;
 }
+
 .dropdownBtn .dropdown-item:hover {
     background-color: #ececec;
 }
@@ -399,24 +408,30 @@ nav.navbar .dropdownBtn:hover .dropdown-menu {
     font-size: 12px !important;
 
 }
+
 .dropdownBtn {
     position: relative;
 }
-.dropdownBtn .dropdown-item.logoutBtn img{
+
+.dropdownBtn .dropdown-item.logoutBtn img {
     width: 15px !important;
 }
-nav.navbar .dropdownBtn.ProfileDropdown button{
+
+nav.navbar .dropdownBtn.ProfileDropdown button {
     position: relative;
 }
+
 nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button span {
     color: #F30E37 !important;
     font-weight: 600;
 
 }
-nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button img{
+
+nav.navbar .dropdownBtn.ProfileDropdown .dropdown-item.logoutBtn button img {
     width: 15px !important;
     height: unset;
 }
+
 .dropdownBtn .dropdown-item.logoutBtn button {
     padding: 0px 10px !important;
 
@@ -543,7 +558,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select, .ProfileForm input,.Error input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input,.PaymentMethods select,.PaymentMethods .form-control:disabled,.PaymentMethods .form-control[readonly] {
+.modal input, .modal select, .ProfileForm input, .Error input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input, .PaymentMethods select, .PaymentMethods .form-control:disabled, .PaymentMethods .form-control[readonly] {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -827,7 +842,7 @@ section.Bundels .card, section.LevelOfEducation .card, .CoursesPage .LevelOfEduc
     background-color: white;
 }
 
-.indexPage section.LevelOfEducation .tab-content .card:hover,.CoursesPage  section.LevelOfEducation .tab-content .card:hover{
+.indexPage section.LevelOfEducation .tab-content .card:hover, .CoursesPage section.LevelOfEducation .tab-content .card:hover {
     filter: drop-shadow(0px 1px 22px hsla(0, 0%, 0%, 0.1));
     transform: scale(1.05);
 }
@@ -1109,10 +1124,12 @@ section.CarouselPart .Overlay a.purpleBtn, .CoursesPage .LevelOfEducation .Overl
     margin: auto;
     margin-top: 10px;
 }
-.CoursesPage .LevelOfEducation .Overlay a.purpleBtn{
-    margin: unset ;
+
+.CoursesPage .LevelOfEducation .Overlay a.purpleBtn {
+    margin: unset;
     margin-top: 20px;
 }
+
 section.CarouselPart .Overlay a.purpleBtn:hover, .CoursesPage .LevelOfEducation .Overlay a.purpleBtn:hover {
     background-color: #5032AD;
 }
@@ -1148,12 +1165,14 @@ section.CarouselPart .carousel-indicator input {
 section.CarouselPart .carousel-indicator input:checked {
     color: white;
 }
-.indexPage section.CarouselPart ,
+
+.indexPage section.CarouselPart,
 .indexPage section.CarouselPart .row,
 .indexPage section.CarouselPart .Teachercarousel,
 .indexPage section.CarouselPart .container {
     position: relative;
 }
+
 #PrevBtn, #NextBtn {
     z-index: 100;
     color: white;
@@ -1455,14 +1474,16 @@ footer.footer .DownloadApp .footerTitle {
     border-bottom: none;
     font-weight: 500;
 }
-footer.footer .SocialIcons img{
+
+footer.footer .SocialIcons img {
     filter: brightness(0) invert(1);
 }
-footer.footer .SocialIcons img,.Error .SocialIcons img {
+
+footer.footer .SocialIcons img, .Error .SocialIcons img {
     width: 30px;
 }
 
-footer.footer .SocialIcons img.whatsapp ,.Error .SocialIcons img.whatsapp {
+footer.footer .SocialIcons img.whatsapp, .Error .SocialIcons img.whatsapp {
     width: 25px;
 }
 
@@ -1690,9 +1711,11 @@ End Footer
     background-color: transparent;
     font-size: 14px;
 }
-.CartPage  .BAQA section.ChooseBAQA h1 {
+
+.CartPage .BAQA section.ChooseBAQA h1 {
     font-size: 25px;
 }
+
 .BAQACARDSROW {
     display: flex;
     justify-content: center;
@@ -1703,17 +1726,18 @@ End Footer
     display: none !important;
     background-color: white !important;
     border-radius: 15px;
-    transform: translate(-50%,-50%);
 }
 
 .EmptyOffer img {
     width: 25%;
 }
-.EmptyOffer svg{
+
+.EmptyOffer svg {
     font-size: 200px;
     color: #5032AD;
     margin: 30px 0px 15px 0px;
 }
+
 .EmptyOffer h4 {
     font-size: 25px;
     line-height: 52px;
@@ -2184,6 +2208,7 @@ BAQA
 .BAQA section.ChooseBAQA .WhiteBG {
     transition: 0.4s ease all;
     border-radius: 20px;
+    min-height: 375px;
     height: 100%;
 }
 
@@ -2331,9 +2356,11 @@ Cart
     background-color: #7453C5;
     color: white;
 }
-.CartPage  .card:hover{
+
+.CartPage .card:hover {
     transform: none !important;
 }
+
 .CouponForm {
     display: none;
 }
@@ -2421,7 +2448,7 @@ Cart
     width: 35% !important;
 }
 
- .BAQACarousel .carousel-cell {
+.BAQACarousel .carousel-cell {
     width: 50%;
     min-height: 400px;
     height: 100%;
@@ -2486,10 +2513,12 @@ SideNav
     position: relative;
     cursor: pointer;
 }
-.ProfileForm .FileInputLabel:first img{
+
+#photo {
     width: 200px !important;
-    height: 200px ;
+    height: 200px;
 }
+
 .ProfileForm .FileInputLabel .ChangeProfileIcon {
     position: absolute;
     bottom: 5%;
@@ -2508,9 +2537,11 @@ Account Status
 .AccountStatus .card img {
     border-radius: 0px !important;
 }
-.AccountStatus .BundelCard .card img{
+
+.AccountStatus .BundelCard .card img {
     border-radius: 15px !important;
 }
+
 .AccountStatus .CardsPart .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.1));
     border-radius: 8px;
@@ -2520,9 +2551,11 @@ Account Status
     right: 3%;
     top: 5%;
 }
+
 .AccountStatus .card .Favorite img {
     width: 30px;
 }
+
 .AboutAjdur .WhiteBG {
     filter: drop-shadow(5px 5px 25px hsla(0, 0%, 0%, 0.08));
     padding: 40px 0px;
@@ -3039,15 +3072,15 @@ End Discussion
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 750px;
     }
-   
+
     section.GreenSection {
         top: -70%;
     }
-   
+
 }
 
 @media (max-width: 1400px) {
-  
+
 
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 650px;
@@ -3058,12 +3091,15 @@ End Discussion
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 550px;
     }
-    #PrevBtn{
+
+    #PrevBtn {
         right: 7%;
     }
-    #NextBtn{
+
+    #NextBtn {
         left: 7%;
     }
+
     .BankAccount .SmallText {
         font-size: 11px;
     }
@@ -3158,6 +3194,7 @@ End Discussion
     .VideoPage .accordion-item .accordion-body .text {
         font-size: 14px;
     }
+
     .AccountStatus .card .Favorite {
         right: 3%;
         top: 10%;
@@ -3168,9 +3205,11 @@ End Discussion
     section.Banner .col-lg-5 {
         display: flex;
     }
+
     img[imgsrc] {
         background-color: transparent;
     }
+
     .UncompletedRegistration .Devices {
         flex-direction: column;
         width: fit-content !important;
@@ -3539,13 +3578,16 @@ End Discussion
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-    .EmptyOffer img{
+
+    .EmptyOffer img {
         width: 50%;
     }
-    section.Bundels .card a, section.LevelOfEducation .card a,section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart{
+
+    section.Bundels .card a, section.LevelOfEducation .card a, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart {
         width: unset !important;
         font-size: 13px;
     }
+
     .BankAccountBanner {
         width: 25% !important;
     }
