@@ -2486,7 +2486,7 @@ SideNav
     position: relative;
     cursor: pointer;
 }
-.ProfileForm .FileInputLabel img{
+.ProfileForm .FileInputLabel:first img{
     width: 200px !important;
     height: 200px ;
 }
@@ -3249,6 +3249,8 @@ End Discussion
 
     .CoursesPage section.LevelOfEducation .FilterPart.SideNav .filterBtn img {
         width: 50px !important;
+        height: 50px !important;
+        margin-left: 20px;
     }
 
     section.WatchVideo .WhiteBG {
@@ -3536,6 +3538,9 @@ End Discussion
 @media (max-width: 575px) {
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
+    }
+    .EmptyOffer img{
+        width: 50%;
     }
     section.Bundels .card a, section.LevelOfEducation .card a,section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart{
         width: unset !important;
