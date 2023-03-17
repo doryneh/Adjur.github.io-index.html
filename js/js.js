@@ -170,3 +170,19 @@ $('.NoCOupon').click(function() {
    });
  });
 
+
+ /**********
+ *Hover animation for bundel choosing
+
+ */
+ $('.BAQA section.ChooseBAQA .WhiteBG').hover(
+  function() {
+    $('.BAQA section.ChooseBAQA .WhiteBG').not(this).css('opacity', '0.5');
+    $('.BAQA section.ChooseBAQA .WhiteBG').not(this).css('transform', 'scale(0.9)');
+
+  },
+  function() {
+    $('.BAQA section.ChooseBAQA .WhiteBG').not(this).css('opacity', '');
+    $('.BAQA section.ChooseBAQA .WhiteBG').not(this).css('transform', 'scale(1)');
+  }
+);

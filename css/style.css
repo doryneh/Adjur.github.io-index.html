@@ -558,7 +558,7 @@ Modal
     margin-top: 20px;
 }
 
-.modal input, .modal select, .ProfileForm input, .Error input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input, .PaymentMethods select, .PaymentMethods .form-control:disabled, .PaymentMethods .form-control[readonly] {
+.modal input, .modal select,.GreenSection input, .ProfileForm input, .Error input, .ProfileForm select, .ProfileForm textarea, .PaymentMethods input, .PaymentMethods select, .PaymentMethods .form-control:disabled, .PaymentMethods .form-control[readonly] {
     direction: rtl;
     border: 1px solid #A09EA5;
     border-radius: 8px;
@@ -568,7 +568,7 @@ Modal
     box-shadow: none !important;
 }
 
-.ProfileForm input, .ProfileForm select {
+.ProfileForm input, .ProfileForm select,.GreenSection input {
     height: 45px;
 }
 
@@ -1420,7 +1420,21 @@ section.GreenSection h3 {
     font-size: 30px;
     line-height: 56px;
 }
+section.GreenSection .AppButton{
+    background-color: #7A5CC8;
+    border-radius: 8px;
+    border: 1px solid #7A5CC8 !important;
+    color: white;
+    font-weight: 600;
+    height: 45px;
+    padding: 0px 20px;
+}
+section.GreenSection .AppButton:hover{
+    background-color: #5b4496;
 
+    border: 1px solid #5b4496 !important;
+
+}
 
 /***********
 ***********
@@ -2208,18 +2222,28 @@ BAQA
 }
 
 .BAQA section.ChooseBAQA .WhiteBG {
-    transition: 0.4s ease all;
+    background-color: unset;
+    background: linear-gradient(to top left, white, white) !important;
+
     border-radius: 20px;
     min-height: 375px;
     height: 100%;
+    transition: 0.3s linear all !important;
+
+}
+
+.GreenBG {
+    transition: 0.3s linear all !important;
+
 }
 
 .BAQA section.ChooseBAQA .WhiteBG:Hover h1, .GreenBG h1 {
     background: transparent;
 }
 
-.BAQA section.ChooseBAQA .WhiteBG:Hover, .GreenBG {
+.BAQA section.ChooseBAQA .WhiteBG:hover, .GreenBG:hover, .BAQA section.ChooseBAQA .WhiteBG:active, .BAQA section.ChooseBAQA .WhiteBG:focus {
     background: linear-gradient(to top left, #CBFFF1, #3FDBB1) !important;
+    transform: scale(1.1);
 }
 
 .BAQA section.ChooseBAQA .addToCart {
@@ -2444,6 +2468,7 @@ Cart
     height: 100%;
     border: 2px dashed #C6C6C6;
     border-radius: 12px;
+    margin-top: 20px;
 }
 
 .CartPage.PackagesCourse section.LevelOfEducation .BundelCard .card button.btn-primary.addToCart {
@@ -3038,6 +3063,14 @@ End Discussion
     color: #242424;
 }
 
+.text b {
+    font-weight: 900;
+}
+
+.SmallText b {
+    font-weight: 700;
+}
+
 .purple {
     color: #7453C6;
 }
@@ -3208,6 +3241,10 @@ End Discussion
         display: flex;
     }
 
+    .BigBox.indexPage {
+        padding-bottom: 20px;
+    }
+
     img[imgsrc] {
         background-color: transparent;
     }
@@ -3321,9 +3358,7 @@ End Discussion
         transform: unset;
     }
 
-    .purpleTop .BigBox {
-        padding-bottom: 0px;
-    }
+
 
     .text {
         font-size: 17px;
@@ -3437,13 +3472,17 @@ End Discussion
         font-size: 13px;
     }
 
+    section.Bundels .card {
+        margin-top: 20px;
+    }
+
     .Devices {
         width: 100% !important;
     }
 
     .sectionTitle {
-        font-size: 17px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 35px;
     }
 
     .UncompletedCards {
@@ -3581,6 +3620,12 @@ End Discussion
         width: 50%;
     }
 
+    section.LevelOfEducation .nav-pills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     section.Bundels .card a, section.LevelOfEducation .card a, section.LevelOfEducation .card button.btn-primary.addToCart, .VideoPage .card button.btn-primary.addToCart {
         width: unset !important;
         font-size: 13px;
@@ -3588,6 +3633,12 @@ End Discussion
 
     .BankAccountBanner {
         width: 25% !important;
+    }
+
+    .sectionTitle {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 20px !important;
     }
 
     .Discussion .ChatCard .MessagesNumber {
