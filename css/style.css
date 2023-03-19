@@ -29,7 +29,7 @@ body {
 }
 
 .purpleTop {
-    background-color: #7453C6;
+    background-color: #7453C6 !important;
 }
 
 .purpleTop p.TopText, footer.footer .TopText {
@@ -2316,6 +2316,7 @@ Cart
 
 .CartPage .CouponDiscountCode {
     height: fit-content;
+    font-size: 15px;
 }
 
 .CartPage .CouponDiscountCode form input {
@@ -2626,7 +2627,9 @@ Contact US
     transform: translateY(-50%);
     color: #808080;
 }
-
+.ShowPassword:hover, .ShowPassword2:hover{
+    color: #464646;
+}
 .PrivacyPolicy .SmallText {
     line-height: 35px;
 }
