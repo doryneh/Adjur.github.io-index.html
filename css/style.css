@@ -2284,7 +2284,8 @@ BAQA
     color: #7453C6;
 }
 
-.BAQA section.FAQ .accordion-button::after, .accordion-button:not(.collapsed)::after {
+.BAQA section.FAQ .accordion-button::after, .accordion-button:not(.collapsed)::after 
+{
     filter: grayscale(100%);
     opacity: 0.5;
 }
@@ -2500,13 +2501,33 @@ ENd Cart
 /***************************
 SideNav
 ****************************/
-.SideNav .SideNavRow a {
+.SideNav .SideNavRow a ,.SideNav .SideNavRow .accordion-item .accordion-button ,.SideNav .SideNavRow .accordion-item .accordion-button svg{
     display: flex;
     justify-content: start;
     align-items: center;
     color: #858585;
     font-weight: 400;
     font-size: 14px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.SideNav .SideNavRow .accordion-item .accordion-button,.SideNav .SideNavRow .accordion-item .accordion-button svg{
+    justify-content: space-between;
+    color: #7453C6 !important;
+    font-weight: bold !important;
+    transition: 0.2s ease all;
+}
+.SideNav .SideNavRow .accordion-item .accordion-button svg{
+    font-size: 16px;
+    transform: rotate(0deg);
+}
+
+.SideNav .SideNavRow .accordion-item .accordion-button::after{
+    display: none;
+}
+.SideNav .SideNavRow .accordion-item .accordion-button:not(.collapsed) svg{
+    transform: rotate(180deg);
 }
 
 .SideNav .SideNavRow a img {
@@ -2553,7 +2574,9 @@ SideNav
     right: 0%;
     width: 30%;
 }
-
+.SideNav .SideNavRow .accordion-item{
+    border: none;
+}
 /***************************
 End SideNav
 ****************************/
@@ -3053,6 +3076,25 @@ End Discussion
 
 
 
+/***************************
+************Teacher Profile PAges *********
+****************************/
+
+.SubscriberRow{
+    height: fit-content !important;
+    filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.10)) !important;
+    border-radius: 8px !important;
+}
+.SubscriberRow .Tag {
+    background-color: #7453c61f;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+/***************************
+************End Teacher Profile PAges *********
+****************************/
+
 
 /***************************
 ************Media *********
@@ -3075,7 +3117,7 @@ End Discussion
 }
 
 .purple {
-    color: #7453C6;
+    color: #7453C6 !important;
 }
 
 .green {
