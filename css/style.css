@@ -3131,6 +3131,100 @@ End Discussion
     float: unset !important;
     margin-left: 10px;
 }
+
+
+/*
+Active Registration
+*/
+
+table{
+    border-collapse:separate;
+    border-spacing: 0px;
+    border: 1px solid #7353c680 !important;
+    border-radius:6px;
+}
+
+
+.ActiveRegistration .table thead {
+    background-color: #7353c634;
+    border-radius: 8px;
+    height: 50px;
+} 
+.ActiveRegistration .table th{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    width: fit-content;
+    vertical-align:  middle;
+    border: 0px;
+}
+.ActiveRegistration .table tbody th{
+    font-size: 10px !important;
+}
+.ActiveRegistration .table  tbody tr{
+    height: 80px;
+}
+.ActiveRegistration .table-striped > tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: rgba(255, 255, 255, 0.05);
+    color: var(--bs-table-striped-color);
+}
+.ActiveRegistration .table-striped > tbody > tr:nth-of-type(even) {
+    --bs-table-accent-bg: hsla(257, 50%, 55%, 0.051);
+    color: var(--bs-table-striped-color);
+}
+
+
+/*
+Teacher Payments 
+*/
+.TeachPayments .WhiteBG{
+    filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.1));
+}
+.TeachPayments thead {
+    background-color: #7353c6 !important;
+}
+.TeachPayments thead th{
+    color: white;
+    font-size: 18px !important;
+}
+.TeachPayments tbody tr th {
+    width: 50% !important;
+}
+
+.TeachPayments .table-striped > tbody > tr{
+    --bs-table-accent-bg: hsl(0, 0%, 100%) !important;
+    color: var(--bs-table-striped-color) !important;
+}
+.TeachPayments tbody tr.TopROw {
+    --bs-table-accent-bg: hsla(257, 50%, 55%, 0.075) !important;
+    color: var(--bs-table-striped-color) !important;
+}
+
+.ActiveRegistration.TeachPayments .table{
+    border: 0px !important;
+}
+.ActiveRegistration.TeachPayments .table tbody th{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border: 1px solid #7353c63f;
+}
+.ActiveRegistration.TeachPayments .table tbody  tr.TopROw  th {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+.ActiveRegistration.TeachPayments .table tbody tr{
+    height: 60px;
+}
+
+.ActiveRegistration.TeachPayments .table tbody tr th:first-child{
+    border-right: 0px !important;
+}
+.ActiveRegistration.TeachPayments .table tbody tr th:last-child{
+    border-left: 0px !important;
+}
+.ActiveRegistration.TeachPayments .table tbody tr:last-child th {
+    border-bottom: none !important;
+}
 /***************************
 ************End Teacher Profile PAges *********
 ****************************/
