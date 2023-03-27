@@ -979,7 +979,7 @@ section.CarouselPart {
     border-radius: 30px;
 }
 
-section.CarouselPart .CarouselText h5 {
+section.CarouselPart .CarouselText h1 {
     color: white !important;
     font-size: 28px;
 }
@@ -1521,7 +1521,7 @@ End Footer
     width: fit-content;
 }
 
-.CoursesPage section.CarouselPart .CarouselText h5 {
+.CoursesPage section.CarouselPart .CarouselText h1 {
     line-height: 71px;
 }
 
@@ -1757,7 +1757,7 @@ End Footer
     margin: 30px 0px 15px 0px;
 }
 
-.EmptyOffer h4 {
+.EmptyOffer h1 {
     font-size: 25px;
     line-height: 52px;
     color: hsla(0, 0%, 14%, 0.5);
@@ -1778,6 +1778,10 @@ End Footer
 
 .DonePaymentPage {
     height: 100vh;
+    margin: 0 !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+
 }
 
 .form-switch .form-check-input:checked {
@@ -2163,11 +2167,11 @@ BAQA
 
 }
 
-.BAQA section.Discount .CarouselText h5, .BAQA section.ChooseBAQA .CarouselText h5 {
+.BAQA section.Discount .CarouselText h1, .BAQA section.ChooseBAQA .CarouselText h1 {
     font-size: 25px;
 }
 
-.BAQA section.Discount .CarouselText h1 {
+.BAQA section.Discount .CarouselText h2 {
     font-size: 100px;
     font-weight: bolder;
     line-height: 150px;
@@ -2197,7 +2201,12 @@ BAQA
 
 }
 
-.BAQA section.ChooseBAQA .CarouselText h6 {
+.BAQA section.ChooseBAQA .CarouselText h5{
+    font-size: 25px !important;
+    color: white !important;
+    background-color:  transparent !important;
+}
+.BAQA section.ChooseBAQA .CarouselText h4 {
     font-size: 20px;
     color: white;
     line-height: 47px;
@@ -3241,13 +3250,15 @@ Teacher Payments
     line-height: 37px;
     color: #242424;
 }
-
-.text b {
-    font-weight: 900;
+.ContactLink {
+    font-size: 20px;
+    border: 1px solid #7453C6;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px 30px;
 }
-
-.SmallText b {
-    font-weight: 700;
+b, strong{
+    font-weight: 700 !important;
 }
 
 .purple {
@@ -3566,7 +3577,7 @@ Teacher Payments
         line-height: 30px;
     }
 
-    section.CarouselPart .CarouselText h5 {
+    section.CarouselPart .CarouselText h1 {
         font-size: 25px;
     }
 
@@ -3753,11 +3764,11 @@ Teacher Payments
         font-size: 15px;
     }
 
-    section.CarouselPart .CarouselText h5 {
+    section.CarouselPart .CarouselText h1 {
         font-size: 20px;
     }
 
-    .CoursesPage section.CarouselPart .CarouselText h5 img {
+    .CoursesPage section.CarouselPart .CarouselText h1 img {
         top: 10%;
         width: 50px;
 
@@ -3947,7 +3958,7 @@ Teacher Payments
         padding: 5px !important;
     }
 
-    .CoursesPage section.CarouselPart .CarouselText h5 {
+    .CoursesPage section.CarouselPart .CarouselText h1 {
         font-size: 17px;
     }
 
