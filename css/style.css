@@ -3238,7 +3238,48 @@ Teacher Payments
 ************End Teacher Profile PAges *********
 ****************************/
 
+/*
+EMail 
+*/
+.MarketingEmail .sectionTitle{
+    font-size: 60px;
+    font-weight: 700;
+}
+.MarketingEmail .sectionTitle .sectionSubTitle{
+    font-size: 25px;
+    
+}
+.MarketingEmail  .sectionSubTitle{
+    font-size: 25px !important;
+    line-height: 52px !important;
+}
+.MarketingEmail  .sectionSubTitle.purple{
+    line-height: 35px !important;
+    font-size: 20px !important;
+}
+.MarketingEmail  .text{
+    font-size: 18px;
+}
+.PinkyBG{
+    background-color: #F3EDFF;
+}
+.MarketingEmail .purpleBtn{
+    background-color: #7554C6;
+    color: white;
+    border-radius: 8px;
+    width: 30%;
+}
+.MarketingEmail .purpleBtn:hover{
+    background-color: #5b429c;
 
+}
+.SocialIcons a img{
+    transition: 0.2s ease all;
+}
+.SocialIcons a img:hover {
+    transform: scale(1.1);
+   
+}
 /***************************
 ************Media *********
 ****************************/
@@ -3283,6 +3324,9 @@ b, strong{
 
 .grey {
     color: #646365;
+}
+.whiteText{
+    color: white;
 }
 .LTR{
     direction: ltr !important;
@@ -4051,5 +4095,24 @@ b, strong{
 
     .VideoPage .accordion-item .accordion-header .disabled img {
         width: 25px;
+    }
+    .MarketingEmail .text{
+        font-size: 16px !important;
+    }
+    .MarketingEmail .sectionSubTitle.purple {
+        line-height: 30px !important;
+        font-size: 18px !important;
+    }
+    .MarketingEmail .sectionTitle {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .MarketingEmail .sectionTitle .sectionSubTitle {
+        font-size: 20px !important;
+        line-height: 40px !important;
+    }
+    .MarketingEmail .purpleBtn{
+  
+        width: 50%;
     }
 }
