@@ -3261,13 +3261,16 @@ EMail
 .MarketingEmail  .text{
     font-size: 18px;
 }
+.MarketingEmail .WhiteBgTwo .text{
+    font-size: 24px;
+}
 .PinkyBG{
     background-color: #F3EDFF;
 }
 .MarketingEmail .purpleBtn{
     background-color: #7554C6;
     color: white;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 30%;
 }
 .MarketingEmail .purpleBtn:hover{
@@ -3280,6 +3283,23 @@ EMail
 .SocialIcons a img:hover {
     transform: scale(1.1);
    
+}
+.Marketing2Bottom{
+    width: 70px ;
+}
+.purpleBorderBtm{
+    height: 2px;
+    width: 25%;
+    background-color: #7554C6;
+}
+.MarketingEmail .sectionSubTitle.MarkEmailBtn{
+    font-size: 20px !important;
+    width: fit-content !important;
+}
+.IMGBG{
+    background-image: url(../images/Marketing5BG.svg);
+    background-position: center center;
+    background-size: contain;
 }
 /***************************
 ************Media *********
@@ -3362,6 +3382,9 @@ b, strong{
 @media (max-width: 1200px) {
     .CourseForRegistered section.WatchVideo .VideoPart {
         min-height: 550px;
+    }
+    .MarketingEmail .WhiteBgTwo .text{
+        font-size: 20px;
     }
 .textEmailImg{
     width: 100% !important;
@@ -3478,6 +3501,15 @@ b, strong{
 @media (max-width: 991px) {
     section.Banner .col-lg-5 {
         display: flex;
+    }
+    .purpleBorderBtm{
+        width: 50%;
+    }
+    .MarketingEmail .WhiteBgTwo .text{
+        font-size: unset;
+    }
+    .Marketing2Phone{
+        width: 100% !important;
     }
     .LTR button{
        width: 50% !important;
@@ -3730,6 +3762,26 @@ b, strong{
         width: 100% !important;
         font-size: 13px;
     }
+   
+    .MarketingEmail .sectionSubTitle.MarkEmailBtn{
+        line-height: 45px !important;
+    }
+    .purpleBorderBtm{
+        width: 75%;
+    }
+    .Marketing2Bottom{
+        width: unset;
+    }
+    .MarketingEmail .WhiteBgTwo .text{
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .MarketingEmail .sectionSubTitle{
+        text-align: center;
+    }
+    .Marketing2Phone{
+        width: 50% !important;
+    }
     .AccountStatus .card .img-fluid.rounded-start.mx-auto{
         width: 100% !important;
         height: unset !important;
@@ -3883,13 +3935,25 @@ b, strong{
     section.CarouselPart {
         border-radius: 10px;
     }
+    .Marketing3Img{
+        width: 75% !important;
+    }
 }
 
 @media (max-width: 575px) {
     .PackagesCourse .OfferCard .card .card-body {
         padding: 0 !important;
     }
-
+    .IMGBG{
+        background-image: unset;
+   
+    }
+    .MarketingEmail .sectionSubTitle.sectionSubTitleBTM{
+        font-size: 20px !important;
+    }
+    .Marketing3Img{
+        width: 100% !important;
+    }
     .EmptyOffer img {
         width: 50%;
     }
@@ -4107,12 +4171,12 @@ b, strong{
         font-size: 18px !important;
     }
     .MarketingEmail .sectionTitle {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 700;
     }
     .MarketingEmail .sectionTitle .sectionSubTitle {
-        font-size: 20px !important;
-        line-height: 40px !important;
+        font-size: 16px !important;
+        line-height:40px !important;
     }
     .MarketingEmail .purpleBtn{
   
