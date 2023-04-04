@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="images/FavIcon.png">
     <meta name="description"
@@ -17,6 +16,301 @@
 
     <title> منصة أجدر التعليمية- شرح المنهاج الدراسي لجميع المراحل</title>
 </head>
+<style>
+    @font-face {
+        font-family: Cairo;
+        src: url(./fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+    }
+
+    @font-face {
+        font-family: Pacifico;
+        src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
+    }
+
+    body {
+        direction: rtl;
+        font-family: Cairo !important;
+        background-color: #F6F2FF;
+    }
+
+    .WhiteBgOne {
+        max-width: 100vw;
+        background-color: white !important;
+        position: unset;
+    }
+
+    .MarketingEmail .sectionTitle {
+        font-size: 60px;
+    }
+
+    .MarketingEmail .sectionTitle .sectionSubTitle {
+        font-size: 25px;
+    }
+
+    .purpleTop {
+        background-color: #7453C6 !important;
+    }
+
+    .MarketingEmail .sectionSubTitle {
+        font-size: 25px !important;
+        line-height: 52px !important;
+    }
+
+    .MarketingEmail .sectionSubTitle.purple {
+        line-height: 35px !important;
+        font-size: 20px !important;
+
+    }
+
+    .LTR {
+        direction: ltr !important;
+    }
+
+    .MarketingEmail .text {
+        font-size: 18px;
+    }
+
+    .MarketingEmail .WhiteBgTwo .text {
+        font-size: 24px;
+    }
+
+    .PinkyBG {
+        background-color: #F3EDFF;
+    }
+
+    .MarketingEmail .purpleBtn {
+        background-color: #7554C6;
+        color: white;
+        border-radius: 15px;
+        width: 30%;
+    }
+
+    .MarketingEmail .purpleBtn:hover {
+        background-color: #5b429c;
+
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 37px;
+        color: #242424;
+    }
+
+    .purple {
+        color: #7453C6 !important;
+    }
+
+    .black {
+        color: #242424;
+    }
+
+    .red {
+        color: #C65353;
+    }
+
+    .whiteText {
+        color: white !important;
+    }
+
+    .SocialIcons a img {
+        transition: 0.2s ease all;
+    }
+
+    footer.footer {
+        background-color: #7453C6;
+    }
+
+    .SocialIcons a img:hover {
+        transform: scale(1.1);
+
+    }
+
+    footer.footer .SocialIcons img {
+        filter: brightness(0) invert(1);
+    }
+
+    footer.footer .SocialIcons img,
+    .Error .SocialIcons img {
+        width: 30px;
+    }
+
+    footer.footer .SocialIcons img.whatsapp,
+    .Error .SocialIcons img.whatsapp {
+        width: 25px;
+    }
+
+    .Marketing2Bottom {
+        width: 70px;
+    }
+
+    .purpleBorderBtm {
+        height: 2px;
+        width: 25%;
+        background-color: #7554C6;
+    }
+
+    .MarketingEmail .sectionSubTitle.MarkEmailBtn {
+        font-size: 20px !important;
+        width: fit-content !important;
+    }
+
+    .IMGBG {
+        background-image: url(../images/Marketing5BG.svg);
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .MarketingEmail .sectionSubTitle b {
+        font-weight: 600 !important;
+    }
+
+    .sectionSubTitle {
+        font-size: 25px;
+        line-height: 52px;
+        color: #706E6E;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .sectionTitle {
+        font-size: 35px;
+        line-height: 75px;
+        color: #242424;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    footer.footer .TopText {
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    @media (max-width: 1200px) {
+        .textEmailImg {
+            width: 100% !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .sectionSubTitle {
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        .text {
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        .sectionTitle {
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        .purpleBorderBtm {
+            width: 50%;
+        }
+
+        .MarketingEmail .WhiteBgTwo .text {
+            font-size: unset;
+        }
+
+        .Marketing2Phone {
+            width: 100% !important;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .Marketing3Img {
+            width: 75% !important;
+        }
+
+        .sectionSubTitle {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .sectionTitle {
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .MarketingEmail .sectionSubTitle.MarkEmailBtn {
+            line-height: 45px !important;
+        }
+
+        .purpleBorderBtm {
+            width: 75%;
+        }
+
+        .Marketing2Bottom {
+            width: unset;
+        }
+
+        .MarketingEmail .WhiteBgTwo .text {
+            align-items: center !important;
+            text-align: center !important;
+        }
+
+        .MarketingEmail .sectionSubTitle {
+            text-align: center;
+        }
+
+        .Marketing2Phone {
+            width: 50% !important;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .MarketingEmail .purpleBtn {
+
+            width: 50%;
+        }
+
+        .MarketingEmail .text {
+            font-size: 16px !important;
+        }
+
+        .MarketingEmail .sectionSubTitle.purple {
+            line-height: 30px !important;
+            font-size: 18px !important;
+        }
+
+        .MarketingEmail .sectionTitle {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .MarketingEmail .sectionTitle .sectionSubTitle {
+            font-size: 16px !important;
+            line-height: 40px !important;
+        }
+
+        footer.footer .TopText {
+            font-size: 12px;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .IMGBG {
+            background-image: unset;
+
+        }
+
+        .MarketingEmail .sectionSubTitle.sectionSubTitleBTM {
+            font-size: 20px !important;
+        }
+
+        .Marketing3Img {
+            width: 100% !important;
+        }
+
+    }
+</style>
 
 <body>
 
@@ -49,14 +343,14 @@
                         <div class="sectionSubTitle whiteText ">جيناكم بالحل مع منصة أجدر للمدارس</div>
 
 
-                        توفّر عليك 
+                        توفّر عليك
                         <span class="sectionSubTitle whiteText">أكثر من</span>
                         70%
 
-                        <div class="sectionSubTitle whiteText mb-0">من المصاريف    </div>
+                        <div class="sectionSubTitle whiteText mb-0">من المصاريف </div>
                     </div>
                 </div>
-                <div class="PinkyBG w-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="PinkyBG w-100 d-flex flex-column justify-content-center align-items-center pb-5">
                     <div class="sectionSubTitle mt-4 purple px-4 text-center">
                         <b>
                             أجدر للمدارس منصة ﺗﻌﻠﻴمية رقمية رائدة تعتمد على التعلم الإلكتروني في المملكة،
@@ -71,7 +365,7 @@
                         والتي تتمثل في:
                     </div>
 
-                    <img src="images/MarketingEmail.svg" alt="MarketingEmail" class="mt-4 w-75 mx-auto textEmailImg">
+                    <img src="images/MarketingEmail.png" alt="MarketingEmail" class="mt-4 w-75 mx-auto textEmailImg">
 
 
                 </div>
@@ -98,11 +392,11 @@
         <div class="container">
             <div class="d-flex flex-column justify-content-between align-items-center">
                 <img src="images/whiteLogoEmail.svg" alt="whiteLogoEmail" width="70" class="mx-auto">
-                <div class="SocialIcons mt-4 d-flex justify-content-center">
+                <div class="SocialIcons mt-4 d-flex justify-content-center ">
 
 
                     <a href=""><img loading="lazy" src="images/LinkedInEmailFooter.svg" alt="LinkedInEmailFooter"
-                            class=""></a>
+                            class="ms-3"></a>
                     <a href=""><img loading="lazy" src="images/TikTokEmailFooter.svg" alt="TikTokEmailFooter"
                             class="ms-3"></a>
                     <a href=""><img loading="lazy" src="images/TwitterEmailFooter.svg" alt="twitter" class="ms-3"></a>

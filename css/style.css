@@ -3241,66 +3241,7 @@ Teacher Payments
 /*
 EMail 
 */
-.MarketingEmail .sectionTitle{
-    font-size: 60px;
 
-}
-.MarketingEmail .sectionTitle .sectionSubTitle{
-    font-size: 25px;
-    
-}
-.MarketingEmail  .sectionSubTitle{
-    font-size: 25px !important;
-    line-height: 52px !important;
-}
-.MarketingEmail  .sectionSubTitle.purple{
-    line-height: 35px !important;
-    font-size: 20px !important;
-
-}
-.MarketingEmail  .text{
-    font-size: 18px;
-}
-.MarketingEmail .WhiteBgTwo .text{
-    font-size: 24px;
-}
-.PinkyBG{
-    background-color: #F3EDFF;
-}
-.MarketingEmail .purpleBtn{
-    background-color: #7554C6;
-    color: white;
-    border-radius: 15px;
-    width: 30%;
-}
-.MarketingEmail .purpleBtn:hover{
-    background-color: #5b429c;
-
-}
-.SocialIcons a img{
-    transition: 0.2s ease all;
-}
-.SocialIcons a img:hover {
-    transform: scale(1.1);
-   
-}
-.Marketing2Bottom{
-    width: 70px ;
-}
-.purpleBorderBtm{
-    height: 2px;
-    width: 25%;
-    background-color: #7554C6;
-}
-.MarketingEmail .sectionSubTitle.MarkEmailBtn{
-    font-size: 20px !important;
-    width: fit-content !important;
-}
-.IMGBG{
-    background-image: url(../images/Marketing5BG.svg);
-    background-position: center center;
-    background-size: contain;
-}
 /***************************
 ************Media *********
 ****************************/
